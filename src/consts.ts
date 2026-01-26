@@ -3,7 +3,7 @@
 
 export const SITE_TITLE = 'LinLib';
 export const SITE_DESCRIPTION =
-  'Wine education and exploration by Leon Lin';
+  'Wine and spirits education and exploration by Leon Lin';
 export const SITE_URL = 'https://linlib.com/';
 export const SITE_AUTHOR = 'Leon Lin';
 
