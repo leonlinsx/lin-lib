@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getAllPostsPaginated } from '../../utils/text';
+import { SITE_TITLE } from '../../consts';
+import type { GetStaticPaths } from 'astro';
+import Pagination from '../../components/Pagination.astro';
+import Filters from '../../components/Filters.astro';
+import PostList from '../../components/PostList.astro';
+import WritingHeader from '../../components/WritingHeader.astro';
+import { buildPaginationHref } from '../../utils/pagination.ts';
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const { pages, categories } = await getAllPostsPaginated(paginate, 8);
+
+  return pages.map((pg) => ({
+    ...pg,
+    props: {
+      ...(pg.props || {}),
+      categories, // ✅ pass categories along for Filters
+    },
+  }));
+}) satisfies GetStaticPaths;
+
+const { page, categories = [] } = Astro.props;
+const pagedPosts = page.data as any[]; // enriched posts with `slug`
+const currentPage = page.currentPage;
+const totalPages = page.lastPage;
+
+const activeCategory = ''; // "All" page
+const canonical = currentPage === 1 ? buildPaginationHref(1) : undefined;
+const relPrev =
+  currentPage > 1 ? buildPaginationHref(currentPage - 1) : undefined;
+const relNext =
+  currentPage < totalPages ? buildPaginationHref(currentPage + 1) : undefined;
+---
+
+<BaseLayout
+  title={`Writing | ${SITE_TITLE}`}
+  description="All essays, notes, and more."
+  canonical={canonical}
+  relPrev={relPrev}
+  relNext={relNext}
+>
+  <WritingHeader
+    title="Essays, Notes, and More"
+    subtitle="Thinking out loud about finance, tech, and other compounding ideas"
+    showSearch={true}
+  />
+
+  <!-- Category Filters -->
+  <Filters categories={categories} activeCategory={activeCategory} />
+
+  <!-- Posts -->
+  <!-- ✅ pagedPosts already has clean slugs -->
+  <PostList posts={pagedPosts} />
+
+  <!-- Pagination -->
+  <Pagination currentPage={currentPage} totalPages={totalPages} />
+</BaseLayout>

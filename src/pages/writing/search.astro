@@ -1,0 +1,170 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+import { SITE_TITLE } from '../../consts';
+import SearchBar from '../../components/SearchBar.astro';
+import { enrichPost } from '../../utils/text'; // ✅ reuse helper
+import { searchPosts } from '../../utils/search';
+
+// Extract query param `q` from the URL
+const url = new URL(Astro.request.url);
+const q = (url.searchParams.get('q') || '').trim();
+
+// Fetch and enrich all posts
+const allPosts = await getCollection('blog');
+
+const posts = allPosts
+  .map(enrichPost)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const filteredPosts = q ? searchPosts(posts, q) : posts;
+const visibleIds = new Set(filteredPosts.map((post) => post.id));
+---
+
+<BaseLayout
+  title={`Search | ${SITE_TITLE}`}
+  description={`Search results for "${q}"`}
+>
+  <div class="search-header">
+    <h1>Search Results</h1>
+    <SearchBar q={q} id="client-search-input" variant="full" />
+  </div>
+
+  <div id="post-list">
+    {posts.map((post) => (
+      <PostCard post={post} hidden={!visibleIds.has(post.id)} />
+    ))}
+  </div>
+
+  <p
+    id="search-empty"
+    class:list={['search-empty', filteredPosts.length === 0 && q ? 'is-visible' : '']}
+    role="status"
+    aria-live="polite"
+  >
+    No posts found. Try a different keyword.
+  </p>
+
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"
+  ></script>
+  <script is:inline type="module">
+    const input = document.getElementById('client-search-input');
+    const postList = document.getElementById('post-list');
+    const allPosts = Array.from(postList.children);
+    const emptyState = document.getElementById('search-empty');
+
+    const postsData = allPosts.map((el) => ({
+      el,
+      title: el.querySelector('.post-title')?.textContent || '',
+      summary: el.querySelector('.post-summary')?.textContent || '',
+      category: el.querySelector('.post-meta')?.textContent || '',
+    }));
+
+    const fuse = new window.Fuse(postsData, {
+      keys: ['title', 'summary', 'category'],
+      threshold: 0.3,
+    });
+
+    // Run search immediately if query present in URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialQuery = urlParams.get('q')?.trim() || '';
+    if (initialQuery) {
+      input.value = initialQuery;
+      runSearch(initialQuery);
+    }
+
+    input.addEventListener('input', (e) => {
+      runSearch(e.target.value.trim());
+    });
+
+    function runSearch(query) {
+      if (!query) {
+        allPosts.forEach(showPost);
+        updateEmptyState(true);
+        return;
+      }
+      const found = fuse.search(query).map((r) => r.item.el);
+      allPosts.forEach(hidePost);
+      found.forEach(showPost);
+      updateEmptyState(found.length > 0);
+    }
+
+    function showPost(el) {
+      el.style.display = '';
+      el.removeAttribute('data-initially-hidden');
+    }
+
+    function hidePost(el) {
+      el.style.display = 'none';
+      el.setAttribute('data-initially-hidden', 'true');
+    }
+
+    function updateEmptyState(hasResults) {
+      if (!emptyState) return;
+      emptyState.classList.toggle('is-visible', !hasResults);
+    }
+  </script>
+</BaseLayout>
+
+<style>
+  .search-header {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: none;
+    background: var(--color-bg);
+    border: 1.5px solid var(--color-border);
+    border-radius: 999px;
+    padding: 0.25rem 0.75rem 0.25rem 1rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+  }
+  .search-input {
+    flex: 1;
+    padding: 0.35rem 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    font-size: 0.95rem;
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--color-text);
+    background: transparent;
+    caret-color: var(--color-text);
+  }
+  .search-btn {
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    border: none;
+    background: transparent;
+    color: var(--color-text);
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    flex-shrink: 0;
+  }
+  .search-btn:hover {
+    opacity: 0.85;
+  }
+  #post-list {
+    display: grid;
+    gap: 1.5rem;
+    width: 100%;
+  }
+  .search-empty {
+    display: none;
+    margin-top: 1.5rem;
+    font-style: italic;
+    color: var(--color-text-dimmed);
+  }
+  .search-empty.is-visible {
+    display: block;
+  }
+</style>

@@ -1,0 +1,128 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostList from '../components/PostList.astro';
+import { getCollection } from 'astro:content';
+import { SITE_TITLE } from '../consts';
+import { enrichPost } from '../utils/text'; // ✅ import enrichment + helpers
+import SubscribeForm from '../components/SubscribeForm.astro';
+
+const allPosts = await getCollection('blog');
+
+// Enrich all posts once for reuse below
+const enrichedPosts = allPosts.map(enrichPost);
+
+// Pick featured posts, enriched
+const featured = enrichedPosts
+  .filter((post) => post.data.featured)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+---
+
+<BaseLayout
+  title={`Home | ${SITE_TITLE}`}
+  description="Writing on finance, tech, and other ideas by Leon Lin"
+>
+  <head>
+    <!-- ✅ Only preload on index page -->
+    <link
+      rel="preload"
+      as="image"
+      href="/logos/substack_banner.webp"
+      imagesrcset="/logos/substack_banner.webp"
+      imagesizes="100vw"
+    />
+  </head>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="banner-wrapper">
+      <img
+        src="/logos/substack_banner.webp"
+        alt="Avoid Boring People newsletter banner"
+        class="banner-img"
+        height="400"
+        width="1600"
+        fetchpriority="high"
+      />
+      <span class="tooltip">
+        I chose the name because of the double meaning. People always default to
+        one interpretation of it, but I promise I'm not as intimidating as I
+        sound.
+      </span>
+    </div>
+
+    <h1>I write to think clearly about finance, tech, and strange ideas</h1>
+    <p>
+      Sharing my writing helps my ideas compound and helps me connect with
+      curious people.
+    </p>
+    <p>
+      Start with a few favourites below, or
+      <a href="#subscribe">join 5,000+ readers</a> who get updates by email.
+    </p>
+  </section>
+
+  <!-- Start Here -->
+  <section class="content-section">
+    <h2>Best Of</h2>
+    <p class="subtext">Essays that highlight what my writing is about</p>
+    <PostList posts={featured} />
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section id="subscribe" class="signup">
+    <SubscribeForm
+      title="Join the Newsletter"
+      subtext="Irregular essays on finance, tech, and life. Delivered directly to your inbox."
+    />
+  </section>
+
+  <!-- Featured Logos -->
+  <section class="featured">
+    <h2>As featured in</h2>
+    <div class="logo-row">
+      <img src="/logos/hacker_news_logo.webp" alt="Hacker News logo" loading="lazy" />
+      <img src="/logos/failory_logo.webp" alt="Failory logo" loading="lazy" />
+      <img src="/logos/finextra_logo.webp" alt="Finextra logo" loading="lazy" />
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .banner-wrapper {
+    position: relative; /* anchor for absolute tooltip */
+    display: inline-block;
+  }
+
+  .banner-img {
+    display: block;
+    width: min(100%, 960px);
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 20px 60px rgba(15, 23, 42, 0.16);
+  }
+
+  .tooltip {
+    position: absolute;
+    bottom: 100%; /* place it above the banner */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0.5rem;
+
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    max-width: 480px;
+    text-align: center;
+    line-height: 1.4;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    white-space: normal; /* allow wrapping if long */
+  }
+
+  .banner-wrapper:hover .tooltip {
+    opacity: 1;
+    transition-delay: 3.1415s; /* only appears if you linger */
+  }
+</style>

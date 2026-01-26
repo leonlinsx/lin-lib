@@ -1,0 +1,89 @@
+---
+import { SITE_TITLE } from '../consts';
+import HeaderLink from './HeaderLink.astro';
+
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+---
+
+<header class="site-header">
+  <div class="nav-container">
+    <a href="/" class="site-logo" aria-label={SITE_TITLE}>
+      <img
+        src="/logos/substack_logo.webp"
+        alt=""
+        aria-hidden="true"
+        width="32"
+        height="32"
+      />
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <HeaderLink href="/writing/1" currentPath={currentPath} class="nav-item">
+        Writing
+      </HeaderLink>
+
+      <HeaderLink href="/about" currentPath={currentPath} class="nav-item">
+        About
+      </HeaderLink>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    width: 100%;
+    background: var(--color-bg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .nav-container {
+    width: 100%;
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    padding: var(--space-sm) var(--space-md);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .site-logo img {
+    height: 32px;
+    transition: opacity 0.2s ease;
+  }
+  .site-logo:hover img {
+    opacity: 0.85;
+  }
+  .nav-links {
+    display: flex;
+    gap: var(--space-lg);
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+  .nav-item {
+    padding: 1em 0.3em;
+    color: var(--color-text);
+    border-bottom: 3px solid transparent;
+    font-weight: 500;
+    transition:
+      border-color 0.2s,
+      color 0.2s;
+  }
+  .nav-item:hover {
+    color: var(--color-link);
+  }
+  .nav-item.active {
+    border-bottom-color: var(--color-link);
+    font-weight: 600;
+  }
+  @media (max-width: 480px) {
+    .nav-links {
+      gap: var(--space-sm);
+      font-size: 0.85rem;
+    }
+    .site-logo img {
+      height: 28px;
+    }
+  }
+</style>

@@ -1,0 +1,262 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import PostList from '../components/PostList.astro';
+import { SITE_AUTHOR, SITE_BANNER_IMAGE, SITE_URL } from '../consts';
+import { enrichPost } from '../utils/text';
+import TableOfContents from '../components/TableOfContents.astro';
+import ShareButtons from '../components/ShareButtons.astro';
+import TagList from '../components/TagList.astro';
+import SubscribeForm from '../components/SubscribeForm.astro';
+import type { MarkdownHeading } from 'astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { titleCase } from '../utils/text';
+
+type Props = {
+  post: CollectionEntry<'blog'> & { slug: string };
+  headings?: MarkdownHeading[];
+};
+
+const { post, headings = [] } = Astro.props;
+
+// ✅ Enrich once, then destructure from .data
+const enrichedPost = enrichPost(post);
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  heroImage,
+  category,
+  categoryNormalized,
+  tags = [],
+  readingTime,
+} = enrichedPost.data;
+const slug = enrichedPost.slug;
+
+// ✅ Use normalized hero (string or ImageMetadata)
+const hero = heroImage ?? SITE_BANNER_IMAGE;
+
+// ✅ Related posts (exclude by id)
+const allPosts = await getCollection('blog');
+const related = allPosts
+  .filter((p) => p.data.category === category && p.id !== post.id)
+  .map(enrichPost)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+
+// ✅ Canonical URL from clean slug
+const canonicalURL = new URL(`/writing/${slug}/`, SITE_URL).toString();
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Writing', href: '/writing/' },
+];
+
+if (categoryNormalized) {
+  breadcrumbItems.push({
+    label: titleCase(categoryNormalized),
+    href: `/writing/category/${encodeURIComponent(categoryNormalized)}`,
+  });
+}
+
+breadcrumbItems.push({ label: title });
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  image={typeof hero === 'object' ? hero.src : hero}
+  pubDate={pubDate}
+  updatedDate={updatedDate}
+  authorName={SITE_AUTHOR}
+  ogType="article"
+  tags={tags}
+>
+  <main>
+    <article>
+      <Breadcrumbs items={breadcrumbItems} />
+      {
+        hero && (
+          <div class="hero-image">
+            {typeof hero === 'object' ? (
+              <Image
+                src={hero}
+                alt={`Hero for ${title}`}
+                format="webp"
+                width={1200}
+                height={630}
+                fit="cover"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            ) : (
+              <img
+                src={hero}
+                alt={`Hero for ${title}`}
+                width="1200"
+                height="630"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            )}
+          </div>
+        )
+      }
+
+      <div class="prose">
+        <div class="title">
+          <div class="meta">
+            <FormattedDate date={pubDate} />
+            {category && ` · ${category}`}
+            {readingTime && ` · ${readingTime} min read`}
+            {
+              updatedDate && (
+                <div class="last-updated-on">
+                  Last updated on <FormattedDate date={updatedDate} />
+                </div>
+              )
+            }
+          </div>
+          <h1>{title}</h1>
+        </div>
+
+        <!-- TOC -->
+        <TableOfContents headings={headings} />
+
+        <!-- Post content -->
+        <slot />
+
+        <!-- Tags -->
+        <TagList tags={tags} />
+
+        <!-- Share Buttons -->
+        <ShareButtons title={title} url={canonicalURL} />
+
+        <!-- Newsletter CTA -->
+        <SubscribeForm compact={false} />
+
+        <!-- Related posts -->
+        {
+          related.length > 0 && (
+            <section class="related-posts">
+              <h2>Related Posts</h2>
+              <PostList posts={related} variant="compact" />
+            </section>
+          )
+        }
+
+        <!-- Comments -->
+        <section class="comments">
+          <h2>Comments</h2>
+          <script
+            id="giscus-script"
+            src="https://giscus.app/client.js"
+            data-repo="leonlinsx/avoid-boring-people"
+            data-repo-id="R_kgDOPvVo9Q"
+            data-category="Comments"
+            data-category-id="DIC_kwDOPvVo9c4CvwrO"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="light"
+            data-lang="en"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async></script>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <!-- Dark mode sync for Giscus -->
+  <script is:inline>
+    function setGiscusTheme(theme) {
+      const iframe = document.querySelector('iframe.giscus-frame');
+      if (!iframe) return;
+      iframe.contentWindow.postMessage(
+        { giscus: { setConfig: { theme } } },
+        'https://giscus.app',
+      );
+    }
+
+    // Run once on page load
+    const initialTheme =
+      document.documentElement.getAttribute('data-theme') || 'light';
+    setGiscusTheme(initialTheme === 'dark' ? 'dark_dimmed' : 'light');
+
+    // Observe changes to <html data-theme="">
+    const observer = new MutationObserver(() => {
+      const newTheme =
+        document.documentElement.getAttribute('data-theme') || 'light';
+      setGiscusTheme(newTheme === 'dark' ? 'dark_dimmed' : 'light');
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme'],
+    });
+  </script>
+</BaseLayout>
+
+<style>
+  .hero-image {
+    max-width: 1100px;
+    margin: 0 auto 2rem auto;
+  }
+  .hero-image img,
+  .hero-image :global(img) {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+  }
+  .title {
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.4;
+  }
+  .meta {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    color: rgb(var(--color-text-meta));
+  }
+  .last-updated-on {
+    font-style: italic;
+  }
+  .title h1 {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+  }
+  .title h1::after {
+    content: '';
+    display: block;
+    margin: 0.75rem auto 0 auto;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+  }
+  .related-posts > h2 {
+    margin-top: 0;
+    margin-bottom: var(--space-lg);
+    font-size: var(--text-xl);
+  }
+  .comments {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+  }
+  .comments h2 {
+    margin-bottom: 1rem;
+  }
+</style>

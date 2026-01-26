@@ -1,0 +1,13 @@
+feedparser
+tweepy
+python-dotenv
+openai
+sumy
+nltk
+numpy
+scipy        
+pycountry    
+requests
+atproto
+python-frontmatter
+setuptools

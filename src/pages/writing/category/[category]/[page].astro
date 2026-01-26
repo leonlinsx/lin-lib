@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import {
+  getCategoryPostsPaginated,
+  titleCase,
+} from '../../../../utils/text';
+import { SITE_TITLE } from '../../../../consts';
+import type { GetStaticPaths } from 'astro';
+import Pagination from '../../../../components/Pagination.astro';
+import Filters from '../../../../components/Filters.astro';
+import PostList from '../../../../components/PostList.astro';
+import WritingHeader from '../../../../components/WritingHeader.astro';
+import { buildPaginationHref } from '../../../../utils/pagination.ts';
+
+export const getStaticPaths = (async ({ paginate }) => {
+  return await getCategoryPostsPaginated(paginate, 8);
+}) satisfies GetStaticPaths;
+
+// ✅ page.data are enriched posts (with clean slug)
+const { page, categories = [], activeCategory = '' } = Astro.props;
+const pagedPosts = page.data as any[];
+const currentPage = page.currentPage;
+const totalPages = page.lastPage;
+
+const canonical =
+  currentPage === 1 ? buildPaginationHref(1, activeCategory) : undefined;
+const relPrev =
+  currentPage > 1 ? buildPaginationHref(currentPage - 1, activeCategory) : undefined;
+const relNext =
+  currentPage < totalPages
+    ? buildPaginationHref(currentPage + 1, activeCategory)
+    : undefined;
+---
+
+<BaseLayout
+  title={`Writing | ${SITE_TITLE}`}
+  description={`Essays and posts in category "${titleCase(activeCategory)}"`}
+  canonical={canonical}
+  relPrev={relPrev}
+  relNext={relNext}
+>
+  <WritingHeader
+    title={`Category: ${titleCase(activeCategory)}`}
+    subtitle=""
+    showSearch={false}
+  />
+
+  <!-- Category Filters -->
+  <Filters categories={categories} activeCategory={activeCategory} />
+
+  <!-- Posts -->
+  <!-- ✅ cleaned slugs are in pagedPosts -->
+  <PostList posts={pagedPosts} />
+
+  <!-- Pagination -->
+  <Pagination
+    currentPage={currentPage}
+    totalPages={totalPages}
+    activeCategory={activeCategory}
+  />
+</BaseLayout>

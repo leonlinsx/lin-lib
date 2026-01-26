@@ -1,0 +1,33 @@
+---
+interface Props {
+  date?: string | Date | null; // make optional & nullable
+  format?: Intl.DateTimeFormatOptions; // allow custom formatting
+  locale?: string; // optional locale override
+}
+
+const { date, format, locale = 'en-US' } = Astro.props;
+
+// Normalize input → undefined/null stays null
+let parsedDate: Date | null = null;
+
+if (typeof date === 'string' && date.trim()) {
+  const d = new Date(date);
+  if (!isNaN(d.getTime())) parsedDate = d;
+} else if (date instanceof Date && !isNaN(date.getTime())) {
+  parsedDate = date;
+}
+
+const defaultFormat: Intl.DateTimeFormatOptions = {
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric',
+};
+---
+
+{
+  parsedDate ? (
+    <time datetime={parsedDate.toISOString()}>
+      {parsedDate.toLocaleDateString(locale, format || defaultFormat)}
+    </time>
+  ) : null
+}

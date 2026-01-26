@@ -1,0 +1,24 @@
+---
+import SearchBarToggle from './SearchBarToggle.tsx';
+import SearchBar from './SearchBar.astro';
+
+interface Props {
+  title: string;
+  subtitle?: string;
+  showSearch?: boolean;
+}
+
+const { title, subtitle = '', showSearch = false } = Astro.props;
+---
+
+<header class="writing-header">
+  <div class="writing-header-text">
+    <h1>{title}</h1>
+    <div class="subtitle-row">
+      <p class="subtext">{subtitle}</p>
+      {showSearch && <SearchBarToggle client:load />}
+    </div>
+  </div>
+
+  {showSearch && <SearchBar className="search-bar-desktop" variant="compact" />}
+</header>

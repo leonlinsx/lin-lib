@@ -1,0 +1,31 @@
+name: Medium Prep
+
+on:
+  push:
+    paths:
+      - 'src/content/blog/**/index.md'
+
+jobs:
+  medium-prep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r scripts/automation/requirements.txt
+
+      - name: Generate Medium summary
+        run: |
+          latest_file=$(git ls-files -m src/content/blog/*/index.md | tail -n1)
+          if [ -z "$latest_file" ]; then
+            latest_file=$(git log -n 1 --pretty=format: --name-only -- src/content/blog/*/index.md | tail -n1)
+          fi
+          echo "Latest blog file: $latest_file"
+          PYTHONPATH=. python scripts/automation/medium_prep.py "$latest_file"

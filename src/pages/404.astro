@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<BaseLayout
+  title={`404 | ${SITE_TITLE}`}
+  description="This page could not be found. Return to the home page."
+>
+  <h1>404</h1>
+  <p>Looks like you wandered off the path and got lost in the void.</p>
+  <div class="void-image-container">
+    <img
+      src="/police_box_void.webp"
+      alt="Lost in the void"
+      width="400"
+      height="400"
+      class="void-image"
+    />
+  </div>
+  <p><a href="/">Go back home safely →</a></p>
+
+  <style>
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      margin: 0.5rem 0;
+    }
+  </style>
+</BaseLayout>
