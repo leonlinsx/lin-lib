@@ -11,5 +11,5 @@ jobs:
     steps:
       - name: Notify Google & Bing
         run: |
-          curl "https://www.google.com/ping?sitemap=https://leonlins.com/sitemap-index.xml"
-          curl "https://www.bing.com/ping?sitemap=https://leonlins.com/sitemap-index.xml"
+          curl "https://www.google.com/ping?sitemap=https://linlib.com/sitemap-index.xml"
+          curl "https://www.bing.com/ping?sitemap=https://linlib.com/sitemap-index.xml"
