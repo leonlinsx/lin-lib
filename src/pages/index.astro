@@ -2,127 +2,157 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PostList from '../components/PostList.astro';
 import { getCollection } from 'astro:content';
-import { SITE_TITLE } from '../consts';
-import { enrichPost } from '../utils/text'; // ✅ import enrichment + helpers
-import SubscribeForm from '../components/SubscribeForm.astro';
 
 const allPosts = await getCollection('blog');
 
-// Enrich all posts once for reuse below
-const enrichedPosts = allPosts.map(enrichPost);
-
-// Pick featured posts, enriched
-const featured = enrichedPosts
-  .filter((post) => post.data.featured)
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
+// Get latest 3 posts sorted by date
+const latestPosts = allPosts
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
 ---
 
 <BaseLayout
-  title={`Home | ${SITE_TITLE}`}
-  description="Writing on finance, tech, and other ideas by Leon Lin"
+  title="LinLib — Wine Education"
+  description="Wine education and exploration by Leon Lin"
 >
-  <head>
-    <!-- ✅ Only preload on index page -->
-    <link
-      rel="preload"
-      as="image"
-      href="/logos/substack_banner.webp"
-      imagesrcset="/logos/substack_banner.webp"
-      imagesizes="100vw"
-    />
-  </head>
-
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section class="hero">
-    <div class="banner-wrapper">
-      <img
-        src="/logos/substack_banner.webp"
-        alt="Avoid Boring People newsletter banner"
-        class="banner-img"
-        height="400"
-        width="1600"
-        fetchpriority="high"
-      />
-      <span class="tooltip">
-        I chose the name because of the double meaning. People always default to
-        one interpretation of it, but I promise I'm not as intimidating as I
-        sound.
-      </span>
+    <h1>Explore Wine with Purpose</h1>
+    <p class="hero-text">
+      LinLib is your guide to understanding wine — from fundamentals to nuances. 
+      Learn, taste, and discover together.
+    </p>
+    <div class="hero-ctas">
+      <a href="/writing" class="cta-button primary">Explore Wine Education</a>
+      <a href="mailto:contact@leonlins.com" class="cta-button secondary">Get in Touch</a>
     </div>
-
-    <h1>I write to think clearly about finance, tech, and strange ideas</h1>
-    <p>
-      Sharing my writing helps my ideas compound and helps me connect with
-      curious people.
-    </p>
-    <p>
-      Start with a few favourites below, or
-      <a href="#subscribe">join 5,000+ readers</a> who get updates by email.
-    </p>
   </section>
 
-  <!-- Start Here -->
+  <!-- Latest Articles -->
   <section class="content-section">
-    <h2>Best Of</h2>
-    <p class="subtext">Essays that highlight what my writing is about</p>
-    <PostList posts={featured} />
+    <h2>Latest Articles</h2>
+    <p class="subtext">Read our most recent explorations</p>
+    <PostList posts={latestPosts} />
   </section>
 
-  <!-- Newsletter Signup -->
-  <section id="subscribe" class="signup">
-    <SubscribeForm
-      title="Join the Newsletter"
-      subtext="Irregular essays on finance, tech, and life. Delivered directly to your inbox."
-    />
-  </section>
-
-  <!-- Featured Logos -->
-  <section class="featured">
-    <h2>As featured in</h2>
-    <div class="logo-row">
-      <img src="/logos/hacker_news_logo.webp" alt="Hacker News logo" loading="lazy" />
-      <img src="/logos/failory_logo.webp" alt="Failory logo" loading="lazy" />
-      <img src="/logos/finextra_logo.webp" alt="Finextra logo" loading="lazy" />
-    </div>
+  <!-- About Teaser -->
+  <section class="about-teaser">
+    <h2>About LinLib</h2>
+    <p>
+      LinLib is dedicated to wine education and exploration. Whether you're just 
+      beginning your wine journey or looking to deepen your knowledge, you'll find 
+      thoughtful essays and practical guides here.
+    </p>
+    <p>
+      <a href="/about">Learn more about the mission →</a>
+    </p>
   </section>
 </BaseLayout>
 
 <style>
-  .banner-wrapper {
-    position: relative; /* anchor for absolute tooltip */
+  .hero {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+    padding: var(--space-xl) var(--space-md);
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: var(--space-md);
+    line-height: 1.2;
+  }
+
+  .hero-text {
+    font-size: 1.25rem;
+    color: var(--color-text-muted);
+    max-width: 600px;
+    margin: 0 auto var(--space-lg);
+    line-height: 1.6;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cta-button {
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
     display: inline-block;
   }
 
-  .banner-img {
-    display: block;
-    width: min(100%, 960px);
-    height: auto;
-    border-radius: 18px;
-    box-shadow: 0 20px 60px rgba(15, 23, 42, 0.16);
+  .cta-button.primary {
+    background: var(--color-link);
+    color: white;
   }
 
-  .tooltip {
-    position: absolute;
-    bottom: 100%; /* place it above the banner */
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 0.5rem;
-
-    font-size: 0.85rem;
-    color: var(--color-text-muted);
-    max-width: 480px;
-    text-align: center;
-    line-height: 1.4;
-
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-    white-space: normal; /* allow wrapping if long */
+  .cta-button.primary:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
   }
 
-  .banner-wrapper:hover .tooltip {
-    opacity: 1;
-    transition-delay: 3.1415s; /* only appears if you linger */
+  .cta-button.secondary {
+    border: 2px solid var(--color-link);
+    color: var(--color-link);
+  }
+
+  .cta-button.secondary:hover {
+    background: var(--color-link);
+    color: white;
+  }
+
+  .content-section {
+    margin: var(--space-xl) 0;
+  }
+
+  .content-section h2 {
+    margin-bottom: var(--space-md);
+  }
+
+  .about-teaser {
+    margin-top: var(--space-xl);
+    padding: var(--space-lg);
+    background: var(--color-bg-alt);
+    border-radius: 8px;
+  }
+
+  .about-teaser p {
+    margin-bottom: var(--space-md);
+    line-height: 1.6;
+  }
+
+  .about-teaser a {
+    color: var(--color-link);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .about-teaser a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero-text {
+      font-size: 1rem;
+    }
+
+    .hero-ctas {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cta-button {
+      width: 100%;
+      text-align: center;
+    }
   }
 </style>

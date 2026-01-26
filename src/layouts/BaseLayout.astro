@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import BaseHead from '../components/BaseHead.astro';
+import { SITE_TITLE } from '../consts';
 
 const {
   title,
@@ -16,6 +17,12 @@ const {
   relPrev,
   relNext,
 } = Astro.props;
+
+// Ensure title follows pattern: 'Page — LinLib' or just 'LinLib'
+const finalTitle = title && (title.includes('—') || title.includes('|')) 
+  ? title 
+  : title ? `${title} — ${SITE_TITLE}` : SITE_TITLE;
+
 const GA_ID = import.meta.env.PUBLIC_GA_ID;
 const isProd = import.meta.env.PROD;
 ---
@@ -23,7 +30,7 @@ const isProd = import.meta.env.PROD;
 <html lang="en">
   <head>
     <BaseHead
-      title={title}
+      title={finalTitle}
       description={description}
       image={image}
       pubDate={pubDate}

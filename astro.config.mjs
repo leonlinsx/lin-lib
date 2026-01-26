@@ -34,7 +34,7 @@ export default defineConfig({
       destination: '/writing/category/:category/1',
       status: 308,
     },
-    '/newsletter': '/#subscribe',
+    '/newsletter': '/',
   },
 
   vite: {

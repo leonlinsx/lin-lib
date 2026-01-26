@@ -1,101 +1,103 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { SITE_TITLE } from '../consts';
+import { Image } from 'astro:assets';
+import leonProfilePic from '../assets/images/leon_profile_pic.webp';
 ---
 
 <BaseLayout
-  title={`About Me | ${SITE_TITLE}`}
-  description="Learn more about Leon Lin — background, beliefs, interests, and how to connect."
+  title="About LinLib"
+  description="About LinLib wine education and Leon Lin"
 >
-  <h1>About Me</h1>
-  <p class="subtext">Who I am, what I write about, and how to connect.</p>
+  <h1>About LinLib</h1>
+  <p class="subtext">Wine education and exploration</p>
+
+  <!-- Profile Picture -->
+  <section class="profile-pic-section">
+    <Image 
+      src={leonProfilePic}
+      alt="Leon Lin profile picture"
+      class="profile-pic"
+      width={800}
+      height={1000}
+    />
+  </section>
 
   <!-- Bio -->
   <section class="bio">
     <p>
-      I've worked in investing, investment banking, big tech, and startups — and
-      I write to make sense of it all. I don’t just discuss those sectors
-      though; I'll cover whatever seems interesting to me!
+      LinLib is a wine and cocktail education platform dedicated to helping people understand, 
+      appreciate, and enjoy drinks. Whether you're exploring these for the first time 
+      or looking to deepen your knowledge, you'll find thoughtful essays, practical 
+      guides, and explorations here.
     </p>
   </section>
 
-  <!-- Why I Write -->
-  <section class="why">
-    <h2>Why I Write</h2>
+  <!-- Mission -->
+  <section class="mission">
+    <h2>My Mission</h2>
     <p>
-      Writing helps me reflect on what I learn, clarify my thinking, and share
-      ideas in a way that compounds. It’s how I have built knowledge,
-      relationships, and opportunities, and how I expect to continue building
-      them.
-    </p>
-    <p>Always open to coffee chats with curious people.</p>
-  </section>
-
-  <!-- Beliefs -->
-  <section class="beliefs">
-    <h2>What I believe in</h2>
-    <ul>
-      <li>Compare yourself only to your past self.</li>
-      <li>Chase excellence in the things that matter to you.</li>
-      <li>Stay curious, and open to new ideas.</li>
-      <li>You will fail. What matters more is what you do after that.</li>
-      <li>Take more risks.</li>
-      <li>Be clear about what you know and what you don’t.</li>
-      <li>Do what you said you're going to do.</li>
-      <li>Be kind to yourself and others, but don't be slack.</li>
-      <li>Be selective with who you spend time with.</li>
-      <li>
-        Improve your process to make better decisions and get better outcomes.
-      </li>
-      <li>
-        The world is mostly noise and not signal, and you are easily fooled by
-        randomness.
-      </li>
-    </ul>
-  </section>
-
-  <!-- Interests -->
-  <section class="interests">
-    <h2>How I like to spend my time</h2>
-    <ul>
-      <li>
-        <b>Movement</b>: Ballet, Calisthenics, Dance, Flexibility, Gymnastics,
-        Handbalancing, Weightlifting
-      </li>
-      <li><b>Lifestyle</b>: Art, Chocolate, Community, Food, Wine</li>
-    </ul>
-  </section>
-
-  <!-- Consulting -->
-  <section class="consulting">
-    <h2>Consulting & Advisory</h2>
-    <p>
-      I work with founders, investors, and teams on strategy, growth, and
-      execution. My background spans investing, investment banking, big tech,
-      and startups, experience that helps me bring clarity to complex problems.
-    </p>
-    <p>
-      I take on consulting opportunities with a well defined scope, where I can
-      add meaningful value and help accelerate outcomes.
-    </p>
-  </section>
-
-  <!-- Investing -->
-  <section class="investing">
-    <h2>Angel Investing</h2>
-    <p>I invest in startups selectively, ideally pre-Series A.</p>
-    <p>
-      I’m sector-agnostic, but the business model has to make sense. If you’re
-      building something ambitious, I’d love to hear from you.
+      Wine can feel intimidating or overly complex. LinLib exists to demystify wine 
+      and make it accessible to curious people. Through clear writing and genuine 
+      exploration, I aim to help you build confidence in your wine journey.
     </p>
   </section>
 
   <!-- Contact -->
   <section id="contact" class="contact">
-    <h2>Contact</h2>
+    <h2>Get in Touch</h2>
     <p>
-      The best way to reach me is by email: contact [at] leonlins [dot] com. I’m
-      rarely on social media.
+      Questions, suggestions, or want to chat about wine? Reach out at 
+      <a href="mailto:contact@leonlins.com">contact [at] leonlins [dot] com</a>
+    </p>
+  </section>
+
+  <!-- Author -->
+  <section class="author">
+    <h2>About Leon Lin</h2>
+    <p>
+      LinLib is created and maintained by Leon Lin. Learn more about Leon at 
+      <a href="https://leonlins.com" target="_blank" rel="noopener noreferrer">leonlins.com</a>.
     </p>
   </section>
 </BaseLayout>
+
+<style>
+  .bio,
+  .mission,
+  .contact,
+  .author {
+    margin: var(--space-lg) 0;
+  }
+
+  .bio p,
+  .mission p,
+  .contact p,
+  .author p {
+    line-height: 1.8;
+    margin-bottom: var(--space-md);
+  }
+
+  .contact a,
+  .author a {
+    color: var(--color-link);
+    text-decoration: none;
+  }
+
+  .contact a:hover,
+  .author a:hover {
+    text-decoration: underline;
+  }
+
+  .profile-pic-section {
+    text-align: center;
+    margin: var(--space-xl) 0;
+  }
+
+  .profile-pic {
+    width: 280px;
+    height: 350px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+</style>

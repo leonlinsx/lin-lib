@@ -10,7 +10,6 @@ import { enrichPost } from '../utils/text';
 import TableOfContents from '../components/TableOfContents.astro';
 import ShareButtons from '../components/ShareButtons.astro';
 import TagList from '../components/TagList.astro';
-import SubscribeForm from '../components/SubscribeForm.astro';
 import type { MarkdownHeading } from 'astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { titleCase } from '../utils/text';
@@ -138,9 +137,6 @@ breadcrumbItems.push({ label: title });
         <!-- Share Buttons -->
         <ShareButtons title={title} url={canonicalURL} />
 
-        <!-- Newsletter CTA -->
-        <SubscribeForm compact={false} />
-
         <!-- Related posts -->
         {
           related.length > 0 && (
@@ -157,7 +153,7 @@ breadcrumbItems.push({ label: title });
           <script
             id="giscus-script"
             src="https://giscus.app/client.js"
-            data-repo="leonlinsx/avoid-boring-people"
+            data-repo="leonlinsx/lin-lib"
             data-repo-id="R_kgDOPvVo9Q"
             data-category="Comments"
             data-category-id="DIC_kwDOPvVo9c4CvwrO"
