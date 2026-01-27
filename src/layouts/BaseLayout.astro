@@ -18,7 +18,7 @@ const {
   relNext,
 } = Astro.props;
 
-// Ensure title follows pattern: 'Page — LinLib' or just 'LinLib'
+// Ensure title follows pattern: 'Page — Lin Lib' or just 'Lin Lib'
 const finalTitle = title && (title.includes('—') || title.includes('|')) 
   ? title 
   : title ? `${title} — ${SITE_TITLE}` : SITE_TITLE;
