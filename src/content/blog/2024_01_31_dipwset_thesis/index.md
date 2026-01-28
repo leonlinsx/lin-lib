@@ -3,7 +3,8 @@ title: "No- and Low-Alcohol Wine: Demand, Production, and Future Trajectory"
 description: "An examination of the demand and supply dynamics behind the growth of no- and low-alcohol wine, alongside the technical tradeoffs in production and the category’s future positioning. The analysis draws on academic and industry sources to assess market drivers, process impacts, and likely pathways."
 pubDate: 2025-10-31
 category: wine studies
-tags: sparkling wine
+tags:
+  - sparkling wine
 ---
 
 “This essay was originally written as part of a professional wine examination.
@@ -237,11 +238,6 @@ distillate by capturing and adding them back after distillation (Ma et
 al., 2022).
 
 ![](./image35.webp)
-*Figure: Reverse osmosis process schematic.*
-*Figure: Reverse osmosis process schematic.*
-*Figure: Spinning cone column process schematic.*
-*Figure: Reverse osmosis process schematic.*
-*Figure: Spinning cone column process schematic.*
 *Figure: Vacuum distillation process schematic.*
 
 Vacuum distillation has a mixed effect on NOLO style and quality. It can
@@ -279,7 +275,7 @@ process. This allows for both a *reduction* in alcohol, and a *reuse* of
 aromas later on (Schmidtke et al., 2012).
 
 ![](./image35.webp)
-*Figure: Reverse osmosis process schematic.*
+*Figure: Spinning cone column process schematic.*
 
 SCC stands out for its ability to recover desirable aromas with both
 high efficiency and minimal passes, leading to higher quality NOLO.
