@@ -1,0 +1,27 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection } from 'astro:content';
+import { normalizeCategory } from '../../../../utils/text';
+import { buildPaginationHref } from '../../../../utils/pagination';
+
+export const getStaticPaths = (async () => {
+  const posts = await getCollection('blog');
+  const categories = Array.from(
+    new Set(posts.map((post) => normalizeCategory(post.data.category ?? ''))),
+  )
+    .filter(Boolean)
+    .sort((a, b) => a.localeCompare(b));
+
+  return categories.map((category) => ({
+    params: { category },
+  }));
+}) satisfies GetStaticPaths;
+
+const { category } = Astro.params;
+
+if (!category) {
+  throw new Error('Missing category');
+}
+
+return Astro.redirect(buildPaginationHref(1, category));
+---
