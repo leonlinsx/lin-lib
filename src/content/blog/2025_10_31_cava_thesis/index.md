@@ -212,6 +212,8 @@ Three ideas for marketing Cava are:
 
 3.  Personalised Cava bottle labels with the help of generative AI
 
+## Canned Cava formats
+
 Canned wine sales are a high growth product segment, with Future Market
 Insights estimating a 17% CAGR over the next decade. Contrasting this
 with the decline in still wine sales overall, this represents a
@@ -240,6 +242,8 @@ Cava in all the suggested markets identified in the above growth areas
 section.
 
 ![Chart showing global canned wine market growth](./image2.webp)
+
+## Taking advantage of NOLO growth
 
 The no and low alcohol (NOLO) market is also another bright spot for
 wine. Growth rates are double that of the overall wine market, and also
@@ -272,6 +276,8 @@ are still in its favour, especially since it will take time for
 producers to set up the production process for NOLO.
 
 ![Vilarnau NOLO Cava product example](./image12.webp)
+
+## Hyper personalisation for Cava
 
 Now that we've had 2 ideas for inexpensive Cava, the remaining idea is
 for the premium and super premium Cava segment. The Cava de Paraje
