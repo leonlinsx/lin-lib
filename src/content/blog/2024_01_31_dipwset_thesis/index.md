@@ -1,10 +1,9 @@
 ---
-title: "No- and Low-Alcohol Wine: Demand, Production, and Future Trajectory"
-description: "An examination of the demand and supply dynamics behind the growth of no- and low-alcohol wine, alongside the technical tradeoffs in production and the category’s future positioning. The analysis draws on academic and industry sources to assess market drivers, process impacts, and likely pathways."
-pubDate: 2025-10-31
-category: wine studies
-tags:
-  - sparkling wine
+title: "No and Low-Alcohol Wine: Demand, Production, and Future Trajectory"
+description: "An analysis of the demand and supply dynamics behind the growth of no and low-alcohol wine, alongside the technical tradeoffs in production and the category’s future positioning"
+pubDate: 2024-01-31
+category: wine education
+tags: [low alcohol wine, wine business]
 ---
 
 “This essay was originally written as part of a professional wine examination.

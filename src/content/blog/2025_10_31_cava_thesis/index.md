@@ -2,7 +2,7 @@
 title: "Cava's Future: Growth Strategies for a Sparkling Wine at a Crossroads"
 description: "An analytical examination of Cava's market position, growth opportunities, and strategic marketing approaches to compete in an evolving global sparkling wine market."
 pubDate: 2025-10-31
-category: wine education
+category: wine
 tags: [sparkling wine, Cava, wine business]
 ---
 
@@ -174,9 +174,7 @@ Thirdly, another way of identifying interesting countries for Cava is by taking 
 
 ![Inbound tourism to Spain and Catalunya by country](./image10.webp)
 
-*Figure 5: Top source countries for inbound tourism to Spain and Catalunya, showing tourism flows that correlate with Cava promotional opportunities.*
-
-**Data sources**: [ine.es](http://ines.es), [idescat.cat](http://idescat.cat)
+*Figure 5: Top source countries for inbound tourism to Spain and Catalunya, showing tourism flows that correlate with Cava promotional opportunities. Data sources: [ine.es](http://ines.es), [idescat.cat](http://idescat.cat)*
 
 Based on the above, some other countries not previously identified include the Netherlands, Belgium, Ireland, Switzerland. Although most of these are naturally European countries due to the ease of tourism, note that Canada does appear in the top 10 list of tourist arrivals for the Catalunya region specifically.
 
@@ -310,7 +308,7 @@ would be more control over the entire end to end process as well.
 
 ![ComfyUI workflow interface for image generation](./image9.webp)
 
-Source: ComfyUI
+*Source: ComfyUI*
 
 The premium price point of the product for this idea is required, due to
 the higher effort and costs involved in producing the unique bottlings.
