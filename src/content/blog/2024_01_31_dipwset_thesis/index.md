@@ -6,15 +6,15 @@ category: wine education
 tags: [low alcohol wine, wine business]
 ---
 
-“This essay was originally written as part of a professional wine examination.
-It has been lightly edited for clarity and web reading.”
+> “This essay was originally written as part of a professional wine examination.
+> It has been lightly edited for clarity and web reading.”
 
 ## Introduction
 
 This opening section frames the scale of recent interest in no- and low-alcohol wine (NOLO) and previews the market and production questions examined in the essay.
 
 Interest in no and low alcohol wines (NOLO) has never been higher. This
-\<11% alcohol by volume (ABV) category[^1] just hit a new peak in
+<11% alcohol by volume (ABV) category[^1] just hit a new peak in
 worldwide Google searches (Google, 2023); it is also the trending topic
 at major wine exhibitions (Carter, 2023).
 
@@ -34,11 +34,9 @@ as a new revenue stream (Frank, 2022).
 
 The paper is structured around three questions:
 
-1.  Why NOLO is growing fast, from a demand and supply perspective
-
-2.  How NOLO is made, with resulting tradeoffs in quality and price
-
-3.  Where NOLO can go, and my contrarian opinion on NOLO marketing
+1. Why NOLO is growing fast, from a demand and supply perspective
+2. How NOLO is made, with resulting tradeoffs in quality and price
+3. Where NOLO can go, and my contrarian opinion on NOLO marketing
 
 ### From YOLO to NOLO
 
@@ -92,7 +90,7 @@ prioritisation of health (The New Consumer & Coefficient Capital, 2022).
 ![Chart](./image25.webp)
 *Figure: Surveyed shifts toward health prioritization.*
 
-For example, \~35% of American consumers surveyed adopted new eating
+For example, ~35% of American consumers surveyed adopted new eating
 patterns to "prevent future health conditions" (International Food
 Information Council Foundation, 2018). The 2020 COVID pandemic also put
 a spotlight on this social norm, with consumers being more observant of
@@ -137,7 +135,7 @@ alcohol purchases was "it's better for my health" (Bruwer et al., 2014).
 ![Chart](./image24.webp)
 *Figure: UK motivations for lower-alcohol purchases.*
 
-A separate 2013 Australian study supported this, with \"health\" being
+A separate 2013 Australian study supported this, with "health" being
 the second most common motivation for interest in NOLO (Saliba et al.,
 2013).
 
@@ -163,7 +161,7 @@ Ricard[^8] (Business Wire, 2023).
 
 From a technology perspective, NOLO quality has improved greatly over
 the past 30 years. Historically, sweetness was used to compensate for
-the lack of ethanol, with sugar levels \>40 g/L being common[^9] (Schulz
+the lack of ethanol, with sugar levels >40 g/L being common[^9] (Schulz
 et al., 2023). However, the typical drinker associates sweetness with
 lower quality cheap wine[^10], resulting in NOLO also being perceived as
 low quality even before being tasted (Josselin et al., 2008).
@@ -211,17 +209,12 @@ achieved success.
 Whether red, white, rose, or sparkling, NOLO is typically made via two
 primary method families, each with subcategories:
 
-1.  Thermal distillation
-
-    a.  Vacuum distillation
-
-    b.  Spinning cone column
-
-2.  Semi-permeable membrane
-
-    a.  Reverse osmosis
-
-    b.  Osmotic distillation
+1. Thermal distillation
+   1. Vacuum distillation
+   2. Spinning cone column
+2. Semi-permeable membrane
+   1. Reverse osmosis
+   2. Osmotic distillation
 
 #### Thermal distillation approaches
 
@@ -253,8 +246,8 @@ process that takes place in two stages to improve aroma retention. SCC
 consists of a central vertical shaft with convex cones[^13], rotating
 between other convex cones attached to the interior casing of the tank
 (Schmidtke et al., 2012). In the first stage, low vacuum pressure and
-moderate \~28C temperatures are used to recover desirable volatile
-aromas. In the second stage, higher vacuum pressure and \~38C
+moderate ~28C temperatures are used to recover desirable volatile
+aromas. In the second stage, higher vacuum pressure and ~38C
 temperatures are used to remove alcohol (Sam et al., 2021). The aromas
 from the first stage are *reused* by combining with the *reduced*
 alcohol liquid from the second stage, to create a product stylistically
@@ -347,76 +340,12 @@ to cost or lack of research, and we will not be discussing these further
 
 #### Comparative summary
 
-+-----------------+-----------------+-----------------+-----------------+
-| **Removal       | **Pros**        | **Cons**        | **Sample        |
-| method**        |                 |                 | producers**     |
-+-----------------+-----------------+-----------------+-----------------+
-| Vacuum          | - Good for      | - Bad for style | - Weingut Leitz |
-| distillation    |   sugar and     |   and quality   |                 |
-|                 |   colour        |   due to        | - Thomson &     |
-|                 |   concentration |   reduction of  |   Scott         |
-|                 |                 |   esters,       |                 |
-|                 | - Cheap; many   |   higher        | - St Regis      |
-|                 |   wineries      |   alcohols,     |                 |
-|                 |   already have  |   terpenes      |                 |
-|                 |   the equipment |                 |                 |
-|                 |                 |                 |                 |
-|                 | - Lower price   |                 |                 |
-|                 |   implication   |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
-| Spinning cone   | - Good for      | - High \$1-2mm  | - Giesen        |
-| column          |   style and     |   capital costs |                 |
-|                 |   quality due   |                 | - Fre Wines     |
-|                 |   to high aroma | - Specialised   |                 |
-|                 |   recovery      |   expertise     | - Weingut Leitz |
-|                 |                 |   required      |                 |
-|                 | - Faster        |                 |                 |
-|                 |   processing    | - Higher price  |                 |
-|                 |   time as fewer |   implication   |                 |
-|                 |   passes        |                 |                 |
-|                 |   required      |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
-| Reverse Osmosis | - Good for      | - Legal         | - Ariel         |
-|                 |   style and     |   uncertainty   |   vineyards     |
-|                 |   quality due   |   in countries  |                 |
-|                 |   to aroma      |   where water   |                 |
-|                 |   retention     |   cannot be     |                 |
-|                 |                 |   added to      |                 |
-|                 | - Lower capital |   wine; grape   |                 |
-|                 |   and operating |   must might be |                 |
-|                 |   costs than    |   a workaround  |                 |
-|                 |   thermal       |                 |                 |
-|                 |   distillation  | - Slower        |                 |
-|                 |                 |   processing    |                 |
-|                 | - Lower price   |   time than     |                 |
-|                 |   implication   |   thermal       |                 |
-|                 |                 |   distillation  |                 |
-|                 | - "Clean"       |   as multiple   |                 |
-|                 |   technology    |   passes        |                 |
-|                 |                 |   required      |                 |
-|                 |                 |                 |                 |
-|                 |                 | - Recurring     |                 |
-|                 |                 |   replacement   |                 |
-|                 |                 |   costs when    |                 |
-|                 |                 |   membranes     |                 |
-|                 |                 |   fail          |                 |
-+-----------------+-----------------+-----------------+-----------------+
-| Osmotic         | - Possibly good | - Even slower   | - None          |
-| distillation    |   for style and |   processing    |   disclosed     |
-|                 |   quality due   |   time than RO  |   publicly      |
-|                 |   to aroma      |   due to lower  |                 |
-|                 |   retention,    |   temperature   |                 |
-|                 |   but more      |   and pressure  |                 |
-|                 |   research      |                 |                 |
-|                 |   required      |                 |                 |
-|                 |                 |                 |                 |
-|                 | - Energy and    |                 |                 |
-|                 |   cost savings  |                 |                 |
-|                 |   due to lower  |                 |                 |
-|                 |   temperature   |                 |                 |
-|                 |   and pressure  |                 |                 |
-|                 |   requirements  |                 |                 |
-+=================+=================+=================+=================+
+| **Removal method** | **Pros** | **Cons** | **Sample producers** |
+| --- | --- | --- | --- |
+| Vacuum distillation | Good for sugar and colour concentration.<br>Cheap; many wineries already have the equipment.<br>Lower price implication. | Bad for style and quality due to reduction of esters, higher alcohols, terpenes. | Weingut Leitz.<br>Thomson & Scott.<br>St Regis. |
+| Spinning cone column | Good for style and quality due to high aroma recovery.<br>Faster processing time as fewer passes required. | High \$1-2mm capital costs.<br>Specialised expertise required.<br>Higher price implication. | Giesen.<br>Fre Wines.<br>Weingut Leitz. |
+| Reverse Osmosis | Good for style and quality due to aroma retention.<br>Lower capital and operating costs than thermal distillation.<br>Lower price implication.<br>"Clean" technology. | Legal uncertainty in countries where water cannot be added to wine; grape must might be a workaround.<br>Slower processing time than thermal distillation as multiple passes required.<br>Recurring replacement costs when membranes fail. | Ariel vineyards. |
+| Osmotic distillation | Possibly good for style and quality due to aroma retention, but more research required.<br>Energy and cost savings due to lower temperature and pressure requirements. | Even slower processing time than RO due to lower temperature and pressure. | None disclosed publicly. |
 
 (Alexandra, 2021; LeBeau, 2018; Mowery, 2021; VE Refinery, 2022)
 
@@ -438,7 +367,7 @@ three main headwinds to NOLO growth.
 
 Climate change typically results in higher alcohol levels in wine, the
 reverse of NOLO aims. Sunny winemaking regions have seen alcohol content
-rise by \~2% ABV over the past 30 years due to the higher sugar
+rise by ~2% ABV over the past 30 years due to the higher sugar
 concentration at harvest (Goold et al., 2017).
 
 The increased production costs associated with crafting NOLO from
@@ -448,7 +377,7 @@ product with *less* alcohol. A 2020 study indicated reduced consumer
 willingness to pay for NOLO, supported by a NielsenIQ report revealing
 an average US NOLO price of \$6.84 vs \$11.01 for traditional wine
 (Bucher et al., 2020; NielsenIQ, 2023). In contrast, six of the top
-eight best-selling NOLO products on Boisson are priced \>\$20, above the
+eight best-selling NOLO products on Boisson are priced >\$20, above the
 typical cost of traditional wines[^18] (Boisson, 2023).
 
 ![Chart](./image2.webp)
@@ -511,7 +440,7 @@ tastes good and makes them feel good about their lifestyle choices.
 
 Here, NOLO can learn from sparkling and natural wine. Both fall under
 the broader category of wine but are regarded as distinct products.
-Consumers don\'t object to the effervescence in their Champagne or the
+Consumers don't object to the effervescence in their Champagne or the
 haziness in their natural wine; these characteristics are embraced
 within their respective styles. Similarly, NOLO should offer a distinct
 style rather than mimic wine. Transforming into a beverage that people
@@ -523,7 +452,7 @@ promoted based on its inherent qualities, akin to the recent surge in
 the hard seltzer market (Grand View Research, 2023). The effervescence
 can enhance the perception of quality, mask potential faults, and
 distinguish it from traditional wine. Given positive reviews for
-sparkling NOLO products (e.g. Thomson & Scott Noughty), it\'s not
+sparkling NOLO products (e.g. Thomson & Scott Noughty), it's not
 surprising that the majority of current NOLO offerings are of the
 sparkling variety (Farrell, 2023; Gentile et al., 2023).
 
@@ -549,356 +478,356 @@ brand.
 
 Sources cited in the essay are listed below.
 
-> Alcohol Change UK. (2023, - -). *The Dry January story*. Alcohol
-> Change UK. Retrieved December 10, 2023, from
-> https://alcoholchange.org.uk/help-and-support/managing-your-drinking/dry-january/about-dry-january/the-dry-january-story
->
-> Alexandra. (2021, June 14). *Wine-Recipe \| Leitz Eins-Zwei-Zero range
-> makes responsible drinking a pleasure*. Carrots and Tigers. Retrieved
-> January 1, 2024, from
-> https://carrotsandtigers.com/2021/06/14/wine-recipe-leitz-eins-zwei-zero-range-makes-responsible-drinking-a-pleasure/
->
-> Anderson, P., Kokole, D., & Llopis, E. J. (2021). Production,
-> Consumption, and Potential Public Health Impact of Low- and No-Alcohol
-> Products: Results of a Scoping Review. *Nutrients*, *13*(9), 3153.
-> MDPI. https://doi.org/10.3390/nu13093153
->
-> Beaton, K. (2022, August 15). *Young Adults Embracing No- and
-> Low-Alcohol Products*. The Food Institute. Retrieved January 1, 2024,
-> from
-> https://foodinstitute.com/focus/young-adults-embracing-no-and-low-alcohol-products/
->
-> Beverage Trade Network. (2023, March 2). *Non Alcoholic Beverages
-> Explained \| Matthew Hughes*. YouTube. Retrieved December 10, 2023,
-> from https://www.youtube.com/watch?v=s6hL20PwLzQ
->
-> Beverage Trade Network. (2023, July 16). *What is Non-alcoholic Wine
-> and How is it made \| Inside The Drinks Business*. YouTube. Retrieved
-> December 10, 2023, from https://www.youtube.com/watch?v=AAZ3hTN_lz4
->
-> BevZero. (2023, June 30). *Choosing The Right Dealcoholization
-> Method*. BevZero. Retrieved December 10, 2023, from
-> https://bevzero.com/choosing-dealcoholization-method/
->
-> Boisson. (2023). *Best Selling Products -- Boisson*. Boisson.
-> Retrieved January 1, 2024, from
-> https://boisson.co/collections/best-selling-products
->
-> Brand, D., Saisana, M., Rynn, L., Pennoni, F., Lowenfels, A., & Hay,
-> P. (2007, April 24). Comparative Analysis of Alcohol Control Policies
-> in 30 Countries. *PLoS Med*, *4*(4), -. PubMed Central.
-> 10.1371/journal.pmed.0040151
->
-> Bruwer, J., Jiranek, V., Halstead, L., & Saliba, A. (2014, July).
-> Lower alcohol wines in the UK market: Some baseline consumer behaviour
-> metrics. *British Food Journal*, *116*(7), 1143-1161. ResearchGate.
-> 10.1108/BFJ-03-2013-0077
->
-> Bruwer, J., Saliba, A., & Miller, B. (2011, January). Consumer
-> behaviour and sensory preference differences: Implications for wine
-> product marketing. *Journal of Consumer Marketing*, *28*(1), 5-18.
-> ResearchGate. 10.1108/07363761111101903
->
-> Bucher, T., Deroover, K., & Stockley, C. (2018). Low-Alcohol Wine: A
-> Narrative Review on Consumer Perception and Behaviour. *Beverages*,
-> *4*(4), 82. MDPI. https://doi.org/10.3390/beverages4040082
->
-> Bucher, T., Deroover, K., & Stockley, C. (2019, June). Production and
-> Marketing of Low-Alcohol Wine. *Advances in Grape and Wine
-> Biotechnology*, *-*(-), -. ResearchGate. 10.5772/intechopen.87025
->
-> Bucher, T., Frey, E., Wilczynska, M., Deroover, K., & Dohle, S. (2020,
-> May 19). Consumer perception and behaviour related to low-alcohol
-> wine: do people overcompensate? *Public Health Nutrition*, *23*(11),
-> 1939-1947. PubMed Central. 10.1017/S1368980019005238
->
-> Business Wire. (2023, September 27). *Non-Alcoholic Retailer Boisson
-> Announces New CEO; Receives New Funding From Convivialité Ventures and
-> Connect Ventures*. Business Wire. Retrieved December 31, 2023, from
-> https://www.businesswire.com/news/home/20230927406605/en/Non-Alcoholic-Retailer-Boisson-Announces-New-CEO-Receives-New-Funding-From-Convivialit%C3%A9-Ventures-and-Connect-Ventures
->
-> Carter, F. (2023, November 28). 8 Reasons to Get Excited About the
-> No-Alcohol Category. *Meininger\'s International*.
-> https://www.meiningers-international.com/wine/insights/8-reasons-get-excited-about-no-alcohol-category
->
-> Corona, O., Liguori, L., Albanese, D., Matteo, M. D., Cinquanta, L., &
-> Russo, P. (2019, October 3). Quality and volatile compounds in red
-> wine at different degrees of dealcoholization by membrane process.
-> *European Food Research and Technology Aims and scope Submit
-> manuscript*, *245*(-), 2601-2611. Springer Link.
-> https://doi.org/10.1007/s00217-019-03376-z
->
-> Drizly. (2023, - -). *Non-Alcoholic Wine, Beer, and Spirits*. BevAlc
-> Insights. Retrieved December 10, 2023, from
-> https://bevalcinsights.com/category-on-the-rise-non-alcoholic-wine-beer-and-spirits/
->
-> Fact.MR. (2022, December -). *Non-Alcoholic Wine Market Outlook
-> (2023-2033)*. Non-Alcoholic Wine Market. Retrieved December 10, 2023,
-> from https://www.factmr.com/report/4532/non-alcoholic-wine-market
->
-> Farrell, N. (2023, March 10). *The 8 Best Nonalcoholic Wines of 2023
-> \| Reviews by Wirecutter*. The New York Times. Retrieved December 11,
-> 2023, from
-> https://www.nytimes.com/wirecutter/reviews/best-nonalcoholic-wines/
->
-> Forbes, S., Cohen, D., & Dean, D. (2010, January). *Women and wine:
-> analysis of this important market segment*. ResearchGate. Retrieved
-> December 10, 2023, from
-> https://www.researchgate.net/publication/50600553_Women_and_wine_analysis_of_this_important_market_segment
->
-> Frank, C. (2022, January 17). The No- and Low-Alcohol Wine Category is
-> Booming---and Retailers Should Pay Attention. *SevenFifty Daily*.
-> https://daily.sevenfifty.com/the-no-and-low-alcohol-wine-category-is-booming-and-retailers-should-pay-attention/
->
-> Gallup. (2023, Jul). *Alcohol and Drinking \| Gallup Historical
-> Trends*. Gallup News. Retrieved December 31, 2023, from
-> https://news.gallup.com/poll/1582/alcohol-drinking.aspx
->
-> Gentile, E., Gentile, M., Loi, A., Piccoli, G., & Bruni, M. (2023,
-> March 2). *Study on low/no alcohol beverages - Publications Office of
-> the EU*. Publications Office of the EU. Retrieved January 1, 2024,
-> from
-> https://op.europa.eu/en/publication-detail/-/publication/bc7b29d4-b7e7-11ed-8912-01aa75ed71a1
->
-> Google. (2023, December 04). *Google Trends*. Google Trends. Retrieved
-> December 04, 2023, from
-> https://trends.google.com/trends/explore?date=2008-12-04%202023-12-04&q=no%20alcohol%20wine,low%20alcohol%20wine&hl=en
->
-> Goold, H., Kroukamp, H., Williams, T., Paulsen, I., Varela, C., &
-> Pretorius, I. (2017, January 13). Yeast\'s balancing act between
-> ethanol and glycerol production in low-alcohol wines. *Microbial
-> Biotechnology*, *10*(2), 264-278. Applied Microbiology International.
-> https://doi.org/10.1111/1751-7915.12488
->
-> Gov.UK. (2023, September 28). *Updating labelling guidance for no and
-> low-alcohol alternatives: consultation*. GOV.UK. Retrieved January 1,
-> 2024, from
-> https://www.gov.uk/government/consultations/updating-labelling-guidance-for-no-and-low-alcohol-alternatives/updating-labelling-guidance-for-no-and-low-alcohol-alternatives-consultation
->
-> Grand View Research. (2023, - -). *Hard Seltzer Market Size, Share And
-> Trends Report, 2030*. Grand View Research. Retrieved December 10,
-> 2023, from
-> https://www.grandviewresearch.com/industry-analysis/hard-seltzer-market
->
-> Gutierrez, A. R., Portu, J., Lopez, R., Garijio, P.,
-> Gonzalez-Arenzana, L., & Santamaria, P. (2023, June 10). Carbonic
-> maceration vinification: A tool for wine alcohol reduction. *Food
-> Chemistry*, *-*(-), -. PubMed. 10.1016/j.foodchem.2023.136558
->
-> Han, B., Daniel, M. G., Park, E., & Piscopo, K. (2020, - -). *Results
-> from the 2019 National Survey on Drug Use and Health: Detailed
-> Tables*. SAMHSA. Retrieved December 10, 2023, from
-> https://www.samhsa.gov/data/sites/default/files/reports/rpt29394/NSDUHDetailedTabs2019/NSDUHDetailedTabs2019.pdf
->
-> International Food Information Council Foundation. (2018, - -). *2018
-> Food and Health Survey Report*. Food Insight. Retrieved December 10,
-> 2023, from
-> https://foodinsight.org/wp-content/uploads/2018/05/2018-FHS-Report-FINAL.pdf
->
-> Josselin, M., Philippe, A., & D\'Hauteville, F. (2008, Aug). Effects
-> of non-sensory cues on perceived quality: The case of low-alcohol
-> wine. *International Journal of Wine Business Research*, *20*(3).
-> ResearchGate. 0.1108/17511060810901037
->
-> King, E. S., Dunn, R. L., & Heymann, H. (2013, April). The influence
-> of alcohol on the sensory perception of red wines. *Food Quality and
-> Preference*, *28*(1), 235-243. ScienceDirect.
-> https://doi.org/10.1016/j.foodqual.2012.08.013
->
-> LeBeau, A. (2018, January 26). *Non-Alcoholic Wine - Because sometimes
-> you have to*. SpitBucket. Retrieved January 1, 2024, from
-> https://spitbucket.net/2018/01/26/non-alcoholic-wine-sometimes/
->
-> Lechmere, A. (2012, February 16). *Consumers across three continents
-> prefer lower alcohol wines: Prowein - Decanter*. Decanter Magazine.
-> Retrieved December 10, 2023, from
-> https://www.decanter.com/wine-news/consumers-across-three-continents-prefer-lower-alcohol-wines-prowein-32578/
->
-> Liguori, L., Albanese, D., Crescitelli, A., Matteo, M. D., & Russo, P.
-> (2019, June 13). Impact of dealcoholization on quality properties in
-> white wine at various alcohol content levels. *Journal of Food Science
-> and Technology*, *56*(-), 3707-3720. Springer Link.
-> https://doi.org/10.1007/s13197-019-03839-x
->
-> Looze, M. d., Raaijmakers, Q., Bogt, T. t., Bendtsen, P., Farhat, T.,
-> Ferreira, M., Godeau, E., Kuntsche, E., Molcho, M., Pförtner, T.-K.,
-> Simons-Morton, B., Vieno, A., Vollebergh, W., & Pickett, W. (2015,
-> March 20). Decreases in adolescent weekly alcohol use in Europe and
-> North America: evidence from 28 countries from 2002 to 2010. *The
-> European Journal of Public Health*, *25*(Suppl 2), 69-72. PubMed
-> Central. 10.1093/eurpub/ckv031
->
-> Loy, J. K., Seitz, N.-N., Bye, E. K., Raitasalo, K., Soellner, R.,
-> Torronen, J., & Kraus, L. (2021, November 1). Trends in alcohol
-> consumption among adolescents in Europe: Do changes occur in concert?
-> *Drug and alcohol dependence*, *228*(-), -. ScienceDirect.
-> https://doi.org/10.1016/j.drugalcdep.2021.109020
->
-> Ma, T.-Z., Sam, F. E., & Zhang, B. (2022, June 30). Low-Alcohol and
-> Nonalcoholic Wines: Production Methods, Compositional Changes, and
-> Aroma Improvement. *Recent Advances in Grapes and Wine Production -
-> New Perspectives for Quality Improvement*, *-*(-), -. IntechOpen.
-> 10.5772/intechopen.105594
->
-> Masson, J., Aurier, P., & d\'hauteville, F. (2008, August 22). Effects
-> of non‐sensory cues on perceived quality: the case of low‐alcohol
-> wine. *International Journal of Wine Business Research*, *20*(3),
-> 215-229. Emerald Insight. https://doi.org/10.1108/17511060810901037
->
-> Mazzeo, J. (2022, July 25). *The Science Behind Non-Alcoholic Beer and
-> Wine Production*. SevenFifty Daily. Retrieved January 1, 2024, from
-> https://daily.sevenfifty.com/the-science-behind-non-alcoholic-beer-and-wine-production/
->
-> Motta, S., Guaita, M., Petrozziello, M., Ciambotti, A., Panero, L.,
-> Solomita, M., & Bosso, A. (2017, April 15). Comparison of the
-> physicochemical and volatile composition of wine fractions obtained by
-> two different dealcoholization techniques. *Food Chemistry*, *221*(-),
-> 1-10. ScienceDirect. https://doi.org/10.1016/j.foodchem.2016.10.046
->
-> Mowery, L. (2021, September 22). *Is It Possible To Make A
-> Nonalcoholic 'Grand Cru' Quality Wine? This Winemaker Says Yes*.
-> Forbes. Retrieved January 1, 2024, from
-> https://www.forbes.com/sites/lmowery/2023/02/22/is-it-possible-to-make-a-nonalcoholic-grand-cru-quality-wine-this-winemaker-says-yes/?sh=2edea2f13c83
->
-> Napjus, A. (2022, January 7). *Are There Any Good Non-Alcoholic
-> Wines?* Wine Spectator. Retrieved December 10, 2023, from
-> https://www.winespectator.com/articles/are-there-any-good-non-alcoholic-wines
->
-> The New Consumer & Coefficient Capital. (2022, December 2). *Consumer
-> Trends 2023*. The New Consumer. Retrieved January 1, 2024, from
-> https://newconsumer.com/wp-content/uploads/2022/12/Consumer-Trends-2023.pdf
->
-> Nielsen. (2021, October 28). *An inside look into the global consumer
-> health and wellness revolution*. NIQ. Retrieved December 10, 2023,
-> from
-> https://nielseniq.com/global/en/insights/report/2021/an-inside-look-into-the-2021-global-consumer-health-and-wellness-revolution/#chapter-1
->
-> NielsenIQ. (2023, October 30). *The rise of non-alcoholic*. NielsenIQ.
-> Retrieved January 1, 2024, from
-> https://nielseniq.com/wp-content/uploads/sites/4/2022/10/32634-beval-non-alc-infographic-d02-1.jpg
->
-> NutriSystem. (2023, March 2). *OVER 70% OF AMERICANS ARE MORE
-> CONSCIOUS OF THEIR PHYSICAL HEALTH POST-PANDEMIC*. The Leaf. Retrieved
-> December 10, 2023, from
-> https://leaf.nutrisystem.com/americans-health-conscious-post-pandemic
->
-> OIV. (2012). *RESOLUTION OIV-ECO 432-2012*. OIV. Retrieved December
-> 10, 2023, from
-> https://www.oiv.int/public/medias/1901/oiv-eco-432-2012-en.pdf
->
-> OIV. (2012). *RESOLUTION OIV-ECO 433-2012*. OIV. Retrieved December
-> 10, 2023, from
-> https://www.oiv.int/public/medias/1902/oiv-eco-433-2012-en.pdf
->
-> OIV. (2012). *RESOLUTION OIV-OENO 394A-2012*. OIV. Retrieved December
-> 10, 2023, from
-> https://www.oiv.int/public/medias/1431/oiv-oeno-394a-2012-en.pdf
->
-> OIV. (2012). *RESOLUTION OIV-OENO 394B-2012*. OIV. Retrieved December
-> 10, 2023, from
-> https://www.oiv.int/public/medias/1432/oiv-oeno-394b-2012-en.pdf
->
-> Our World in Data. (2017). *Alcohol Consumption*. Our World in Data.
-> Retrieved December 31, 2023, from
-> https://ourworldindata.org/alcohol-consumption#total-alcohol-consumption-over-the-long-run
->
-> Oztruk, B., & Anli, E. (2015, Feb 4). Different techniques for
-> reducing alcohol levels in wine: A review. *BIO Web of Conferences*,
-> *3*, 8. https://doi.org/10.1051/bioconf/20140302012
->
-> Pickering, G. (2010, August 4). Low- and Reduced-alcohol Wine: A
-> Review. *Journal of Wine Research*, *11*(2), 129-144. Taylor & Francis
-> Online. https://doi.org/10.1080/09571260020001575
->
-> Reiley, L., Morrison, N., & Lacap, B. (2023, March 24). Could
-> nonalcoholic wine be the toast of the town? *Washington Post*.
-> https://www.washingtonpost.com/business/2023/03/25/nonalcoholic-wine/
->
-> Rossow, I., Bye, E. K., Moan, I. S., & Tchounwou, P. B. (2022, July).
-> The Declining Trend in Adolescent Drinking: Do Volume and Drinking
-> Pattern Go Hand in Hand? *International Journal of Environmental
-> Research and Public Health*, *19*(13), 7965. PubMed Central.
-> 10.3390/ijerph19137965
->
-> Rossow, I., & Storvoll, E. (2013, December 12). Long-term trends in
-> alcohol policy attitudes in Norway. *Drug and Alcohol review*,
-> *33*(3), 220-226. Wiley Online Library.
-> https://doi.org/10.1111/dar.12098
->
-> Saliba, A., Ovington, L., & Moran, C. (2013, March). Consumer demand
-> for low-alcohol wine in an Australian sample. *International Journal
-> of Wine Research*, *1*(5), -. ResearchGate. 10.2147/IJWR.S41448
->
-> Saliba, A., Ovington, L., Moran, C. C., & Bruwer, J. (2013,
-> March/April -). *Consumer attitudes to low alcohol wine: an Australian
-> sample*. -. Retrieved December 10, 2023, from
-> https://www.marketingscience.info/wp-content/uploads/2016/07/Saliba-2013-WVJ-6595.pdf
->
-> Sam, F. E., Ma, T., Liang, Y., Qiang, W., Atuna, R. A., Amagloh, F.
-> K., Morata, A., & Han, S. (2021, December 1). Comparison between
-> Membrane and Thermal Dealcoholization Methods: Their Impact on the
-> Chemical Parameters, Volatile Composition, and Sensory Characteristics
-> of Wines. *Membranes*, *11*(12), 957. MDPI.
-> https://doi.org/10.3390/membranes11120957
->
-> Sam, F. E., Ma, T.-Z., Salifu, R., Wang, J., Jiang, Y.-M., Zhang, B.,
-> & Han, S.-Y. (2021, October 18). Techniques for Dealcoholization of
-> Wines: Their Impact on Wine Phenolic Composition, Volatile
-> Composition, and Sensory Characteristics (C. Duan & Y. Lan, Eds.).
-> *Foods*, *10*(10), 2498. MDPI. https://doi.org/10.3390/foods10102498
->
-> Schmidtke, L. M., Blackman, J. W., & Agboola, S. O. (2012, January).
-> Production Technologies for Reduced Alcoholic Wines. *Journal of Food
-> Science*, *77*(1), R25-R41. IFT.
-> https://doi.org/10.1111/j.1750-3841.2011.02448.x
->
-> Schulz, F. N., Farid, H., & Hanf, J. H. (2023, August 30). The Lower
-> the Better? Discussion on Non-Alcoholic Wine and Its Marketing.
-> *Dietetics*, *2*(3), 278-288. MDPI.
-> https://doi.org/10.3390/dietetics2030020
->
-> Schulz, F. N., & Hanf, J. (2023, Sep 12). *European Alcohol Policy Is
-> Coming for Wine*. Meininger\'s International. Retrieved December 31,
-> 2023, from
-> https://www.meiningers-international.com/wine/academic-papers-wine/european-alcohol-policy-coming-wine
->
-> Statista. (2023, November -). *Wine - Worldwide*. Statista. Retrieved
-> December 10, 2023, from
-> https://www.statista.com/outlook/cmo/alcoholic-drinks/wine/worldwide
->
-> Stockley, C., Taylor, A., Montgomeri, A., & Grande, E. D. (2017, Mar
-> 13). Changes in wine consumption are influenced most by health:
-> results from a population survey of South Australians in 2013.
-> *International Journal of Wine Research*, *9*(-), 13-22. Taylor &
-> Francis Online. https://doi.org/10.2147/IJWR.S126417
->
-> Texas Health. (2023, April 25). *Study Shows Younger Generations Are
-> More Health-Conscious Than Previous Generations*. Texas Health
-> Resources. Retrieved December 10, 2023, from
-> https://www.texashealth.org/areyouawellbeing/Health-and-Well-Being/Study-Shows-Younger-Generations-Are-More-Health-Conscious-Than-Previous-Generations
->
-> VE Refinery. (2022, June 29). *How is the alcohol removed from wine?
-> \|VE REFINERY*. VE Refinery. Retrieved January 1, 2024, from
-> https://ve-refinery.ch/blogs/blog-ve-refinery-alcohol-free/how-do-you-remove-alcohol-from-wine
->
-> World Cancer Research Fund. (2018, - -). *Alcoholic drinks and the
-> risk of cancer*. World Cancer Research Fund. Retrieved December 10,
-> 2023, from
-> https://www.wcrf.org/wp-content/uploads/2021/02/Alcoholic-Drinks.pdf
->
-> World Health Organization. (2022, May 9). *Alcohol*. World Health
-> Organization (WHO). Retrieved December 10, 2023, from
-> https://www.who.int/news-room/fact-sheets/detail/alcohol
->
-> World Health Organization. (2023, March 2). *Diet, nutrition and the
-> prevention of chronic diseases*. WHO Technical Report Series.
-> Retrieved December 10, 2023, from
-> https://iris.who.int/bitstream/handle/10665/42665/WHO_TRS_916.pdf?sequence=1
->
-> World Health Organization. (2023, April 15). A public health
-> perspective on zero-and low-alcohol beverages. *Snapshot series on
-> alcohol control policies and practice*, *-*(10), 22.
-> https://iris.who.int/bitstream/handle/10665/366740/9789240072152-eng.pdf?sequence=1
+Alcohol Change UK. (2023, - -). *The Dry January story*. Alcohol
+Change UK. Retrieved December 10, 2023, from
+https://alcoholchange.org.uk/help-and-support/managing-your-drinking/dry-january/about-dry-january/the-dry-january-story
+
+Alexandra. (2021, June 14). *Wine-Recipe | Leitz Eins-Zwei-Zero range
+makes responsible drinking a pleasure*. Carrots and Tigers. Retrieved
+January 1, 2024, from
+https://carrotsandtigers.com/2021/06/14/wine-recipe-leitz-eins-zwei-zero-range-makes-responsible-drinking-a-pleasure/
+
+Anderson, P., Kokole, D., & Llopis, E. J. (2021). Production,
+Consumption, and Potential Public Health Impact of Low- and No-Alcohol
+Products: Results of a Scoping Review. *Nutrients*, *13*(9), 3153.
+MDPI. https://doi.org/10.3390/nu13093153
+
+Beaton, K. (2022, August 15). *Young Adults Embracing No- and
+Low-Alcohol Products*. The Food Institute. Retrieved January 1, 2024,
+from
+https://foodinstitute.com/focus/young-adults-embracing-no-and-low-alcohol-products/
+
+Beverage Trade Network. (2023, March 2). *Non Alcoholic Beverages
+Explained | Matthew Hughes*. YouTube. Retrieved December 10, 2023,
+from https://www.youtube.com/watch?v=s6hL20PwLzQ
+
+Beverage Trade Network. (2023, July 16). *What is Non-alcoholic Wine
+and How is it made | Inside The Drinks Business*. YouTube. Retrieved
+December 10, 2023, from https://www.youtube.com/watch?v=AAZ3hTN_lz4
+
+BevZero. (2023, June 30). *Choosing The Right Dealcoholization
+Method*. BevZero. Retrieved December 10, 2023, from
+https://bevzero.com/choosing-dealcoholization-method/
+
+Boisson. (2023). *Best Selling Products -- Boisson*. Boisson.
+Retrieved January 1, 2024, from
+https://boisson.co/collections/best-selling-products
+
+Brand, D., Saisana, M., Rynn, L., Pennoni, F., Lowenfels, A., & Hay,
+P. (2007, April 24). Comparative Analysis of Alcohol Control Policies
+in 30 Countries. *PLoS Med*, *4*(4), -. PubMed Central.
+10.1371/journal.pmed.0040151
+
+Bruwer, J., Jiranek, V., Halstead, L., & Saliba, A. (2014, July).
+Lower alcohol wines in the UK market: Some baseline consumer behaviour
+metrics. *British Food Journal*, *116*(7), 1143-1161. ResearchGate.
+10.1108/BFJ-03-2013-0077
+
+Bruwer, J., Saliba, A., & Miller, B. (2011, January). Consumer
+behaviour and sensory preference differences: Implications for wine
+product marketing. *Journal of Consumer Marketing*, *28*(1), 5-18.
+ResearchGate. 10.1108/07363761111101903
+
+Bucher, T., Deroover, K., & Stockley, C. (2018). Low-Alcohol Wine: A
+Narrative Review on Consumer Perception and Behaviour. *Beverages*,
+*4*(4), 82. MDPI. https://doi.org/10.3390/beverages4040082
+
+Bucher, T., Deroover, K., & Stockley, C. (2019, June). Production and
+Marketing of Low-Alcohol Wine. *Advances in Grape and Wine
+Biotechnology*, *-*(-), -. ResearchGate. 10.5772/intechopen.87025
+
+Bucher, T., Frey, E., Wilczynska, M., Deroover, K., & Dohle, S. (2020,
+May 19). Consumer perception and behaviour related to low-alcohol
+wine: do people overcompensate? *Public Health Nutrition*, *23*(11),
+1939-1947. PubMed Central. 10.1017/S1368980019005238
+
+Business Wire. (2023, September 27). *Non-Alcoholic Retailer Boisson
+Announces New CEO; Receives New Funding From Convivialité Ventures and
+Connect Ventures*. Business Wire. Retrieved December 31, 2023, from
+https://www.businesswire.com/news/home/20230927406605/en/Non-Alcoholic-Retailer-Boisson-Announces-New-CEO-Receives-New-Funding-From-Convivialit%C3%A9-Ventures-and-Connect-Ventures
+
+Carter, F. (2023, November 28). 8 Reasons to Get Excited About the
+No-Alcohol Category. *Meininger's International*.
+https://www.meiningers-international.com/wine/insights/8-reasons-get-excited-about-no-alcohol-category
+
+Corona, O., Liguori, L., Albanese, D., Matteo, M. D., Cinquanta, L., &
+Russo, P. (2019, October 3). Quality and volatile compounds in red
+wine at different degrees of dealcoholization by membrane process.
+*European Food Research and Technology Aims and scope Submit
+manuscript*, *245*(-), 2601-2611. Springer Link.
+https://doi.org/10.1007/s00217-019-03376-z
+
+Drizly. (2023, - -). *Non-Alcoholic Wine, Beer, and Spirits*. BevAlc
+Insights. Retrieved December 10, 2023, from
+https://bevalcinsights.com/category-on-the-rise-non-alcoholic-wine-beer-and-spirits/
+
+Fact.MR. (2022, December -). *Non-Alcoholic Wine Market Outlook
+(2023-2033)*. Non-Alcoholic Wine Market. Retrieved December 10, 2023,
+from https://www.factmr.com/report/4532/non-alcoholic-wine-market
+
+Farrell, N. (2023, March 10). *The 8 Best Nonalcoholic Wines of 2023
+| Reviews by Wirecutter*. The New York Times. Retrieved December 11,
+2023, from
+https://www.nytimes.com/wirecutter/reviews/best-nonalcoholic-wines/
+
+Forbes, S., Cohen, D., & Dean, D. (2010, January). *Women and wine:
+analysis of this important market segment*. ResearchGate. Retrieved
+December 10, 2023, from
+https://www.researchgate.net/publication/50600553_Women_and_wine_analysis_of_this_important_market_segment
+
+Frank, C. (2022, January 17). The No- and Low-Alcohol Wine Category is
+Booming---and Retailers Should Pay Attention. *SevenFifty Daily*.
+https://daily.sevenfifty.com/the-no-and-low-alcohol-wine-category-is-booming-and-retailers-should-pay-attention/
+
+Gallup. (2023, Jul). *Alcohol and Drinking | Gallup Historical
+Trends*. Gallup News. Retrieved December 31, 2023, from
+https://news.gallup.com/poll/1582/alcohol-drinking.aspx
+
+Gentile, E., Gentile, M., Loi, A., Piccoli, G., & Bruni, M. (2023,
+March 2). *Study on low/no alcohol beverages - Publications Office of
+the EU*. Publications Office of the EU. Retrieved January 1, 2024,
+from
+https://op.europa.eu/en/publication-detail/-/publication/bc7b29d4-b7e7-11ed-8912-01aa75ed71a1
+
+Google. (2023, December 04). *Google Trends*. Google Trends. Retrieved
+December 04, 2023, from
+https://trends.google.com/trends/explore?date=2008-12-04%202023-12-04&q=no%20alcohol%20wine,low%20alcohol%20wine&hl=en
+
+Goold, H., Kroukamp, H., Williams, T., Paulsen, I., Varela, C., &
+Pretorius, I. (2017, January 13). Yeast's balancing act between
+ethanol and glycerol production in low-alcohol wines. *Microbial
+Biotechnology*, *10*(2), 264-278. Applied Microbiology International.
+https://doi.org/10.1111/1751-7915.12488
+
+Gov.UK. (2023, September 28). *Updating labelling guidance for no and
+low-alcohol alternatives: consultation*. GOV.UK. Retrieved January 1,
+2024, from
+https://www.gov.uk/government/consultations/updating-labelling-guidance-for-no-and-low-alcohol-alternatives/updating-labelling-guidance-for-no-and-low-alcohol-alternatives-consultation
+
+Grand View Research. (2023, - -). *Hard Seltzer Market Size, Share And
+Trends Report, 2030*. Grand View Research. Retrieved December 10,
+2023, from
+https://www.grandviewresearch.com/industry-analysis/hard-seltzer-market
+
+Gutierrez, A. R., Portu, J., Lopez, R., Garijio, P.,
+Gonzalez-Arenzana, L., & Santamaria, P. (2023, June 10). Carbonic
+maceration vinification: A tool for wine alcohol reduction. *Food
+Chemistry*, *-*(-), -. PubMed. 10.1016/j.foodchem.2023.136558
+
+Han, B., Daniel, M. G., Park, E., & Piscopo, K. (2020, - -). *Results
+from the 2019 National Survey on Drug Use and Health: Detailed
+Tables*. SAMHSA. Retrieved December 10, 2023, from
+https://www.samhsa.gov/data/sites/default/files/reports/rpt29394/NSDUHDetailedTabs2019/NSDUHDetailedTabs2019.pdf
+
+International Food Information Council Foundation. (2018, - -). *2018
+Food and Health Survey Report*. Food Insight. Retrieved December 10,
+2023, from
+https://foodinsight.org/wp-content/uploads/2018/05/2018-FHS-Report-FINAL.pdf
+
+Josselin, M., Philippe, A., & D'Hauteville, F. (2008, Aug). Effects
+of non-sensory cues on perceived quality: The case of low-alcohol
+wine. *International Journal of Wine Business Research*, *20*(3).
+ResearchGate. 0.1108/17511060810901037
+
+King, E. S., Dunn, R. L., & Heymann, H. (2013, April). The influence
+of alcohol on the sensory perception of red wines. *Food Quality and
+Preference*, *28*(1), 235-243. ScienceDirect.
+https://doi.org/10.1016/j.foodqual.2012.08.013
+
+LeBeau, A. (2018, January 26). *Non-Alcoholic Wine - Because sometimes
+you have to*. SpitBucket. Retrieved January 1, 2024, from
+https://spitbucket.net/2018/01/26/non-alcoholic-wine-sometimes/
+
+Lechmere, A. (2012, February 16). *Consumers across three continents
+prefer lower alcohol wines: Prowein - Decanter*. Decanter Magazine.
+Retrieved December 10, 2023, from
+https://www.decanter.com/wine-news/consumers-across-three-continents-prefer-lower-alcohol-wines-prowein-32578/
+
+Liguori, L., Albanese, D., Crescitelli, A., Matteo, M. D., & Russo, P.
+(2019, June 13). Impact of dealcoholization on quality properties in
+white wine at various alcohol content levels. *Journal of Food Science
+and Technology*, *56*(-), 3707-3720. Springer Link.
+https://doi.org/10.1007/s13197-019-03839-x
+
+Looze, M. d., Raaijmakers, Q., Bogt, T. t., Bendtsen, P., Farhat, T.,
+Ferreira, M., Godeau, E., Kuntsche, E., Molcho, M., Pförtner, T.-K.,
+Simons-Morton, B., Vieno, A., Vollebergh, W., & Pickett, W. (2015,
+March 20). Decreases in adolescent weekly alcohol use in Europe and
+North America: evidence from 28 countries from 2002 to 2010. *The
+European Journal of Public Health*, *25*(Suppl 2), 69-72. PubMed
+Central. 10.1093/eurpub/ckv031
+
+Loy, J. K., Seitz, N.-N., Bye, E. K., Raitasalo, K., Soellner, R.,
+Torronen, J., & Kraus, L. (2021, November 1). Trends in alcohol
+consumption among adolescents in Europe: Do changes occur in concert?
+*Drug and alcohol dependence*, *228*(-), -. ScienceDirect.
+https://doi.org/10.1016/j.drugalcdep.2021.109020
+
+Ma, T.-Z., Sam, F. E., & Zhang, B. (2022, June 30). Low-Alcohol and
+Nonalcoholic Wines: Production Methods, Compositional Changes, and
+Aroma Improvement. *Recent Advances in Grapes and Wine Production -
+New Perspectives for Quality Improvement*, *-*(-), -. IntechOpen.
+10.5772/intechopen.105594
+
+Masson, J., Aurier, P., & d'hauteville, F. (2008, August 22). Effects
+of non‐sensory cues on perceived quality: the case of low‐alcohol
+wine. *International Journal of Wine Business Research*, *20*(3),
+215-229. Emerald Insight. https://doi.org/10.1108/17511060810901037
+
+Mazzeo, J. (2022, July 25). *The Science Behind Non-Alcoholic Beer and
+Wine Production*. SevenFifty Daily. Retrieved January 1, 2024, from
+https://daily.sevenfifty.com/the-science-behind-non-alcoholic-beer-and-wine-production/
+
+Motta, S., Guaita, M., Petrozziello, M., Ciambotti, A., Panero, L.,
+Solomita, M., & Bosso, A. (2017, April 15). Comparison of the
+physicochemical and volatile composition of wine fractions obtained by
+two different dealcoholization techniques. *Food Chemistry*, *221*(-),
+1-10. ScienceDirect. https://doi.org/10.1016/j.foodchem.2016.10.046
+
+Mowery, L. (2021, September 22). *Is It Possible To Make A
+Nonalcoholic 'Grand Cru' Quality Wine? This Winemaker Says Yes*.
+Forbes. Retrieved January 1, 2024, from
+https://www.forbes.com/sites/lmowery/2023/02/22/is-it-possible-to-make-a-nonalcoholic-grand-cru-quality-wine-this-winemaker-says-yes/?sh=2edea2f13c83
+
+Napjus, A. (2022, January 7). *Are There Any Good Non-Alcoholic
+Wines?* Wine Spectator. Retrieved December 10, 2023, from
+https://www.winespectator.com/articles/are-there-any-good-non-alcoholic-wines
+
+The New Consumer & Coefficient Capital. (2022, December 2). *Consumer
+Trends 2023*. The New Consumer. Retrieved January 1, 2024, from
+https://newconsumer.com/wp-content/uploads/2022/12/Consumer-Trends-2023.pdf
+
+Nielsen. (2021, October 28). *An inside look into the global consumer
+health and wellness revolution*. NIQ. Retrieved December 10, 2023,
+from
+https://nielseniq.com/global/en/insights/report/2021/an-inside-look-into-the-2021-global-consumer-health-and-wellness-revolution/#chapter-1
+
+NielsenIQ. (2023, October 30). *The rise of non-alcoholic*. NielsenIQ.
+Retrieved January 1, 2024, from
+https://nielseniq.com/wp-content/uploads/sites/4/2022/10/32634-beval-non-alc-infographic-d02-1.jpg
+
+NutriSystem. (2023, March 2). *OVER 70% OF AMERICANS ARE MORE
+CONSCIOUS OF THEIR PHYSICAL HEALTH POST-PANDEMIC*. The Leaf. Retrieved
+December 10, 2023, from
+https://leaf.nutrisystem.com/americans-health-conscious-post-pandemic
+
+OIV. (2012). *RESOLUTION OIV-ECO 432-2012*. OIV. Retrieved December
+10, 2023, from
+https://www.oiv.int/public/medias/1901/oiv-eco-432-2012-en.pdf
+
+OIV. (2012). *RESOLUTION OIV-ECO 433-2012*. OIV. Retrieved December
+10, 2023, from
+https://www.oiv.int/public/medias/1902/oiv-eco-433-2012-en.pdf
+
+OIV. (2012). *RESOLUTION OIV-OENO 394A-2012*. OIV. Retrieved December
+10, 2023, from
+https://www.oiv.int/public/medias/1431/oiv-oeno-394a-2012-en.pdf
+
+OIV. (2012). *RESOLUTION OIV-OENO 394B-2012*. OIV. Retrieved December
+10, 2023, from
+https://www.oiv.int/public/medias/1432/oiv-oeno-394b-2012-en.pdf
+
+Our World in Data. (2017). *Alcohol Consumption*. Our World in Data.
+Retrieved December 31, 2023, from
+https://ourworldindata.org/alcohol-consumption#total-alcohol-consumption-over-the-long-run
+
+Oztruk, B., & Anli, E. (2015, Feb 4). Different techniques for
+reducing alcohol levels in wine: A review. *BIO Web of Conferences*,
+*3*, 8. https://doi.org/10.1051/bioconf/20140302012
+
+Pickering, G. (2010, August 4). Low- and Reduced-alcohol Wine: A
+Review. *Journal of Wine Research*, *11*(2), 129-144. Taylor & Francis
+Online. https://doi.org/10.1080/09571260020001575
+
+Reiley, L., Morrison, N., & Lacap, B. (2023, March 24). Could
+nonalcoholic wine be the toast of the town? *Washington Post*.
+https://www.washingtonpost.com/business/2023/03/25/nonalcoholic-wine/
+
+Rossow, I., Bye, E. K., Moan, I. S., & Tchounwou, P. B. (2022, July).
+The Declining Trend in Adolescent Drinking: Do Volume and Drinking
+Pattern Go Hand in Hand? *International Journal of Environmental
+Research and Public Health*, *19*(13), 7965. PubMed Central.
+10.3390/ijerph19137965
+
+Rossow, I., & Storvoll, E. (2013, December 12). Long-term trends in
+alcohol policy attitudes in Norway. *Drug and Alcohol review*,
+*33*(3), 220-226. Wiley Online Library.
+https://doi.org/10.1111/dar.12098
+
+Saliba, A., Ovington, L., & Moran, C. (2013, March). Consumer demand
+for low-alcohol wine in an Australian sample. *International Journal
+of Wine Research*, *1*(5), -. ResearchGate. 10.2147/IJWR.S41448
+
+Saliba, A., Ovington, L., Moran, C. C., & Bruwer, J. (2013,
+March/April -). *Consumer attitudes to low alcohol wine: an Australian
+sample*. -. Retrieved December 10, 2023, from
+https://www.marketingscience.info/wp-content/uploads/2016/07/Saliba-2013-WVJ-6595.pdf
+
+Sam, F. E., Ma, T., Liang, Y., Qiang, W., Atuna, R. A., Amagloh, F.
+K., Morata, A., & Han, S. (2021, December 1). Comparison between
+Membrane and Thermal Dealcoholization Methods: Their Impact on the
+Chemical Parameters, Volatile Composition, and Sensory Characteristics
+of Wines. *Membranes*, *11*(12), 957. MDPI.
+https://doi.org/10.3390/membranes11120957
+
+Sam, F. E., Ma, T.-Z., Salifu, R., Wang, J., Jiang, Y.-M., Zhang, B.,
+& Han, S.-Y. (2021, October 18). Techniques for Dealcoholization of
+Wines: Their Impact on Wine Phenolic Composition, Volatile
+Composition, and Sensory Characteristics (C. Duan & Y. Lan, Eds.).
+*Foods*, *10*(10), 2498. MDPI. https://doi.org/10.3390/foods10102498
+
+Schmidtke, L. M., Blackman, J. W., & Agboola, S. O. (2012, January).
+Production Technologies for Reduced Alcoholic Wines. *Journal of Food
+Science*, *77*(1), R25-R41. IFT.
+https://doi.org/10.1111/j.1750-3841.2011.02448.x
+
+Schulz, F. N., Farid, H., & Hanf, J. H. (2023, August 30). The Lower
+the Better? Discussion on Non-Alcoholic Wine and Its Marketing.
+*Dietetics*, *2*(3), 278-288. MDPI.
+https://doi.org/10.3390/dietetics2030020
+
+Schulz, F. N., & Hanf, J. (2023, Sep 12). *European Alcohol Policy Is
+Coming for Wine*. Meininger's International. Retrieved December 31,
+2023, from
+https://www.meiningers-international.com/wine/academic-papers-wine/european-alcohol-policy-coming-wine
+
+Statista. (2023, November -). *Wine - Worldwide*. Statista. Retrieved
+December 10, 2023, from
+https://www.statista.com/outlook/cmo/alcoholic-drinks/wine/worldwide
+
+Stockley, C., Taylor, A., Montgomeri, A., & Grande, E. D. (2017, Mar
+13). Changes in wine consumption are influenced most by health:
+results from a population survey of South Australians in 2013.
+*International Journal of Wine Research*, *9*(-), 13-22. Taylor &
+Francis Online. https://doi.org/10.2147/IJWR.S126417
+
+Texas Health. (2023, April 25). *Study Shows Younger Generations Are
+More Health-Conscious Than Previous Generations*. Texas Health
+Resources. Retrieved December 10, 2023, from
+https://www.texashealth.org/areyouawellbeing/Health-and-Well-Being/Study-Shows-Younger-Generations-Are-More-Health-Conscious-Than-Previous-Generations
+
+VE Refinery. (2022, June 29). *How is the alcohol removed from wine?
+|VE REFINERY*. VE Refinery. Retrieved January 1, 2024, from
+https://ve-refinery.ch/blogs/blog-ve-refinery-alcohol-free/how-do-you-remove-alcohol-from-wine
+
+World Cancer Research Fund. (2018, - -). *Alcoholic drinks and the
+risk of cancer*. World Cancer Research Fund. Retrieved December 10,
+2023, from
+https://www.wcrf.org/wp-content/uploads/2021/02/Alcoholic-Drinks.pdf
+
+World Health Organization. (2022, May 9). *Alcohol*. World Health
+Organization (WHO). Retrieved December 10, 2023, from
+https://www.who.int/news-room/fact-sheets/detail/alcohol
+
+World Health Organization. (2023, March 2). *Diet, nutrition and the
+prevention of chronic diseases*. WHO Technical Report Series.
+Retrieved December 10, 2023, from
+https://iris.who.int/bitstream/handle/10665/42665/WHO_TRS_916.pdf?sequence=1
+
+World Health Organization. (2023, April 15). A public health
+perspective on zero-and low-alcohol beverages. *Snapshot series on
+alcohol control policies and practice*, *-*(10), 22.
+https://iris.who.int/bitstream/handle/10665/366740/9789240072152-eng.pdf?sequence=1
 
 </details>
 
@@ -915,11 +844,11 @@ Similar to "natural wine", there is no standard definition for NOLO. A
 2021; Sam et al., 2021)
 
 In this paper we will adopt the International Organisation of Vine and
-Wine (OIV) thresholds of \<0.5% ABV for no alcohol wine (OIV, 2012).
+Wine (OIV) thresholds of <0.5% ABV for no alcohol wine (OIV, 2012).
 
-We will adopt \>=0.5% ABV for low alcohol wine, up to the typical ABV of
-that wine style (typically \~11% ABV at a minimum, though this varies by
-wine style) in cases where the alcohol reduction is \>20% (OIV, 2012).
+We will adopt >=0.5% ABV for low alcohol wine, up to the typical ABV of
+that wine style (typically ~11% ABV at a minimum, though this varies by
+wine style) in cases where the alcohol reduction is >20% (OIV, 2012).
 
 We will only include wine where alcohol has been reduced
 post-fermentation to be intentionally marketed as NOLO. Therefore, we
