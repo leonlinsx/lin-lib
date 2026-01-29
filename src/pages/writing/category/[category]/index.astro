@@ -4,18 +4,13 @@ import { getCollection } from 'astro:content';
 import { normalizeCategory } from '../../../../utils/text';
 import { buildPaginationHref } from '../../../../utils/pagination';
 
-async function getCategories() {
+export const getStaticPaths = (async () => {
   const posts = await getCollection('blog');
-
-  return Array.from(
+  const categories = Array.from(
     new Set(posts.map((post) => normalizeCategory(post.data.category ?? ''))),
   )
     .filter(Boolean)
     .sort((a, b) => a.localeCompare(b));
-}
-
-export const getStaticPaths = (async () => {
-  const categories = await getCategories();
 
   return categories.map((category) => ({
     params: { category },
