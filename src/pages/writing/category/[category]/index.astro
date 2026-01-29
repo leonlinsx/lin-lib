@@ -1,0 +1,21 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getAllPostsPaginated } from '../../../../utils/text';
+import { buildPaginationHref } from '../../../../utils/pagination';
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const { categories } = await getAllPostsPaginated(paginate, 8);
+
+  return categories.map((category) => ({
+    params: { category },
+  }));
+}) satisfies GetStaticPaths;
+
+const { category } = Astro.params;
+
+if (!category) {
+  throw new Error('Missing category');
+}
+
+return Astro.redirect(buildPaginationHref(1, category));
+---
