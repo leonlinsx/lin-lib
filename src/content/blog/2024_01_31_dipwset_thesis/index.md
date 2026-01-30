@@ -1,22 +1,19 @@
 ---
-title: "No and Low-Alcohol Wine: Demand, Production, and Future Trajectory"
-description: "An analysis of the demand and supply dynamics behind the growth of no and low-alcohol wine, alongside the technical tradeoffs in production and the category’s future positioning"
+title: "No and Low-Alcohol Wine: Demand, Production, and Future Growth"
+description: "An analysis of the demand and supply dynamics behind the growth of no and low-alcohol wine, alongside the technical tradeoffs in production, and the category’s future positioning"
 pubDate: 2024-01-31
-category: wine education
-tags: [low alcohol wine, wine business]
+category: wine
+tags: [low alcohol wine, wine business, winemaking]
+heroImage: './image22.webp'
 ---
 
-> “This essay was originally written as part of a professional wine examination.
-> It has been lightly edited for clarity and web reading.”
+> **Editorial Note**: This essay was originally written as part of a professional wine examination. It has been lightly edited for clarity and web reading.
 
-## Introduction
+# Introduction
 
-This opening section frames the scale of recent interest in no- and low-alcohol wine (NOLO) and previews the market and production questions examined in the essay.
+Interest in no and low alcohol wines (NOLO) has never been higher. This <11% alcohol by volume (ABV) category [^1] just hit a new peak in worldwide Google searches (Google, 2023); it is also the trending topic at major wine exhibitions (Carter, 2023).
 
-Interest in no and low alcohol wines (NOLO) has never been higher. This
-<11% alcohol by volume (ABV) category[^1] just hit a new peak in
-worldwide Google searches (Google, 2023); it is also the trending topic
-at major wine exhibitions (Carter, 2023).
+[^1]: For a comprehensive definition of NOLO as used in this paper, refer to Appendix 1
 
 ![Chart](./image3.webp)
 *Figure: Google Trends interest in no and low alcohol wine.*
@@ -38,11 +35,7 @@ The paper is structured around three questions:
 2. How NOLO is made, with resulting tradeoffs in quality and price
 3. Where NOLO can go, and my contrarian opinion on NOLO marketing
 
-### From YOLO to NOLO
-
-This section examines the demand- and supply-side forces behind NOLO’s growth, tracing shifts in consumption, health perceptions, and production capability.
-
-#### Demand: declining consumption and health motivations
+# From YOLO to NOLO
 
 NOLO's growth can be attributed to (1) Decreased alcohol consumption due
 to social and political factors, impacting *demand* (2) Improved NOLO
@@ -51,17 +44,23 @@ influencing *supply*. The increased demand for NOLO attracts new supply,
 in a reinforcing growth loop that has excited both consumers and
 producers.
 
+## Factors impacting alcohol demand
+
 Alcohol consumption has declined in recent decades, particularly among
 the younger generation (Loy et al., 2021). This shift has led some
 consumers to substitute traditional alcoholic wines with NOLO
 alternatives, as outlined in a World Health Organization (WHO) report
 (World Health Organization, 2023). For example, "Dry January" started as
-a discussion about having a temporary break from drinking[^2] (Alcohol
+a discussion about having a temporary break from drinking [^2] (Alcohol
 Change UK, 2023).
 
+[^2]: Dry January is a month where people pledge to not drink alcohol; it is the highest month of NOLO sales (Drizly, 2023)
+
 Research indicates that the decline in alcohol consumption has been a
-global phenomenon for the past 50 years, and not country specific[^3]
+global phenomenon for the past 50 years, and not country specific [^3]
 (Our World in Data, 2017).
+
+[^3]: The UK was an exception for this time period, but also sees a decline when a longer period is chosen
 
 ![Chart](./image14.webp)
 *Figure: Long-run decline in alcohol consumption across countries.*
@@ -87,6 +86,8 @@ prevent them from doing so, and changing what they consume as a result
 (Texas Health, 2023). Across generations, people are increasing their
 prioritisation of health (The New Consumer & Coefficient Capital, 2022).
 
+[^4]: YOLO was re-popularised in the 2010s due to a song, with loose origins to the phrase “carpe diem”
+
 ![Chart](./image25.webp)
 *Figure: Surveyed shifts toward health prioritization.*
 
@@ -104,6 +105,9 @@ estimating harmful alcohol usage represents 5% of the global disease
 burden[^6], governing bodies such as the EU are considering stronger
 alcohol regulations (World Cancer Research Fund, 2018; World Health
 Organization, 2022).
+
+[^5]: Mouth, oesophagus, breast cancer were some cancers specifically mentioned in the report
+[^6]: As measured in disability adjusted life years
 
 These regulations are typically aimed at restricting and reducing
 alcohol consumption (Looze et al., 2015; Goold et al., 2017). The
@@ -125,6 +129,8 @@ For example, a 2017 study found that "health" was the main reason
 participants decreased their wine consumption[^7] (Stockley et al.,
 2017).
 
+[^7]: The chart shows the combined response totals across multiple participant experiment groups 
+
 ![Chart](./image10.webp)
 *Figure: Health as a primary reason for reduced wine consumption.*
 
@@ -142,13 +148,13 @@ the second most common motivation for interest in NOLO (Saliba et al.,
 ![Chart](./image22.webp)
 *Figure: Australian motivations for NOLO interest.*
 
+## Factors impacting NOLO supply
+
 However, these demand influences on NOLO would not have been fulfilled,
 had product quality missed expectations. After all, NOLO is trending,
 not grape juice. Economic and technological factors have increased the
 supply of quality product offerings, past a tipping point of consumer
 acceptance.
-
-#### Supply: quality improvements and production economics
 
 From an economic perspective, NOLO's high growth provides an attractive
 new profit opportunity, with industry experts discussing how "there's
@@ -165,6 +171,10 @@ the lack of ethanol, with sugar levels >40 g/L being common[^9] (Schulz
 et al., 2023). However, the typical drinker associates sweetness with
 lower quality cheap wine[^10], resulting in NOLO also being perceived as
 low quality even before being tasted (Josselin et al., 2008).
+
+[^8]: Boisson raised a $5mm bridge round from Convivialité Ventures, the venture arm of Pernod Ricard, and Connect Ventures (Business Wire, 2023) 
+[^9]: Typical dry wines have <2 g/L of sugar
+[^10]: A pity, as the author personally loves dessert wines
 
 ![Chart](./image1.webp)
 *Figure: Sweetness perceptions and quality associations in NOLO.*
@@ -183,10 +193,11 @@ Spectator's review of Ariel Vineyards NOLO Chardonnay described it as
 recent 2020 experiment also found no significant difference in how much
 participants liked NOLO vs standard wine[^12] (Bucher et al., 2020).
 
+[^11]: Linalool contributes floral, geranial rose, and isoamyl acetate banana aromas respectively 
+[^12]: In the “blind” condition, participants did not know they were drinking NOLO, vs the “low-alcohol wine” condition where they did know 
+
 ![Chart](./image28.webp)
 *Figure: Comparative liking of NOLO vs standard wine.*
-
-#### Summary of drivers
 
 **In summary, health has been the main demand driver for NOLO, with
 profit opportunities and technology improvements the main supply
@@ -197,7 +208,7 @@ alcohol wine driving alcohol driving alcohol reduction companies to seek
 new customers, the country agnostic growth in NOLO is due to the primary
 reasons above.
 
-### Reduce and reuse to make NOLO
+# Reduce and reuse to make NOLO
 
 This section outlines the main post-fermentation techniques used to reduce alcohol, emphasizing how process choices affect style, quality, and cost.
 
@@ -216,7 +227,7 @@ primary method families, each with subcategories:
    1. Reverse osmosis
    2. Osmotic distillation
 
-#### Thermal distillation approaches
+## Thermal distillation approaches
 
 Thermal distillation processes require higher temperatures and cost more
 than membrane processes. Within this method, vacuum distillation is a
@@ -266,7 +277,11 @@ attached to the cones increase turbulence and hence effectiveness of the
 process. This allows for both a *reduction* in alcohol, and a *reuse* of
 aromas later on (Schmidtke et al., 2012).
 
-![](./image35.webp)
+[^13]: Point of the cone facing downwards
+[^14]: Note that SCC is not a centrifuge; it spins at lower forces (Beverage Trade Network, 2023)
+[^15]: Such as nitrogen
+
+![](./image36.webp)
 *Figure: Spinning cone column process schematic.*
 
 SCC stands out for its ability to recover desirable aromas with both
@@ -284,7 +299,7 @@ sparkling winemakers delegate parts of the production process (BevZero,
 countries where expected production volumes are too low to justify
 investment, such as Austria (Gentile et al., 2023).
 
-#### Membrane-based approaches
+## Membrane-based approaches
 
 Membrane processes typically require lower temperatures but more passes
 than thermal processes. Reverse osmosis (RO) uses a hydrophilic
@@ -297,7 +312,7 @@ membrane. The ethanol and water mixture can be further separated through
 distillation, allowing for *reuse* of the water in the process (Ma et
 al., 2022).
 
-![](./image35.webp)
+![](./image37.webp)
 *Figure: Reverse osmosis process schematic.*
 
 RO benefits include aroma retention due to the low operating
@@ -323,7 +338,10 @@ membrane causes ethanol to evaporate on one side, diffuse across the
 membrane, and then condense on the other side with the help of a
 "stripping gas"[^17] (Schmidtke et al., 2012).
 
-![](./image35.webp)
+[^16]: Also known as as evaporative pertraction (Ma et al., 2022)
+[^17]: Typically degassed pure water vapour (Schmidtke et al., 2012) 
+
+![](./image38.webp)
 *Figure: Osmotic distillation process schematic.*
 
 Compared to RO, OD requires lower pressures and temperatures. However,
@@ -338,20 +356,19 @@ multiple methods. However, these are not as widely used commercially due
 to cost or lack of research, and we will not be discussing these further
 (Ma et al., 2022; Schmidtke et al., 2012).
 
-#### Comparative summary
+## Comparative summary of NOLO production methods
 
 | **Removal method** | **Pros** | **Cons** | **Sample producers** |
-| --- | --- | --- | --- |
-| Vacuum distillation | Good for sugar and colour concentration.<br>Cheap; many wineries already have the equipment.<br>Lower price implication. | Bad for style and quality due to reduction of esters, higher alcohols, terpenes. | Weingut Leitz.<br>Thomson & Scott.<br>St Regis. |
-| Spinning cone column | Good for style and quality due to high aroma recovery.<br>Faster processing time as fewer passes required. | High \$1-2mm capital costs.<br>Specialised expertise required.<br>Higher price implication. | Giesen.<br>Fre Wines.<br>Weingut Leitz. |
-| Reverse Osmosis | Good for style and quality due to aroma retention.<br>Lower capital and operating costs than thermal distillation.<br>Lower price implication.<br>"Clean" technology. | Legal uncertainty in countries where water cannot be added to wine; grape must might be a workaround.<br>Slower processing time than thermal distillation as multiple passes required.<br>Recurring replacement costs when membranes fail. | Ariel vineyards. |
-| Osmotic distillation | Possibly good for style and quality due to aroma retention, but more research required.<br>Energy and cost savings due to lower temperature and pressure requirements. | Even slower processing time than RO due to lower temperature and pressure. | None disclosed publicly. |
+|--------------------|----------|----------|----------------------|
+| **Vacuum distillation** | • Good for sugar and colour concentration<br>• Cheap; many wineries already have the equipment<br>• Lower price implication | • Bad for style and quality due to reduction of esters, higher alcohols, terpenes | • Weingut Leitz<br>• Thomson & Scott<br>• St Regis |
+| **Spinning cone column** | • Good for style and quality due to high aroma recovery<br>• Faster processing time as fewer passes required | • High \$1–2 mm capital costs<br>• Specialised expertise required<br>• Higher price implication | • Giesen<br>• Fre Wines<br>• Weingut Leitz |
+| **Reverse osmosis** | • Good for style and quality due to aroma retention<br>• Lower capital and operating costs than thermal distillation<br>• Lower price implication<br>• “Clean” technology | • Legal uncertainty where water cannot be added to wine (grape must may be a workaround)<br>• Slower processing time due to multiple passes<br>• Recurring membrane replacement costs | • Ariel Vineyards |
+| **Osmotic distillation** | • Potentially good for style and quality due to aroma retention<br>• Energy and cost savings from lower temperature and pressure | • Even slower processing time than RO due to lower temperature and pressure | • None disclosed publicly |
+
 
 (Alexandra, 2021; LeBeau, 2018; Mowery, 2021; VE Refinery, 2022)
 
-### NOLO has ample room to grow
-
-This section considers market scale, headwinds, and practical responses, before moving to the author’s perspective on category positioning.
+# NOLO has ample room to grow
 
 NOLO's current total market revenue of \$2bn is a fraction of the total
 \$173bn wine market, implying future growth potential (Fact.MR, 2022;
@@ -360,7 +377,7 @@ for this category should continue to propel faster growth than the
 overall wine market. In addition, I would like to propose an alternative
 approach to NOLO marketing.
 
-#### Headwinds
+## Headwinds to NOLO growth
 
 Climate change, costs of production, and consumer perception are the
 three main headwinds to NOLO growth.
@@ -380,6 +397,8 @@ an average US NOLO price of \$6.84 vs \$11.01 for traditional wine
 eight best-selling NOLO products on Boisson are priced >\$20, above the
 typical cost of traditional wines[^18] (Boisson, 2023).
 
+[^18]: See Appendix 2 for a list of Boisson (a NOLO retailer) best selling products and prices
+
 ![Chart](./image2.webp)
 *Figure: NOLO pricing relative to traditional wine benchmarks.*
 
@@ -391,7 +410,7 @@ et al., 2013).
 ![Chart](./image21.webp)
 *Figure: NOLO acceptance varies when quality parity is emphasized.*
 
-#### Mitigation options
+## Mitigation options
 
 Producers have multiple options to mitigate the above risks. In the
 vineyard, planting varieties that naturally make lower alcohol wines
@@ -424,12 +443,14 @@ Alcohol and Tobacco Tax and Trade Bureau jurisdiction. This makes it
 possible to sell and offer tastings of NOLO in grocery stores, an
 attractive marketing opportunity (Beverage Trade Network, 2023).
 
-#### Positioning and outlook
+[^19]: For example, Pichia Pastoris, Williopsis Saturnus, or genetically engineered Saccharomyces Cerevisiae (Schmidtke et al., 2012)
 
 NOLO technology is likely to improve over time; health conscious
 attitudes towards alcohol are unlikely to reverse in the short term.
 Together with the options above, it is likely NOLO continues growing
 faster than the traditional wine market.
+
+## Changing the branding positioning of NOLO
 
 **I also believe that current NOLO marketing is missing the point**.
 Rather than harping on the association with wine, NOLO should
@@ -459,6 +480,8 @@ sparkling variety (Farrell, 2023; Gentile et al., 2023).
 ![Chart](./image18.webp)
 *Figure: Sparkling NOLO prominence within current offerings.*
 
+# Conclusion
+
 A hundred years on from Prohibition, the Temperance movement has come
 and gone, but perhaps a tempered temperance, NOLO movement is on the
 rise. Health concerns have increased demand for NOLO, with technological
@@ -471,12 +494,9 @@ driven by its exceptional taste, breaking free from the limitations of
 being solely a wine derivative, and evolving to a formidable standalone
 brand.
 
+<br>
 <details>
-<summary>References</summary>
-
-## References
-
-Sources cited in the essay are listed below.
+<summary><h2 style="display:inline">Bibliography</h2></summary>
 
 Alcohol Change UK. (2023, - -). *The Dry January story*. Alcohol
 Change UK. Retrieved December 10, 2023, from
@@ -830,11 +850,12 @@ alcohol control policies and practice*, *-*(10), 22.
 https://iris.who.int/bitstream/handle/10665/366740/9789240072152-eng.pdf?sequence=1
 
 </details>
+<br>
 
 <details>
-<summary>Appendices</summary>
+<summary><h2 style="display:inline">Appendix 1</h2></summary>
 
-## Appendix 2 - Definition of no and low alcohol wine (NOLO)
+### Definition of no and low alcohol wine (NOLO)
 
 This appendix defines the NOLO thresholds and scope used in the analysis.
 
@@ -865,9 +886,15 @@ as BevZero, who had to diversify their income stream after a change in
 US tax law on higher alcohol wines resulted in less demand for alcohol
 reduction services.
 
-## Appendix 3 - Best selling products on Boisson are priced higher than traditional wine
+</details>
+<br>
 
-This appendix summarizes pricing context for best-selling NOLO products in the cited dataset.
+<details>
+<summary><h2 style="display:inline">Appendix 2</h2></summary>
+
+### Best selling products on Boisson are priced higher than traditional wine
+
+This appendix summarizes pricing context for NOLO products on Boisson
 
 (Boisson, 2023)
 
