@@ -11,7 +11,7 @@ Some interesting excerpts from "Sherry", by Julian Jeffs.
 
 I found the book helpful in providing more context about the history and types of Sherry while preparing for the dipWSET fortified wine module. 
 
-I personally have liked the PX style of sherry more, but not the cream or fino styles. Amontillado and Oloroso seem to be hit or miss for me as well. I suspect this is partially a budgetary issue, given the lack of selection available in ths US.
+I personally have liked the PX style of sherry more, but not the cream or fino styles. Amontillado and Oloroso seem to be hit or miss for me. I suspect this is partially a budgetary issue, given the lack of selection available at reasonable prices in ths US.
 
 > Chaucer (13402-1400) was the son of a vintner and was famously accurate in everything he mentioned, so it appears that wines from southern Spain were already fortified when he wrote his Tales, and this is borne out by the knowledge that the Moors distilled alcohol and used it for medicinal purposes. 
 
@@ -23,13 +23,17 @@ I personally have liked the PX style of sherry more, but not the cream or fino s
 
 > The sherry slump at the turn of the [20th] century was brought about by five factors working together: the dreadful imitation sherries or 'horrible mixings' from Hamburg and other places; the very inferior wines made in Jerez itself during the boom years; the ignorant attacks of certain doctors who claimed that the wine was 'plastered', 'gouty', 'full of added spirit', and 'acid to the stomach'; the caprice of fashion; and, lastly, the plague of the phylloxera which for several years made wine growing difficult, unprofitable and heartbreaking
 
+Sherry has generally declined significantly in popularity in recent decades, much like other fortified wines, such as Port or Madeira.
+
 > The trade of an almacenista in those days was an important one. Many shippers, even some of the largest like Williams & Humbert, preferred to limit their stocks of wine and to own no vineyards, relying on the plentiful supplies available from the almacenistas
 
 > Perhaps the greatest change of all is the rise of the boutique bodegas.This was made possible by a change in the regulations. To get a shipping licence a bodega had to hold stocks of 12,500 hectolitres, and this was reduced to 500. The almacenistas had been having a bad time, as falling demand meant that their customers, the big shippers, had enough wine of their own and decided to be self-reliant, so their market was lost. Many had wines of great age and quality. The new regulations enabled them to become shippers and small bodegas could be started up.
 
 > very occasionally there is a calamity, but the trials and tribulations of the Jerez wine growers are nothing compared to those of almost any other growing area. 
 
-> A new vineyard is by no means ready to produce good wine. Any wine made in the first year is used for distillation, that of the second and third years for making mistela sweetening wines, that of the fourth year (a small crop) for cheap sherries, and then serious production begins in the fifth year. 
+> A new vineyard is by no means ready to produce good wine. Any wine made in the first year is used for distillation, that of the second and third years for making mistela sweetening wines, that of the fourth year (a small crop) for cheap sherries, and then serious production begins in the fifth year.
+
+This applies not just to sherry, but generally for most grape vines.
 
 > For this purpose it is essential to use good oak. Other woods, such as chestnut and cherry, have been tried, but without success
 
@@ -39,4 +43,8 @@ I personally have liked the PX style of sherry more, but not the cream or fino s
 
 > Manzanilla can only be made in Sanlúcar: attempts to make it in the other towns have produced only some strange finos, and when casks of manzanilla are taken to Jerez, or even to El Puerto, they rapidly turn into finos. After only six or seven months they are completely spoiled
 
+This is believed to be due to the type of yeast present
+
 > A first-class, unsweetened, straight solera wine is almost inimitable: it can rarely be matched perfectly by any other shipper, and when the full output of the solera has been sold there is no other source of supply. On the other hand, if the wine is even slightly sweetened, it can be matched very closely, and there is practically no limit to the quantity that can be supplied
+
+Goes to show the overwhelming influence of sweetness in taste

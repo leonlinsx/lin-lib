@@ -1,6 +1,6 @@
 ---
 title: "Cava's Future: Growth Strategies for a Sparkling Wine at a Crossroads"
-description: "An analysis of Cava's market position, growth opportunities, and strategic marketing approaches to compete in an evolving sparkling wine market."
+description: "An analysis of Cava's market position, growth opportunities, and strategic marketing approaches to compete in an evolving sparkling wine market"
 pubDate: 2025-10-31
 category: wine
 tags: [sparkling wine, Cava, wine business]
