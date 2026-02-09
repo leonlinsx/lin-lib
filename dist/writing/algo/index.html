@@ -1,0 +1,294 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-37fxchfa> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><!-- Performance hints for third-party scripts --><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://www.clarity.ms" crossorigin><link rel="preconnect" href="https://giscus.app" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;600;700&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;600;700&display=swap"></noscript><!-- ✅ Preload Fonts --><link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff2" crossorigin><!-- Favicons --><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="https://linlib.com/logos/substack_logo.webp" type="image/webp" sizes="192x192"><link rel="apple-touch-icon" href="https://linlib.com/logos/substack_logo.webp"><!-- Sitemap & RSS --><link rel="sitemap" href="https://linlib.com/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="LinLib" href="https://linlib.com/rss.xml"><meta name="generator" content="Astro v5.13.7"><!-- Canonical URL --><link rel="canonical" href="https://linlib.com/writing/algo/"><!-- Primary Meta Tags --><title>Book Review: Algorithms to live by — LinLib</title><meta name="title" content="Book Review: Algorithms to live by — LinLib"><meta name="description" content="How can we apply algorithms to improve decision making in real life?"><meta name="author" content="Leon Lin"><meta name="keywords" content="behaviour, tech"><!-- Open Graph --><meta property="og:type" content="article"><meta property="og:locale" content="en_US"><meta property="og:url" content="https://linlib.com/writing/algo/"><meta property="og:title" content="Book Review: Algorithms to live by — LinLib"><meta property="og:description" content="How can we apply algorithms to improve decision making in real life?"><meta property="og:image" content="https://linlib.com/_astro/a_3.CRDTJh8S.webp"><meta property="og:image:alt" content="Preview image for Book Review: Algorithms to live by — LinLib"><meta property="og:site_name" content="LinLib"><meta property="article:published_time" content="2021-04-10T00:00:00.000Z"><meta property="article:modified_time" content="2021-04-10T00:00:00.000Z"><meta property="article:author" content="Leon Lin"><meta property="article:tag" content="behaviour" key="behaviour"><meta property="article:tag" content="tech" key="tech"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://linlib.com/writing/algo/"><meta name="twitter:title" content="Book Review: Algorithms to live by — LinLib"><meta name="twitter:description" content="How can we apply algorithms to improve decision making in real life?"><meta name="twitter:image" content="https://linlib.com/_astro/a_3.CRDTJh8S.webp"><meta name="twitter:image:alt" content="Preview image for Book Review: Algorithms to live by — LinLib"><meta name="twitter:creator" content="@leonlinsx"><meta name="twitter:site" content="@leonlinsx"><!-- ✅ Combined Structured Data --><script type="application/ld+json">
+  {JSON.stringify(structuredData)}
+</script><!-- Microsoft Clarity --><script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "tegwfukh6k");
+  </script><!-- Dark Mode Initialization --><script>
+  (function() {
+    try {
+      const stored = localStorage.getItem('theme');
+      if (stored) {
+        document.documentElement.setAttribute('data-theme', stored);
+        return;
+      }
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    } catch (e) {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  })();
+</script><style>.writing-post-list[data-astro-cid-nni2rj4u]{display:flex;flex-direction:column;width:100%;margin:0;padding:0}.writing-post-list[data-astro-cid-nni2rj4u].compact{gap:0}.writing-post-list[data-astro-cid-nni2rj4u].compact .post-card{align-items:flex-start;padding-bottom:var(--space-sm);margin-bottom:var(--space-md);border-bottom:1px solid var(--color-border-soft)}.writing-post-list[data-astro-cid-nni2rj4u].compact .post-card:last-child{border-bottom:none;margin-bottom:0}.writing-post-list[data-astro-cid-nni2rj4u].compact .post-title{margin:0 0 var(--space-xs) 0;line-height:1.3;font-size:var(--text-lg);font-weight:600}.writing-post-list[data-astro-cid-nni2rj4u].compact .post-summary{margin-top:0;margin-bottom:var(--space-xs)}.writing-post-list[data-astro-cid-nni2rj4u].compact .post-meta{margin-top:0}.writing-post-list[data-astro-cid-nni2rj4u].compact .post-thumb{margin:var(--space-xs);display:block}.writing-post-list[data-astro-cid-nni2rj4u].grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:var(--space-lg)}
+</style>
+<link rel="stylesheet" href="/_astro/_slug_.6ZBfWDje.css">
+<link rel="stylesheet" href="/_astro/_slug_.DX8uF6Vb.css"></head> <body data-astro-cid-37fxchfa> <!-- Site Header (full width) --> <header class="site-header" data-astro-cid-3ef6ksr2> <div class="nav-container" data-astro-cid-3ef6ksr2> <a href="/" class="site-logo" aria-label="LinLib" data-astro-cid-3ef6ksr2> <img src="/logos/linlib_logo.webp" alt="" aria-hidden="true" width="32" height="32" data-astro-cid-3ef6ksr2> </a> <nav class="nav-links" aria-label="Primary" data-astro-cid-3ef6ksr2> <a href="/writing/1" aria-current="page" class="nav-item active" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> 
+Writing
+ </a>  <a href="/about" class="nav-item" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> 
+About
+ </a>  </nav> </div> </header>  <!-- Main content area (constrained width) --> <main class="page-main" data-astro-cid-37fxchfa>  <main data-astro-cid-bvzihdzo> <article data-astro-cid-bvzihdzo> <nav class="breadcrumbs" aria-label="Breadcrumb" data-astro-cid-ilhxcym7><ol data-astro-cid-ilhxcym7><li data-astro-cid-ilhxcym7><a href="/" data-astro-cid-ilhxcym7>Home</a></li><li data-astro-cid-ilhxcym7><a href="/writing/" data-astro-cid-ilhxcym7>Writing</a></li><li data-astro-cid-ilhxcym7><a href="/writing/category/book%20review" data-astro-cid-ilhxcym7>Book Review</a></li><li data-astro-cid-ilhxcym7><span aria-current="page" data-astro-cid-ilhxcym7>Book Review: Algorithms to live by</span></li></ol><script type="application/ld+json">
+      {JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: breadcrumbList,
+      })}
+    </script></nav> <div class="hero-image" data-astro-cid-bvzihdzo> <img src="/_astro/a_3.CRDTJh8S_ZPDdfH.webp" alt="Hero for Book Review: Algorithms to live by" loading="eager" fetchpriority="high" decoding="async" data-astro-cid-bvzihdzo="true" width="1200" height="630"> </div> <div class="prose" data-astro-cid-bvzihdzo> <div class="title" data-astro-cid-bvzihdzo> <div class="meta" data-astro-cid-bvzihdzo> <time datetime="2021-04-10T00:00:00.000Z">Apr 9, 2021</time>  · Book Review  · 10 min read  </div> <h1 data-astro-cid-bvzihdzo>Book Review: Algorithms to live by</h1> </div> <!-- TOC --> <!-- ================= DESKTOP ================= --><aside class="toc-desktop" data-astro-cid-xvrfupwn> <!-- collapsed: mini segments --> <div class="toc-mini" data-astro-cid-xvrfupwn> <div class="toc-bar-segment" data-id="takeaway" aria-hidden="true" data-astro-cid-xvrfupwn></div><div class="toc-bar-segment" data-id="algorithms-in-life" aria-hidden="true" data-astro-cid-xvrfupwn></div><div class="toc-bar-segment" data-id="optimal-stopping" aria-hidden="true" data-astro-cid-xvrfupwn></div><div class="toc-bar-segment" data-id="explore-exploit" aria-hidden="true" data-astro-cid-xvrfupwn></div><div class="toc-bar-segment" data-id="sorting" aria-hidden="true" data-astro-cid-xvrfupwn></div><div class="toc-bar-segment" data-id="caching-and-memory" aria-hidden="true" data-astro-cid-xvrfupwn></div><div class="toc-bar-segment" data-id="scheduling" aria-hidden="true" data-astro-cid-xvrfupwn></div><div class="toc-bar-segment" data-id="bayes-rule-and-distributions" aria-hidden="true" data-astro-cid-xvrfupwn></div><div class="toc-bar-segment" data-id="game-theory" aria-hidden="true" data-astro-cid-xvrfupwn></div><div class="toc-bar-segment" data-id="footnote-label" aria-hidden="true" data-astro-cid-xvrfupwn></div> </div> <!-- expanded: flyout --> <div class="toc-flyout" data-astro-cid-xvrfupwn> <ul data-astro-cid-xvrfupwn> <li class="level-2" data-astro-cid-xvrfupwn> <a href="#takeaway" data-astro-cid-xvrfupwn>Takeaway</a> </li><li class="level-2" data-astro-cid-xvrfupwn> <a href="#algorithms-in-life" data-astro-cid-xvrfupwn>Algorithms in life</a> </li><li class="level-2" data-astro-cid-xvrfupwn> <a href="#optimal-stopping" data-astro-cid-xvrfupwn>Optimal stopping</a> </li><li class="level-2" data-astro-cid-xvrfupwn> <a href="#explore-exploit" data-astro-cid-xvrfupwn>Explore exploit</a> </li><li class="level-2" data-astro-cid-xvrfupwn> <a href="#sorting" data-astro-cid-xvrfupwn>Sorting</a> </li><li class="level-2" data-astro-cid-xvrfupwn> <a href="#caching-and-memory" data-astro-cid-xvrfupwn>Caching and memory</a> </li><li class="level-2" data-astro-cid-xvrfupwn> <a href="#scheduling" data-astro-cid-xvrfupwn>Scheduling</a> </li><li class="level-2" data-astro-cid-xvrfupwn> <a href="#bayes-rule-and-distributions" data-astro-cid-xvrfupwn>Bayes rule and distributions</a> </li><li class="level-2" data-astro-cid-xvrfupwn> <a href="#game-theory" data-astro-cid-xvrfupwn>Game theory</a> </li><li class="level-2" data-astro-cid-xvrfupwn> <a href="#footnote-label" data-astro-cid-xvrfupwn>Footnotes</a> </li> </ul> </div> </aside> <!-- ================= MOBILE ================= --> <div class="toc-mobile" data-astro-cid-xvrfupwn> <button id="toc-toggle" class="toc-button" aria-expanded="false" aria-controls="toc-drawer" data-astro-cid-xvrfupwn>
+☰ Contents
+</button> <div id="toc-drawer" class="toc-drawer" data-astro-cid-xvrfupwn> <ul data-astro-cid-xvrfupwn> <li class="level-2" data-astro-cid-xvrfupwn> <a href="#takeaway" data-astro-cid-xvrfupwn>Takeaway</a> </li><li class="level-2" data-astro-cid-xvrfupwn> <a href="#algorithms-in-life" data-astro-cid-xvrfupwn>Algorithms in life</a> </li><li class="level-2" data-astro-cid-xvrfupwn> <a href="#optimal-stopping" data-astro-cid-xvrfupwn>Optimal stopping</a> </li><li class="level-2" data-astro-cid-xvrfupwn> <a href="#explore-exploit" data-astro-cid-xvrfupwn>Explore exploit</a> </li><li class="level-2" data-astro-cid-xvrfupwn> <a href="#sorting" data-astro-cid-xvrfupwn>Sorting</a> </li><li class="level-2" data-astro-cid-xvrfupwn> <a href="#caching-and-memory" data-astro-cid-xvrfupwn>Caching and memory</a> </li><li class="level-2" data-astro-cid-xvrfupwn> <a href="#scheduling" data-astro-cid-xvrfupwn>Scheduling</a> </li><li class="level-2" data-astro-cid-xvrfupwn> <a href="#bayes-rule-and-distributions" data-astro-cid-xvrfupwn>Bayes rule and distributions</a> </li><li class="level-2" data-astro-cid-xvrfupwn> <a href="#game-theory" data-astro-cid-xvrfupwn>Game theory</a> </li><li class="level-2" data-astro-cid-xvrfupwn> <a href="#footnote-label" data-astro-cid-xvrfupwn>Footnotes</a> </li> </ul> </div> <!-- Backdrop only used on mobile --> <div id="toc-backdrop" class="toc-backdrop" data-astro-cid-xvrfupwn></div> </div>  <script type="module">const g=document.querySelectorAll(".toc-bar-segment"),i=document.querySelectorAll(".toc-flyout a, .toc-drawer a"),v=document.querySelectorAll("h2[id], h3[id]"),f=new IntersectionObserver(e=>{e.forEach(c=>{if(c.isIntersecting){g.forEach(t=>t.classList.remove("active")),i.forEach(t=>t.classList.remove("active"));const o=c.target.getAttribute("id"),s=document.querySelector(`.toc-bar-segment[data-id="${o}"]`),n=document.querySelectorAll(`a[href="#${o}"]`);s&&s.classList.add("active"),n.forEach(t=>t.classList.add("active"))}})},{rootMargin:"0px 0px -70% 0px"});v.forEach(e=>f.observe(e));i.forEach(e=>{e.addEventListener("click",c=>{c.preventDefault();const o=e.getAttribute("href")||"",s=o.startsWith("#")?o.slice(1):o,n=document.getElementById(s)||(window.CSS&&CSS.escape?document.querySelector(`#${CSS.escape(s)}`):null);if(n){const u=window.matchMedia?window.matchMedia("(prefers-reduced-motion: reduce)").matches:!1;n.scrollIntoView({behavior:u?"auto":"smooth"})}const t=document.getElementById("toc-drawer"),l=document.getElementById("toc-backdrop"),m=document.getElementById("toc-toggle");t?.classList.remove("open"),l?.classList.remove("visible"),m?.setAttribute("aria-expanded","false")})});const d=document.getElementById("toc-toggle"),r=document.getElementById("toc-drawer"),a=document.getElementById("toc-backdrop");if(d&&r&&a){const e=()=>{const c=r.classList.contains("open");d.setAttribute("aria-expanded",c?"true":"false")};e(),d.addEventListener("click",()=>{r.classList.toggle("open"),a.classList.toggle("visible"),e()}),a.addEventListener("click",()=>{r.classList.remove("open"),a.classList.remove("visible"),e()})}</script> <!-- Post content -->  <h2 id="takeaway">Takeaway</h2>
+<p>An algorithm is a defined process to follow to get a desired result. Much of our lives are decided by algorithms. Knowing what algorithms to follow can result in more efficient and effective decision making.</p>
+<h2 id="algorithms-in-life">Algorithms in life</h2>
+<p>I recently re-read <a href="https://algorithmstoliveby.com/" title="algo">Algorithms to Live By</a>, a book by Brian Christian and Tom Griffiths on how algorithms can help us be more effective in our lives. Having picked up programming last year, I got more out of this time around.</p>
+<p>An algorithm is a process, and you can think of it as instructions to follow to complete some task. For example, learning how to add numbers together is a simple algorithm <sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup>.</p>
+<p>More complex instructions can calculate results for other problems in life. Interest rates, web search rankings, or social media feeds are all based on the output of algorithms. The book goes through many such algorithms, and relates them to problems you might face personally.</p>
+<p>It’s too difficult to explain every algorithm they mention <sup><a href="#user-content-fn-2" id="user-content-fnref-2" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup>, so instead I’ll be doing short highlights from some, and usually concentrating on the qualitative, not quantitative takeaways.</p>
+<p>Also, most of the algorithms rely on certain assumptions; rather than specify that every time, take that as a given when reading. I’ll add some of the assumptions in footnotes for those interested.</p>
+<p>Some of the problems discussed include:</p>
+<ul>
+<li>When to stop interviewing for the max chance of the best outcome</li>
+<li>When you should stop exploring new options to enjoy the ones you already know</li>
+<li>How to schedule your tasks based on what your goal is</li>
+</ul>
+<p>Let’s look at our first algorithm, on when you should stop working on a problem.</p>
+<h2 id="optimal-stopping">Optimal stopping</h2>
+<p>If you’re evaluating options (job applicants, housing offers, parking spaces etc), there’s a tradeoff between how long you spend choosing, and the chance of picking the “best” option. This is known as the <a href="https://en.wikipedia.org/wiki/Secretary_problem" title="prob">secretary problem</a> - suppose you were hiring a secretary, how many interviews should you do to get the best chance of finding the best one?</p>
+<p>In this case, there’s a precise percentage to use. You should wait after seeing 37% of the applicant pool, and then take the next best applicant you see <sup><a href="#user-content-fn-3" id="user-content-fnref-3" data-footnote-ref="" aria-describedby="footnote-label">3</a></sup>. For example, if you had 100 applicants, wait after you’ve seen the first 37, and then pick the next applicant that is better than all you’ve seen so far.</p>
+<p>That is the mathematically optimal point with the highest chance of picking the best person for the job. If you stop too early, you might miss someone interviewing later. If you stop too late, you waste time <sup><a href="#user-content-fn-4" id="user-content-fnref-4" data-footnote-ref="" aria-describedby="footnote-label">4</a></sup>.</p>
+<p><img alt="post" loading="lazy" decoding="async" fetchpriority="auto" width="754" height="780" src="/_astro/a_1.CdnWppJ4_1G3oLY.webp" ></p>
+<h2 id="explore-exploit">Explore exploit</h2>
+<p>Similar to the optimal stopping situation, there’s a tradeoff between information gathering (explore) and enjoying (exploit). Suppose you’re at a casino, and want to decide which machines to play. You want to maximise your winnings, but don’t know the exact odds for the machines (if you did, you’d play the best one).</p>
+<p>In this case, there’s a number, known as the <a href="https://www.cs.cornell.edu/courses/cs6840/2017sp/lecnotes/6840sp17R_Kleinberg.pdf" title="gittins">Gittins Index</a>, that gives you the optimal machine to play <sup><a href="#user-content-fn-5" id="user-content-fnref-5" data-footnote-ref="" aria-describedby="footnote-label">5</a></sup>. If you know the number of wins, losses, and how much you value future gains, you can calculate precise values for each choice. Some interesting properties:</p>
+<ul>
+<li>If you’re playing the optimal machine and win again, it makes sense to continue playing that machine</li>
+<li>If you’re playing the optimal machine and lose once, it might still make sense to continue playing that machine</li>
+<li>An entirely unknown machine can be preferable to machines that are known to win often, and that unknown machine gets more valuable the more you value future gains</li>
+</ul>
+<p>Some other related implications:</p>
+<ul>
+<li>Exploration has a higher impact younger in life; babies putting everything in their mouth makes sense from their standpoint</li>
+<li>Exploiting has a higher impact later in life; hence older people cutting down their social network and preferring to return to favourite restaurants</li>
+</ul>
+<h2 id="sorting">Sorting</h2>
+<p>The book gave a few examples of sorting algorithms, which are commonly used in programming. For example, returning search results requires a sorting of the most relevant ones for you.</p>
+<p>I’ll save more detailed discussion of sorting algos for another day since they require understanding <a href="https://www.bigocheatsheet.com/" title="time">time complexity</a>. Here are some qualitative takeaways:</p>
+<ul>
+<li>Some ways of sorting can be drastically more efficient than others (>10x faster)</li>
+<li>Some scenarios do not desire sort efficiency only. For example, arranging a sports season matchup calendar also requires taking into account how exciting the season will be. You could optimise sort efficiency, but the season will seem less thrilling</li>
+<li>The more efficient a sort, the more fragile it might be against accidental mistakes. For example, the “best” team might accidentally get knocked out in a single elimination tournament (essentially a sorting algo) like the World Cup <sup><a href="#user-content-fn-6" id="user-content-fnref-6" data-footnote-ref="" aria-describedby="footnote-label">6</a></sup>.</li>
+</ul>
+<h2 id="caching-and-memory">Caching and memory</h2>
+<p>The idea of having a cache is to have 1) a small, fast memory (storage) section, and 2) a large, slow memory section. We’ll then alternate between the two depending on what our intention is. This lets us get both some amount of speed and some amount of size for the activity we want.</p>
+<p>For example, you might have your favourite clothes in your wardrobe, and your unused ones in the attic. You’d have quick access to the items you used the most, but still have space for that ugly christmas sweater if you wanted. Caching sounds complicated, but you’ll realised we do it naturally for most of our daily lives.</p>
+<p>How do you decide what items should be put in the fast section, and what items in the slow section? You could put random items, the newest item, the largest item etc.</p>
+<p>In this case, keeping the most recently used items in the small and fast section is the optimal choice, due to something known as <a href="https://www.geeksforgeeks.org/difference-between-spatial-locality-and-temporal-locality/" title="temp">temporal locality</a>. You’re more likely to need something again that’s something you’ve recently used. For example, google drive highlights your frequently used files for quick access.</p>
+<p><img alt="post" loading="lazy" decoding="async" fetchpriority="auto" width="656" height="654" src="/_astro/a_2.CaCYpAHN_yiVnd.webp" ></p>
+<h2 id="scheduling">Scheduling</h2>
+<p>Most of us have to decide how to prioritise items on our to do list. This usually requires making a tradeoff between responsiveness (how quickly you respond) and throughput (how much you can get done).</p>
+<p>A key point about scheduling and prioritisation is defining your goal metric, since that determines what algorithm you want to use <sup><a href="#user-content-fn-7" id="user-content-fnref-7" data-footnote-ref="" aria-describedby="footnote-label">7</a></sup>. Maximising responsiveness comes at the expense of how much you can get done:</p>
+<p>If you want to minimise the max lateness of all your projects <sup><a href="#user-content-fn-8" id="user-content-fnref-8" data-footnote-ref="" aria-describedby="footnote-label">8</a></sup>, the <a href="https://en.wikipedia.org/wiki/Single-machine_scheduling" title="EDT">Earliest Due Date</a> algorithm tells you to start with the project due earliest.</p>
+<p>If you want to minimise the total completion time, the <a href="https://en.wikipedia.org/wiki/Single-machine_scheduling" title="spt">Shortest Processing Time</a> algorithm tells you to just do the quickest task first.</p>
+<p>If your tasks are not equal in importance, then placing a weight on each task and calculating the weight over time required ratio will help you decide which task to do; pick the project with highest weight over time.</p>
+<p>Practically, this means that it’s probably worth having a conversation with your manager on how the team thinks about this tradeoff, and which method they’d prefer you adopt.</p>
+<p>There’s another important concept in scheduling, which is the idea of <a href="https://blog.doist.com/context-switching/" title="switch">context switching</a> - whenever you have to switch between tasks. Context switching is wasted time since it’s not real work, but takes up time and effort on your part.</p>
+<p>For example, if you were writing an email and then got interrupted by a slack message, it takes time for you to both respond to the slack message, and then remember what you wanted to do for the email.</p>
+<p>At its worst, context switching turns to thrash, when you get nothing productive done because you’re too busy with only switching. Ways to avoid thrash include:</p>
+<ul>
+<li>Saying no to tasks, though the authors acknowledge we’re often unable to do so</li>
+<li>Working dumber and more inefficiently. Rather than think about the optimal way to get through your tasks, just start on something and get it done</li>
+</ul>
+<h2 id="bayes-rule-and-distributions">Bayes rule and distributions</h2>
+<p>Explaining Bayes rule would probably take an article on its own, so let’s just take it as a rule that helps you with predicting how likely something is to occur <sup><a href="#user-content-fn-9" id="user-content-fnref-9" data-footnote-ref="" aria-describedby="footnote-label">9</a></sup>. What the authors want to highlight is that this depends on the distribution that your events are coming from. There are three main distributions to think about:</p>
+<ul>
+<li>Power law: the longer something has gone on, the longer we expect it to continue going on. For example, if a company has been growing a long time, we’d expect it to continue growing</li>
+<li>Normal: early events are surprising, late events are expected. For example, we’d be surprised by people who die early in life, and not by people who die late in life.</li>
+<li>Erlang: events are never any more or less surprising. For example, a memoryless distribution of a roulette wheel or <a href="https://leonlins.com/writing/2021_04_03_ergodicity/" title="sub">the coin flips we discussed last week</a></li>
+</ul>
+<p><img alt="post" loading="lazy" decoding="async" fetchpriority="auto" width="622" height="830" src="/_astro/a_3.CRDTJh8S_ZbNA49.webp" ></p>
+<h2 id="game-theory">Game theory</h2>
+<p>Most of us have probably heard of game theory before, which is a way of thinking what the optimal strategy is when playing a game. Some highlights:</p>
+<ul>
+<li>If you play too many levels above your opponent, you’re going to think they have information they don’t actually have, and they won’t be able to think what you want them to think. Put another way, you don’t want to get <em>too</em> smart with your strategies</li>
+<li>Every two player game has at least one <a href="https://en.wikipedia.org/wiki/Nash_equilibrium" title="nash">Nash Equilibrium,</a> where both players are choosing the optimal strategy for themselves</li>
+<li>However, finding Nash equilibrium is an intractable problem, meaning there’s limits to the practicality of game theory</li>
+<li>The equilibrium may also not be the outcome that is best for all players. <a href="https://en.wikipedia.org/wiki/Prisoner%27s_dilemma#:~:text=The%20prisoner&#x27;s%20dilemma%20is%20a,working%20at%20RAND%20in%201950." title="wiki">It may be optimal for an individual to compete, but optimal for the group to cooperate.</a> We can quantify this as the “price of anarchy”, which measures the gap between cooperation and competition.</li>
+<li>There’s also a counterintuitive concept known as <a href="https://en.wikipedia.org/wiki/Mechanism_design" title="mech">mechanism design</a>, which shows that <em>worsening</em> every outcome might actually make everyone better off, due to shifting the equilibrium</li>
+</ul>
+<p>Besides the algorithms mentioned above, the authors also go through:</p>
+<ul>
+<li>When you might be overfitting your decision making process and what you can do about it</li>
+<li>What to do when real world problems aren’t as nice as theory and why you should relax constraints</li>
+<li>How to think about information networking and how the internet works</li>
+</ul>
+<p>Overall I thought the book was worth reading to get an overview of interesting ways algorithms show up in life. I did understand it better <em>after</em> learning some computer science though, so keep that in mind. I also wish that they’d included more practical examples <sup><a href="#user-content-fn-10" id="user-content-fnref-10" data-footnote-ref="" aria-describedby="footnote-label">10</a></sup>, since trying to apply the findings to life can be difficult when you have to work off different assumptions.</p>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-1">
+<p>Easy enough to teach children, by telling them to memorise sums and when to carry a number, but surprisingly not obvious when trying to implement on a computer, see <a href="https://www.electronics-tutorials.ws/combination/comb_7.html" title="full">full adder logic gate</a> <a href="#user-content-fnref-1" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-2">
+<p>You might say that by the time I explain everything, I might as well have <a href="https://en.wikipedia.org/wiki/P_versus_NP_problem" title="p np">written the entire book</a> <a href="#user-content-fnref-2" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-3">
+<p><a href="https://projecteuclid.org/journals/statistical-science/volume-4/issue-3/Who-Solved-the-Secretary-Problem/10.1214/ss/1177012493.full" title="problem">The percentage is 1 divided by e, euler’s number.</a> The chance doesn’t change as the size of the applicant pool grows, but does change with different information states you get <a href="#user-content-fnref-3" data-footnote-backref="" aria-label="Back to reference 3" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-4">
+<p>The base secretary problem assumes that you can’t go back to a candidate that you passed on, but there are variations that resemble real life a bit more closely. <a href="#user-content-fnref-4" data-footnote-backref="" aria-label="Back to reference 4" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-5">
+<p>This problem is intractable if the probabilities of a payoff on a machine change over time; essentially meaning it’s unsolvable. Some problems are intractable. In these cases, relaxing some constraints and accepting solutions that are “close enough” helps us significantly in structuring the problem. <a href="#user-content-fnref-5" data-footnote-backref="" aria-label="Back to reference 5" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-6">
+<p>Or March Madness, for the Americans <a href="#user-content-fnref-6" data-footnote-backref="" aria-label="Back to reference 6" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-7">
+<p>Only 9% of all scheduling problems can be solved efficiently. <a href="#user-content-fnref-7" data-footnote-backref="" aria-label="Back to reference 7" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-8">
+<p>As in, take all your projects that are late, and then the maximum of those. That’s the metric you want to minimise. <a href="#user-content-fnref-8" data-footnote-backref="" aria-label="Back to reference 8" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-9">
+<p>See <a href="https://betterexplained.com/articles/an-intuitive-and-short-explanation-of-bayes-theorem/" title="bayes">here</a> for an article that explains Bayes. Bayes is unintuitive (for me at least), which also means its good to know <a href="#user-content-fnref-9" data-footnote-backref="" aria-label="Back to reference 9" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-10">
+<p>To be fair, there’s a good amount of information in the footnotes elaborating more <a href="#user-content-fnref-10" data-footnote-backref="" aria-label="Back to reference 10" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>  <!-- Tags --> <ul class="tag-list" data-astro-cid-lga65v7i><li data-astro-cid-lga65v7i><a href="/tags/behaviour" data-astro-cid-lga65v7i>behaviour</a></li><li data-astro-cid-lga65v7i><a href="/tags/tech" data-astro-cid-lga65v7i>tech</a></li></ul> <!-- Share Buttons --> <section class="share-buttons" data-astro-cid-zllr3mxm> <p class="share-label" data-astro-cid-zllr3mxm>Share this post:</p> <!-- Desktop pills --> <div class="share-links desktop-only" data-astro-cid-zllr3mxm> <a href="https://www.threads.net/intent/post?text=Book%20Review%3A%20Algorithms%20to%20live%20by%20https%3A%2F%2Flinlib.com%2Fwriting%2Falgo%2F" target="_blank" rel="noopener noreferrer" aria-label="Share on Threads" data-share="Threads" data-astro-cid-zllr3mxm> <svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-zllr3mxm="true" class="lucide lucide-hash icon">  <line x1="4" x2="20" y1="9" y2="9"></line> <line x1="4" x2="20" y1="15" y2="15"></line> <line x1="10" x2="8" y1="3" y2="21"></line> <line x1="16" x2="14" y1="3" y2="21"></line>  </svg> Threads
+</a> <a href="https://twitter.com/intent/tweet?text=Book%20Review%3A%20Algorithms%20to%20live%20by&url=https%3A%2F%2Flinlib.com%2Fwriting%2Falgo%2F" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter" data-share="Twitter" data-astro-cid-zllr3mxm> <svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-zllr3mxm="true" class="lucide lucide-twitter icon">  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>  </svg> Twitter
+</a> <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Flinlib.com%2Fwriting%2Falgo%2F" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn" data-share="LinkedIn" data-astro-cid-zllr3mxm> <svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-zllr3mxm="true" class="lucide lucide-linkedin icon">  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path> <rect width="4" height="12" x="2" y="9"></rect> <circle cx="4" cy="4" r="2"></circle>  </svg> LinkedIn
+</a> <a href="mailto:?subject=Book%20Review%3A%20Algorithms%20to%20live%20by&#38;body=https%3A%2F%2Flinlib.com%2Fwriting%2Falgo%2F" aria-label="Share via Email" data-share="Email" data-astro-cid-zllr3mxm> <svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-zllr3mxm="true" class="lucide lucide-mail icon">  <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path> <rect x="2" y="4" width="20" height="16" rx="2"></rect>  </svg> Email
+</a> </div> <!-- Mobile dropdown --> <div class="mobile-only dropdown" data-astro-cid-zllr3mxm> <button type="button" id="share-toggle" class="dropdown-toggle" aria-haspopup="menu" aria-expanded="false" aria-controls="share-menu" data-astro-cid-zllr3mxm> <svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-zllr3mxm="true" class="lucide lucide-share-2 icon">  <circle cx="18" cy="5" r="3"></circle> <circle cx="6" cy="12" r="3"></circle> <circle cx="18" cy="19" r="3"></circle> <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line> <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>  </svg> Share
+</button> <div id="share-menu" class="dropdown-menu" role="menu" aria-labelledby="share-toggle" hidden data-astro-cid-zllr3mxm> <a href="https://www.threads.net/intent/post?text=Book%20Review%3A%20Algorithms%20to%20live%20by%20https%3A%2F%2Flinlib.com%2Fwriting%2Falgo%2F" target="_blank" rel="noopener noreferrer" role="menuitem" data-share="Threads" data-astro-cid-zllr3mxm>Threads</a> <a href="https://twitter.com/intent/tweet?text=Book%20Review%3A%20Algorithms%20to%20live%20by&url=https%3A%2F%2Flinlib.com%2Fwriting%2Falgo%2F" target="_blank" rel="noopener noreferrer" role="menuitem" data-share="Twitter" data-astro-cid-zllr3mxm>Twitter</a> <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Flinlib.com%2Fwriting%2Falgo%2F" target="_blank" rel="noopener noreferrer" role="menuitem" data-share="LinkedIn" data-astro-cid-zllr3mxm>LinkedIn</a> <a href="mailto:?subject=Book%20Review%3A%20Algorithms%20to%20live%20by&#38;body=https%3A%2F%2Flinlib.com%2Fwriting%2Falgo%2F" role="menuitem" data-share="Email" data-astro-cid-zllr3mxm>Email</a> </div> </div> </section> <script>
+  function trackShare(platform) {
+    if (window.gtag) {
+      // eslint-disable-next-line no-undef
+      gtag('event', 'share', {
+        event_category: 'engagement',
+        event_label: platform,
+      });
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const dropdown = document.querySelector('.dropdown');
+    const toggle = document.querySelector('.dropdown-toggle');
+    const menu = document.querySelector('.dropdown-menu');
+
+    const closeMenu = (returnFocus = true) => {
+      if (!toggle || !menu) return;
+      menu.classList.remove('open');
+      menu.hidden = true;
+      toggle.setAttribute('aria-expanded', 'false');
+      if (returnFocus) {
+        toggle.focus();
+      }
+    };
+
+    const openMenu = () => {
+      if (!toggle || !menu) return;
+      menu.classList.add('open');
+      menu.hidden = false;
+      toggle.setAttribute('aria-expanded', 'true');
+      const firstItem = menu.querySelector('[role="menuitem"]');
+      if (firstItem instanceof HTMLElement) {
+        firstItem.focus();
+      }
+    };
+
+    // Track clicks on all share links
+    document.querySelectorAll('[data-share]').forEach((el) => {
+      el.addEventListener('click', () => {
+        trackShare(el.dataset.share);
+        if (menu?.classList.contains('open')) {
+          closeMenu(false);
+        }
+      });
+    });
+
+    // Mobile dropdown toggle
+    if (toggle && menu) {
+      toggle.addEventListener('click', (e) => {
+        e.stopPropagation(); // prevent immediate close
+        if (menu.classList.contains('open')) {
+          closeMenu(false);
+        } else {
+          openMenu();
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && menu.classList.contains('open')) {
+          closeMenu();
+        }
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', (e) => {
+        if (menu.classList.contains('open') && !dropdown?.contains(e.target)) {
+          closeMenu();
+        }
+      });
+    }
+  });
+</script>  <!-- Related posts -->  <!-- Comments --> <section class="comments" data-astro-cid-bvzihdzo> <h2 data-astro-cid-bvzihdzo>Comments</h2> <script id="giscus-script" src="https://giscus.app/client.js" data-repo="leonlinsx/lin-lib" data-repo-id="R_kgDOPvVo9Q" data-category="Comments" data-category-id="DIC_kwDOPvVo9c4CvwrO" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script> </section> </div> </article> </main>  <script>
+    function setGiscusTheme(theme) {
+      const iframe = document.querySelector('iframe.giscus-frame');
+      if (!iframe) return;
+      iframe.contentWindow.postMessage(
+        { giscus: { setConfig: { theme } } },
+        'https://giscus.app',
+      );
+    }
+
+    // Run once on page load
+    const initialTheme =
+      document.documentElement.getAttribute('data-theme') || 'light';
+    setGiscusTheme(initialTheme === 'dark' ? 'dark_dimmed' : 'light');
+
+    // Observe changes to <html data-theme="">
+    const observer = new MutationObserver(() => {
+      const newTheme =
+        document.documentElement.getAttribute('data-theme') || 'light';
+      setGiscusTheme(newTheme === 'dark' ? 'dark_dimmed' : 'light');
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme'],
+    });
+  </script>  </main> <!-- Site Footer --> <footer class="site-footer" data-astro-cid-sz7xmlte> <div class="footer-container" data-astro-cid-sz7xmlte> <p data-astro-cid-sz7xmlte> <a href="mailto:contact@leonlins.com" data-astro-cid-sz7xmlte>
+contact [at] leonlins [dot] com
+</a>
+·
+<a href="/rss.xml" data-astro-cid-sz7xmlte>RSS Feed</a>
+·
+<button id="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode" class="dark-mode-toggle" data-astro-cid-sz7xmlte> <svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-sz7xmlte="true" class="lucide lucide-moon icon moon">  <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path>  </svg> <svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-sz7xmlte="true" class="lucide lucide-sun icon sun">  <circle cx="12" cy="12" r="4"></circle> <path d="M12 2v2"></path> <path d="M12 20v2"></path> <path d="m4.93 4.93 1.41 1.41"></path> <path d="m17.66 17.66 1.41 1.41"></path> <path d="M2 12h2"></path> <path d="M20 12h2"></path> <path d="m6.34 17.66-1.41 1.41"></path> <path d="m19.07 4.93-1.41 1.41"></path>  </svg> </button> </p> <p data-astro-cid-sz7xmlte><a href="https://leonlins.com" data-astro-cid-sz7xmlte>By Leon Lin</a> · © 2026</p> </div> </footer> <script>
+  const toggle = document.getElementById('dark-mode-toggle');
+
+  function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }
+
+  function getPreferredTheme() {
+    const stored = localStorage.getItem('theme');
+    if (stored) return stored;
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return 'dark';
+    }
+    return 'light';
+  }
+
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const current =
+        document.documentElement.getAttribute('data-theme') || 'light';
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    });
+  }
+
+  setTheme(getPreferredTheme());
+</script>  </body></html> 
