@@ -172,6 +172,8 @@ They taste every three months to check for quality. **They typically age their p
 
 # Visit to Pares Balta
 
+![Pares Balta](./img8.webp)
+
 Our final visit of the day was to [Pares Balta](https://paresbalta.com/en/?v=0b3b97fa6688), to learn more about the traditional method from Marta Casas [^Marta].
 
 [^Marta]: Marta was recently awarded [Winemaker of the Year](https://paresbalta.com/en/marta-casas-from-pares-balta-recognized-as-winemaker-of-the-year-by-tim-atkin-mw/?v=0b3b97fa6688) in Catalan
@@ -192,5 +194,5 @@ Some details discussed included:
 
 We ended our day later than scheduled due to asking too many questions on our visits, as can be expected. Judith and Andrea (also from the D.O.) did an admirable job trying to keep us on schedule; if left to our own devices we would probably have spent the entire day at the first winery.
 
-After checking in to the hotel, we also had a group dinner, which was a fun experience where I learnt what a [porrón](https://en.wikipedia.org/wiki/Porron) was and have to hope that some videos never become public.
+After checking in to the hotel, we also had a group dinner, which was a fun experience where I learnt what a [porrón](https://en.wikipedia.org/wiki/Porron) was and on an entirely unrelated note, have to hope that some videos never become public.
 

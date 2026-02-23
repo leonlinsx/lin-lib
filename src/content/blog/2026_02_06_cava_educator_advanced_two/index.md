@@ -13,6 +13,8 @@ The second day included two winery visits and our exam.
 
 # Visit to Vilarnau
 
+![Vilarnau](./img4.webp)
+
 > My life is here. [We have a] long history, it's my legacy - 
 Eva Plazas Torné
 
@@ -108,6 +110,8 @@ That said, I still passed! That means I have a Cava Educator Advanced certificat
 We finished with a certification presentation ceremony and a short celebration, before most of us had to catch the bus back to the airport or Barcelona city center.
 
 # Conclusion
+
+![Exam](./img5.webp)
 
 I'm grateful for the opportunity from the D.O. to take this course, which was a fantastic experience. Judith, Andrea, David, and everyone from all the wineries (Oliver, Vins El Cep, Parés Baltà, Vilarnau, Codorníu) provided both an educational and fun journey through all parts of the Cava production process.
 
