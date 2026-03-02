@@ -178,7 +178,7 @@ Our final visit of the day was to [Pares Balta](https://paresbalta.com/en/?v=0b3
 
 [^Marta]: Marta was recently awarded [Winemaker of the Year](https://paresbalta.com/en/marta-casas-from-pares-balta-recognized-as-winemaker-of-the-year-by-tim-atkin-mw/?v=0b3b97fa6688) in Catalan
 
-Pares Balta has been certified organic sicne 2002, and biodynamic since 2012. **They are one of the few Integral Producers of Cava as well.**
+Pares Balta has been certified organic since 2002, and biodynamic since 2012. **They are one of the few Integral Producers of Cava as well.**
 
 Some details discussed included:
 
