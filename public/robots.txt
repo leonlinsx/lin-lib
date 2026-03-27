@@ -4,12 +4,14 @@
 # Default policy for all crawlers (search + AI):
 # - Crawl all public educational content.
 # - Avoid common private/backend paths.
+# - Block JSON data endpoints (not public web pages).
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /login/
 Disallow: /wp-admin/
 Disallow: /staging/
+Disallow: /search-index.json
 
 # Explicitly allow major search engine bots.
 User-agent: Googlebot
@@ -22,7 +24,13 @@ Allow: /
 User-agent: GPTBot
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
 User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
 Allow: /
 
 User-agent: PerplexityBot
@@ -32,6 +40,18 @@ User-agent: Google-Extended
 Allow: /
 
 User-agent: CCBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: DiffBot
 Allow: /
 
 # Sitemap for faster discovery and better indexing coverage.
