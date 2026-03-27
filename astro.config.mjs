@@ -11,13 +11,10 @@ export default defineConfig({
   site: SITE_URL,
   integrations: [
     sitemap({
-      // Simplified: SitemapItem has no .data, so just return lastmod = now
-      serialize(item) {
-        return {
-          ...item,
-          lastmod: new Date().toISOString(),
-        };
-      },
+      // Exclude low-value / non-indexable pages from the sitemap.
+      filter: (page) =>
+        !page.includes('/writing/search') &&
+        !page.startsWith('https://linlib.com/tags/'),
     }),
     mdx(),
     preact(),

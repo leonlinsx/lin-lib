@@ -50,6 +50,11 @@ const related = allPosts
 // ✅ Canonical URL from clean slug
 const canonicalURL = new URL(`/writing/${slug}/`, SITE_URL).toString();
 
+// ✅ Word count for BlogPosting schema (rough count from raw markdown body)
+const wordCount = post.body
+  ? post.body.trim().split(/\s+/).filter(Boolean).length
+  : undefined;
+
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
   { label: 'Writing', href: '/writing/' },
@@ -58,7 +63,8 @@ const breadcrumbItems = [
 if (categoryNormalized) {
   breadcrumbItems.push({
     label: titleCase(categoryNormalized),
-    href: `/writing/category/${encodeURIComponent(categoryNormalized)}`,
+    // ✅ Link to canonical paginated URL, not the redirect source
+    href: `/writing/category/${encodeURIComponent(categoryNormalized)}/1`,
   });
 }
 
@@ -74,6 +80,8 @@ breadcrumbItems.push({ label: title });
   authorName={SITE_AUTHOR}
   ogType="article"
   tags={tags}
+  articleSection={category || undefined}
+  wordCount={wordCount}
 >
   <main>
     <article>
@@ -84,7 +92,7 @@ breadcrumbItems.push({ label: title });
             {typeof hero === 'object' ? (
               <Image
                 src={hero}
-                alt={`Hero for ${title}`}
+                alt={title}
                 format="webp"
                 width={1200}
                 height={630}
@@ -96,7 +104,7 @@ breadcrumbItems.push({ label: title });
             ) : (
               <img
                 src={hero}
-                alt={`Hero for ${title}`}
+                alt={title}
                 width="1200"
                 height="630"
                 loading="eager"
