@@ -20,9 +20,6 @@ const {
   canonical,
   relPrev,
   relNext,
-  noindex = false,
-  articleSection,
-  wordCount,
 } = Astro.props as {
   title: string;
   description?: string;
@@ -35,9 +32,6 @@ const {
   canonical?: string;
   relPrev?: string;
   relNext?: string;
-  noindex?: boolean;
-  articleSection?: string;
-  wordCount?: number;
 };
 
 const resolveAbsoluteURL = (maybeRelative?: string) => {
@@ -88,81 +82,32 @@ const keywordsContent =
 // ✅ Absolute URL for organization logo
 const orgLogo = new URL("/logos/linlib_logo.webp", SITE_URL).toString();
 
-// ✅ Person @id for cross-schema linking
-const PERSON_ID = new URL("/about/#person", SITE_URL).toString();
-const ORG_ID = new URL("/#organization", SITE_URL).toString();
-const WEBSITE_ID = new URL("/#website", SITE_URL).toString();
-const ABOUT_URL = new URL("/about/", SITE_URL).toString();
-
-// ✅ Organization structured data — enriched for entity clarity
+// ✅ Organization structured data
 const orgSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": ORG_ID,
-  name: SITE_TITLE,
   url: SITE_URL,
-  logo: {
-    "@type": "ImageObject",
-    url: orgLogo,
-  },
-  description:
-    "Wine and spirits education by Leon Lin — essays, guides, and tasting notes to help you understand and enjoy wine and spirits.",
-  sameAs: ["https://twitter.com/leonlinsx"],
-  founder: {
-    "@id": PERSON_ID,
-  },
-  contactPoint: {
-    "@type": "ContactPoint",
-    email: "contact@linlib.com",
-    contactType: "customer support",
-  },
-};
-
-// ✅ WebSite schema — helps AI systems understand what the site is
-const webSiteSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "@id": WEBSITE_ID,
-  url: SITE_URL,
+  logo: orgLogo,
   name: SITE_TITLE,
-  description:
-    "Wine and spirits education by Leon Lin — essays, guides, and tasting notes.",
-  inLanguage: "en-US",
-  publisher: {
-    "@id": ORG_ID,
-  },
-  potentialAction: {
-    "@type": "SearchAction",
-    target: {
-      "@type": "EntryPoint",
-      urlTemplate: `${SITE_URL}writing/search?q={search_term_string}`,
-    },
-    "query-input": "required name=search_term_string",
-  },
 };
 
 // ✅ Article structured data (only if pubDate provided → means it's a blog post)
-let articleSchema: Record<string, unknown> | undefined;
+let articleSchema;
 if (pubDate) {
   articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "@id": canonicalURL,
     headline: title,
     description: metaDescription,
     image: [ogImage],
     datePublished: pubDate.toISOString(),
     dateModified: (updatedDate || pubDate).toISOString(),
-    inLanguage: "en-US",
     author: {
       "@type": "Person",
-      "@id": PERSON_ID,
       name: resolvedAuthor,
-      url: ABOUT_URL,
     },
     publisher: {
       "@type": "Organization",
-      "@id": ORG_ID,
       name: SITE_TITLE,
       logo: {
         "@type": "ImageObject",
@@ -174,23 +119,14 @@ if (pubDate) {
       "@id": canonicalURL,
     },
   };
-
-  if (articleSection) {
-    articleSchema.articleSection = articleSection;
-  }
-  if (wordCount && wordCount > 0) {
-    articleSchema.wordCount = wordCount;
-  }
-  if (normalizedTags.length > 0) {
-    articleSchema.keywords = normalizedTags.join(", ");
-  }
 }
 
 // ✅ Merge schemas into one JSON-LD array
-const structuredData = articleSchema
-  ? [orgSchema, webSiteSchema, articleSchema]
-  : [orgSchema, webSiteSchema];
+if (articleSchema && normalizedTags.length > 0) {
+  articleSchema.keywords = normalizedTags.join(", ");
+}
 
+const structuredData = articleSchema ? [orgSchema, articleSchema] : [orgSchema];
 const ogImageAlt = `Preview image for ${title}`;
 ---
 
@@ -248,9 +184,6 @@ const ogImageAlt = `Preview image for ${title}`;
 {prevURL && <link rel="prev" href={prevURL} />}
 {nextURL && <link rel="next" href={nextURL} />}
 
-<!-- Crawl directives -->
-{noindex && <meta name="robots" content="noindex, follow" />}
-
 <!-- Primary Meta Tags -->
 <title>{title}</title>
 <meta name="title" content={title} />
@@ -266,8 +199,6 @@ const ogImageAlt = `Preview image for ${title}`;
 <meta property="og:description" content={metaDescription} />
 <meta property="og:image" content={ogImage} />
 <meta property="og:image:alt" content={ogImageAlt} />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
 <meta property="og:site_name" content={SITE_TITLE} />
 {ogType === "article" && isoPubDate && (
   <meta property="article:published_time" content={isoPubDate} />
@@ -276,7 +207,7 @@ const ogImageAlt = `Preview image for ${title}`;
   <meta property="article:modified_time" content={isoUpdatedDate} />
 )}
 {ogType === "article" && (
-  <meta property="article:author" content={ABOUT_URL} />
+  <meta property="article:author" content={resolvedAuthor} />
 )}
 {ogType === "article" &&
   normalizedTags.map((tag) => (
@@ -294,7 +225,9 @@ const ogImageAlt = `Preview image for ${title}`;
 <meta name="twitter:site" content="@leonlinsx" />
 
 <!-- ✅ Combined Structured Data -->
-<Fragment set:html={`<script type="application/ld+json">${JSON.stringify(structuredData)}</script>`} />
+<script is:inline type="application/ld+json">
+  {JSON.stringify(structuredData)}
+</script>
 
 <!-- Microsoft Clarity -->
 {import.meta.env.PROD && (

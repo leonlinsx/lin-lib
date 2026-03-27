@@ -16,9 +16,6 @@ const {
   canonical,
   relPrev,
   relNext,
-  noindex,
-  articleSection,
-  wordCount,
 } = Astro.props;
 
 // Ensure title follows pattern: 'Page — Lin Lib' or just 'Lin Lib'
@@ -44,9 +41,6 @@ const isProd = import.meta.env.PROD;
       canonical={canonical}
       relPrev={relPrev}
       relNext={relNext}
-      noindex={noindex}
-      articleSection={articleSection}
-      wordCount={wordCount}
     />
 
     {

@@ -2,50 +2,11 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { Image } from 'astro:assets';
 import leonProfilePic from '../assets/images/leon_profile_pic.webp';
-import { SITE_URL } from '../consts';
-
-const personSchema = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": new URL("/about/#person", SITE_URL).toString(),
-  name: "Leon Lin",
-  url: new URL("/about/", SITE_URL).toString(),
-  sameAs: [
-    "https://twitter.com/leonlinsx",
-    "https://leonlins.com",
-  ],
-  jobTitle: "Wine and Spirits Educator",
-  worksFor: {
-    "@id": new URL("/#organization", SITE_URL).toString(),
-  },
-  knowsAbout: [
-    "wine education",
-    "wine tasting",
-    "spirits education",
-    "WSET",
-    "sommelier",
-    "Cava",
-    "Sherry",
-    "Port",
-  ],
-  hasCredential: [
-    { "@type": "EducationalOccupationalCredential", name: "WSET Level 3 with Distinction" },
-    { "@type": "EducationalOccupationalCredential", name: "WSET Level 2 with Distinction" },
-    { "@type": "EducationalOccupationalCredential", name: "Certified Specialist of Wine (CSW)" },
-    { "@type": "EducationalOccupationalCredential", name: "Court of Master Sommeliers Level 1" },
-    { "@type": "EducationalOccupationalCredential", name: "Cava Educator Advanced and Cava Expert" },
-    { "@type": "EducationalOccupationalCredential", name: "Sherry Academy Advanced" },
-    { "@type": "EducationalOccupationalCredential", name: "Rioja Wine Academy Diploma" },
-    { "@type": "EducationalOccupationalCredential", name: "Valpolicella Education Program Level 1" },
-    { "@type": "EducationalOccupationalCredential", name: "BarSmarts Professional" },
-    { "@type": "EducationalOccupationalCredential", name: "Calvados Academy Ambassador" },
-  ],
-};
 ---
 
 <BaseLayout
-  title="About"
-  description="Leon Lin is the creator of Lin Lib, a wine and spirits education site. WSET Level 3 with Distinction, Certified Specialist of Wine, and Cava Educator."
+  title="About Lin Lib"
+  description="About Lin Lib wine and spirits education and Leon Lin"
 >
   <h1>About Lin Lib</h1>
   <p class="subtext">Wine and spirits education and exploration</p>
@@ -111,13 +72,10 @@ const personSchema = {
   <section class="author">
     <h2>About Leon</h2>
     <p>
-      Lin Lib is created and maintained by Leon Lin. Learn more about Leon at
+      Lin Lib is created and maintained by Leon Lin. Learn more about Leon at 
       <a href="https://leonlins.com" target="_blank" rel="noopener noreferrer">leonlins.com</a>.
     </p>
   </section>
-
-  <!-- ✅ Person structured data — defines Leon Lin as the author entity -->
-  <Fragment set:html={`<script type="application/ld+json">${JSON.stringify(personSchema)}</script>`} />
 </BaseLayout>
 
 <style>
