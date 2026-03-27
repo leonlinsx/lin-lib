@@ -86,9 +86,54 @@ const orgLogo = new URL("/logos/linlib_logo.webp", SITE_URL).toString();
 const orgSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  url: SITE_URL,
-  logo: orgLogo,
+  "@id": `${SITE_URL}#organization`,
   name: SITE_TITLE,
+  url: SITE_URL,
+  logo: {
+    "@type": "ImageObject",
+    url: orgLogo,
+  },
+  description: SITE_DESCRIPTION,
+  sameAs: ["https://twitter.com/leonlinsx"],
+  founder: {
+    "@type": "Person",
+    "@id": `${SITE_URL}#person`,
+    name: SITE_AUTHOR,
+  },
+};
+
+// ✅ WebSite schema with SearchAction
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${SITE_URL}#website`,
+  name: SITE_TITLE,
+  url: SITE_URL,
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: `${SITE_URL}writing/search?q={search_term_string}`,
+    },
+    "query-input": "required name=search_term_string",
+  },
+};
+
+// ✅ Person schema for site author
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `${SITE_URL}#person`,
+  name: SITE_AUTHOR,
+  url: SITE_URL,
+  sameAs: ["https://twitter.com/leonlinsx"],
+  jobTitle: "Wine Educator",
+  worksFor: {
+    "@type": "Organization",
+    "@id": `${SITE_URL}#organization`,
+    name: SITE_TITLE,
+  },
+  knowsAbout: ["wine", "wine education", "spirits", "wine tasting", "WSET"],
 };
 
 // ✅ Article structured data (only if pubDate provided → means it's a blog post)
@@ -97,17 +142,23 @@ if (pubDate) {
   articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    "@id": canonicalURL,
     headline: title,
     description: metaDescription,
     image: [ogImage],
+    url: canonicalURL,
+    inLanguage: "en-US",
     datePublished: pubDate.toISOString(),
     dateModified: (updatedDate || pubDate).toISOString(),
     author: {
       "@type": "Person",
+      "@id": `${SITE_URL}#person`,
       name: resolvedAuthor,
+      url: SITE_URL,
     },
     publisher: {
       "@type": "Organization",
+      "@id": `${SITE_URL}#organization`,
       name: SITE_TITLE,
       logo: {
         "@type": "ImageObject",
@@ -126,7 +177,9 @@ if (articleSchema && normalizedTags.length > 0) {
   articleSchema.keywords = normalizedTags.join(", ");
 }
 
-const structuredData = articleSchema ? [orgSchema, articleSchema] : [orgSchema];
+const structuredData = articleSchema
+  ? [orgSchema, websiteSchema, personSchema, articleSchema]
+  : [orgSchema, websiteSchema, personSchema];
 const ogImageAlt = `Preview image for ${title}`;
 ---
 

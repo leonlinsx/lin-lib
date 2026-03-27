@@ -7,9 +7,13 @@
 User-agent: *
 Allow: /
 Disallow: /admin/
+Disallow: /api/
 Disallow: /login/
 Disallow: /wp-admin/
 Disallow: /staging/
+Disallow: /preview/
+Disallow: /draft/
+Disallow: /search/
 
 # Explicitly allow major search engine bots.
 User-agent: Googlebot
