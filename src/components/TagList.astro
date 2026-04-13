@@ -1,4 +1,6 @@
 ---
+import { slugifyTag } from '../utils/tags';
+
 interface Props {
   tags?: string[];
 }
@@ -11,7 +13,7 @@ const { tags = [] } = Astro.props; // ✅ ensures tags is always an array
     <ul class="tag-list">
       {tags.map((tag) => (
         <li>
-          <a href={`/tags/${tag.toLowerCase()}`}>{tag}</a>
+          <a href={`/tags/${slugifyTag(tag)}/`}>{tag}</a>
         </li>
       ))}
     </ul>

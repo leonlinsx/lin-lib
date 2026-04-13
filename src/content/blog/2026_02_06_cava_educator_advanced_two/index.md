@@ -7,7 +7,7 @@ tags: [sparkling wine, Cava, winemaking]
 heroImage: './img3.webp'
 ---
 
-This is notes from the second day of the Cava Educator Advanced course, [see here for the introduction and notes from the first day.](www.linlib.com/writing/cava_educator_advanced/)
+This is notes from the second day of the Cava Educator Advanced course, [see here for the introduction and notes from the first day.](https://linlib.com/writing/cava_educator_advanced/)
 
 The second day included two winery visits and our exam.
 

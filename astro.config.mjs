@@ -49,6 +49,13 @@ export default defineConfig({
   site: SITE_URL,
   integrations: [
     sitemap({
+      filter(page) {
+        // Keep internal search out of index coverage.
+        if (page.includes('/writing/search')) return false;
+        // Avoid surfacing legacy space-based tag URLs.
+        if (page.includes('%20')) return false;
+        return true;
+      },
       serialize(item) {
         // Blog post URLs: /writing/<slug>
         const writingMatch = item.url.match(/\/writing\/([^/]+)\/?$/);

@@ -4,22 +4,49 @@ import PostList from '../../components/PostList.astro';
 import { getCollection } from 'astro:content';
 import { SITE_TITLE } from '../../consts';
 import { enrichPost } from '../../utils/text';
+import { slugifyTag } from '../../utils/tags';
 
 // Build paths for each tag
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
-  const allTags = new Set(posts.flatMap((post) => post.data.tags || []));
-  return Array.from(allTags).map((tag) => ({
-    params: { tag: tag.toLowerCase() },
-    props: { tag },
-  }));
+  const uniqueTags = Array.from(new Set(posts.flatMap((post) => post.data.tags || [])));
+  const paths: Array<{
+    params: { tag: string };
+    props: { tag: string; redirectTo?: string };
+  }> = [];
+
+  for (const tag of uniqueTags) {
+    const canonicalSlug = slugifyTag(tag);
+    if (!canonicalSlug) continue;
+
+    paths.push({
+      params: { tag: canonicalSlug },
+      props: { tag },
+    });
+
+    // Keep legacy lowercase-space tag URLs working and redirect them to canonical slug.
+    const legacyTag = tag.toLowerCase();
+    if (legacyTag !== canonicalSlug) {
+      paths.push({
+        params: { tag: legacyTag },
+        props: { tag, redirectTo: `/tags/${canonicalSlug}/` },
+      });
+    }
+  }
+
+  return paths;
 }
 
-const { tag } = Astro.props;
+const { tag, redirectTo } = Astro.props;
+if (redirectTo) {
+  return Astro.redirect(redirectTo, 301);
+}
+
+const canonicalTagSlug = slugifyTag(tag);
 const posts = (await getCollection('blog'))
   .map(enrichPost)
   .filter((post) =>
-    post.data.tags?.map((t) => t.toLowerCase()).includes(tag.toLowerCase()),
+    post.data.tags?.some((t) => slugifyTag(t) === canonicalTagSlug),
   )
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
