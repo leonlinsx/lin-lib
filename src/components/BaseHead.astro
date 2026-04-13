@@ -20,6 +20,7 @@ const {
   canonical,
   relPrev,
   relNext,
+  noindex = false,
 } = Astro.props as {
   title: string;
   description?: string;
@@ -32,6 +33,7 @@ const {
   canonical?: string;
   relPrev?: string;
   relNext?: string;
+  noindex?: boolean;
 };
 
 const resolveAbsoluteURL = (maybeRelative?: string) => {
@@ -236,6 +238,7 @@ const ogImageAlt = `Preview image for ${title}`;
 <link rel="canonical" href={canonicalURL} />
 {prevURL && <link rel="prev" href={prevURL} />}
 {nextURL && <link rel="next" href={nextURL} />}
+{noindex && <meta name="robots" content="noindex,follow" />}
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
