@@ -1,0 +1,49 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Pagination from '../../components/Pagination.astro';
+import Filters from '../../components/Filters.astro';
+import PostList from '../../components/PostList.astro';
+import WritingHeader from '../../components/WritingHeader.astro';
+import { SITE_TITLE } from '../../consts';
+import { buildPaginationHref } from '../../utils/pagination.ts';
+import { enrichPost, normalizeCategory } from '../../utils/text';
+
+const allPosts = await getCollection('blog');
+const categories = Array.from(
+  new Set(allPosts.map((post) => normalizeCategory(post.data.category ?? ''))),
+)
+  .filter(Boolean)
+  .sort((a, b) => a.localeCompare(b));
+
+const posts = allPosts
+  .map(enrichPost)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const pageSize = 8;
+const currentPage = 1;
+const totalPages = Math.max(1, Math.ceil(posts.length / pageSize));
+const pagedPosts = posts.slice(0, pageSize);
+
+const canonical = buildPaginationHref(1);
+const relNext = totalPages > 1 ? buildPaginationHref(2) : undefined;
+---
+
+<BaseLayout
+  title={`Writing | ${SITE_TITLE}`}
+  description="All essays, notes, and more."
+  canonical={canonical}
+  relNext={relNext}
+>
+  <WritingHeader
+    title="Essays, Notes, and More"
+    subtitle="What I'm learning about wine and spirits"
+    showSearch={true}
+  />
+
+  <Filters categories={categories} activeCategory="" />
+
+  <PostList posts={pagedPosts} />
+
+  <Pagination currentPage={currentPage} totalPages={totalPages} />
+</BaseLayout>
