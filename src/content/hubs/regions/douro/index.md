@@ -6,7 +6,3 @@ updatedDate: 2026-04-14
 ---
 
 The Douro is Portugal's historic river valley region associated with Port and a growing range of dry table wines.
-
-## Related posts
-
-- [Port and the Douro: Book Notes](/writing/port_book_review)

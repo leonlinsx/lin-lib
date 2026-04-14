@@ -1,0 +1,84 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import { computeCleanSlug } from '../../../utils/slug-helpers';
+import { titleCase } from '../../../utils/text';
+
+export async function getStaticPaths() {
+  const hubs = await getCollection('hubs');
+  const hubTypes = ['styles', 'regions', 'grapes', 'producers'] as const;
+
+  return hubTypes.map((hubType) => {
+    const hubsForType = hubs
+      .filter((hub) => hub.data.hubType === hubType)
+      .map((hub) => {
+        const slug = computeCleanSlug(hub).replace(new RegExp(`^${hubType}/`), '');
+        return {
+          title: hub.data.title,
+          href: `/wine/${hubType}/${slug}`,
+        };
+      })
+      .sort((a, b) => a.title.localeCompare(b.title));
+
+    return {
+      params: { hubType },
+      props: {
+        hubType,
+        hubs: hubsForType,
+      },
+    };
+  });
+}
+
+const { hubType, hubs } = Astro.props;
+const heading = titleCase(hubType);
+---
+
+<BaseLayout
+  title={`${heading} Hubs`}
+  description={`Browse ${heading.toLowerCase()} hub pages in the wine section.`}
+  canonical={Astro.url.pathname}
+>
+  <Breadcrumbs
+    items={[
+      { label: 'Home', href: '/' },
+      { label: 'Wine', href: '/writing/category/wine' },
+      { label: heading },
+    ]}
+  />
+
+  <article class="hub-index">
+    <header>
+      <h1>{heading}</h1>
+      <p>Browse all wine {heading.toLowerCase()} reference pages.</p>
+    </header>
+
+    <ul>
+      {hubs.map((hub) => (
+        <li>
+          <a href={hub.href}>{hub.title}</a>
+        </li>
+      ))}
+    </ul>
+  </article>
+</BaseLayout>
+
+<style>
+  .hub-index {
+    max-width: 760px;
+  }
+
+  .hub-index p {
+    color: var(--color-text-muted);
+  }
+
+  .hub-index ul {
+    margin-top: var(--space-md);
+    padding-left: 1.25rem;
+  }
+
+  .hub-index li + li {
+    margin-top: var(--space-xs);
+  }
+</style>

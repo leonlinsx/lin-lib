@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import { computeCleanSlug } from '../../../utils/slug-helpers';
+import { titleCase } from '../../../utils/text';
 
 export async function getStaticPaths() {
   const hubs = await getCollection('hubs');
@@ -20,7 +21,7 @@ export async function getStaticPaths() {
 
 const { hub } = Astro.props;
 const { Content } = await render(hub);
-const sectionLabel = hub.data.hubType.charAt(0).toUpperCase() + hub.data.hubType.slice(1);
+const sectionLabel = titleCase(hub.data.hubType);
 const hubRef = computeCleanSlug(hub).toLowerCase();
 
 const normalizeHubRef = (value: string) =>
@@ -51,8 +52,8 @@ const relatedPosts = (await getCollection('blog'))
   <Breadcrumbs
     items={[
       { label: 'Home', href: '/' },
-      { label: 'Wine' },
-      { label: sectionLabel },
+      { label: 'Wine', href: '/writing/category/wine' },
+      { label: sectionLabel, href: `/wine/${hub.data.hubType}` },
       { label: hub.data.title },
     ]}
   />
@@ -75,7 +76,7 @@ const relatedPosts = (await getCollection('blog'))
       )}
     </header>
 
-    <div class="content">
+    <div class="content prose">
       <Content />
     </div>
 
@@ -115,6 +116,10 @@ const relatedPosts = (await getCollection('blog'))
   }
 
   .content {
+    margin-top: var(--space-lg);
+  }
+
+  .prose :global(h2) {
     margin-top: var(--space-lg);
   }
 
