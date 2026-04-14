@@ -83,6 +83,7 @@ export default defineConfig({
       status: 308,
     },
     '/newsletter': '/',
+    '/wine/styles/amarone': { destination: '/wine/styles/valpolicella', status: 308 },
   },
 
   vite: {
