@@ -1,0 +1,78 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import { computeCleanSlug } from '../../../utils/slug-helpers';
+
+export async function getStaticPaths() {
+  const hubs = await getCollection('hubs');
+
+  return hubs.map((hub) => {
+    const hubType = hub.data.hubType;
+    const slug = computeCleanSlug(hub).replace(new RegExp(`^${hubType}/`), '');
+
+    return {
+      params: { hubType, slug },
+      props: { hub },
+    };
+  });
+}
+
+const { hub } = Astro.props;
+const { Content } = await render(hub);
+const sectionLabel = hub.data.hubType.charAt(0).toUpperCase() + hub.data.hubType.slice(1);
+---
+
+<BaseLayout
+  title={hub.data.title}
+  description={hub.data.description}
+  updatedDate={hub.data.updatedDate}
+  canonical={Astro.url.pathname}
+>
+  <Breadcrumbs
+    items={[
+      { label: 'Home', href: '/' },
+      { label: 'Wine' },
+      { label: sectionLabel },
+      { label: hub.data.title },
+    ]}
+  />
+
+  <article class="hub-page">
+    <header>
+      <h1>{hub.data.title}</h1>
+      {hub.data.description && <p class="description">{hub.data.description}</p>}
+      {hub.data.updatedDate && (
+        <p class="updated-date">
+          Updated on{' '}
+          <time datetime={hub.data.updatedDate.toISOString()}>
+            {hub.data.updatedDate.toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+            })}
+          </time>
+        </p>
+      )}
+    </header>
+
+    <div class="content">
+      <Content />
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .hub-page {
+    max-width: 760px;
+  }
+
+  .description,
+  .updated-date {
+    color: var(--color-text-muted);
+  }
+
+  .content {
+    margin-top: var(--space-lg);
+  }
+</style>

@@ -17,4 +17,17 @@ const blog = defineCollection({
     }),
 });
 
-export const collections = { blog };
+const hubs = defineCollection({
+  type: 'content',
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string().optional(),
+      updatedDate: z.coerce.date().optional(),
+      heroImage: z.union([image(), z.string()]).optional(),
+      slug: z.string().optional(),
+      hubType: z.enum(['regions', 'grapes']),
+    }),
+});
+
+export const collections = { blog, hubs };
