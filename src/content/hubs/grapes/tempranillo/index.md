@@ -1,21 +1,22 @@
 ---
 title: Tempranillo Grape
 hubType: grapes
-description: A practical overview of Tempranillo’s key regions and common flavor profile.
-updatedDate: 2026-04-13
+description: Spain’s flagship red grape, known for balancing fruit, structure, and aging ability.
+updatedDate: 2026-04-14
 ---
 
-Tempranillo is a major red grape of Spain and a foundational variety for wines from Rioja and Ribera del Duero.
+Tempranillo is one of Spain’s most important red grapes and appears in many major regions, including Rioja and Ribera del Duero. It often gives wines with red and dark fruit, earth, leather, tobacco, and spice, especially when oak-aged.
 
-## Typical profile
+For beginners, Tempranillo is a useful reference grape because it appears in multiple styles: fresher and more traditional in some Rioja wines, darker and firmer in Ribera del Duero.
 
-- Red cherry, plum, dried herbs, and tobacco notes
-- Moderate acidity and moderate tannin
-- Structure that responds well to oak aging
+## At a glance
 
-## Common roles
+- **Region:** Spain
+- **Typical style:** Structured red with good aging ability
+- **Known for:** Rioja, Ribera del Duero
+- **Good for:** Comparing region and oak influence
+- **Similar to:** Some Cabernet/Merlot blends in seriousness, but with a distinct Spanish profile
 
-- **Single-varietal wines:** Especially in quality-focused Spanish appellations
-- **Blends:** Often with Garnacha, Graciano, or Mazuelo in traditional regional blends
+## Why it matters
 
-This hub is intended as a stable reference page that can be expanded over time while the blog covers newer tastings and producer stories.
+Tempranillo is one of the clearest gateways into Spanish fine wine.
