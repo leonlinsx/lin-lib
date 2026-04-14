@@ -11,6 +11,8 @@ heroImage: './img2.webp'
 
 Cava is Spain's largest sparkling wine, with 218mm bottles sold in 2024, also making it the world's third largest sparkling wine. It is made in the traditional method, with second fermentation in bottle, and typically sold with minimal dosage (sugar added) [^1].
 
+For concise references, see the [Cava style hub](/wine/styles/cava), [Penedès region hub](/wine/regions/penedes), [Xarel·lo grape hub](/wine/grapes/xarel-lo), and [Champagne style hub](/wine/styles/champagne).
+
 [^1]: Dosage refers to the sugar added in the liqueur d'expédition to top up sparkling wines after disgorgement. Cava is typically in the Brut Nature (<3 g/l) to Brut (<12 g/l) range
 
 ![Chart showing category sales](./img6.webp)
@@ -195,4 +197,3 @@ Some details discussed included:
 We ended our day later than scheduled due to asking too many questions on our visits, as can be expected. Judith and Andrea (also from the D.O.) did an admirable job trying to keep us on schedule; if left to our own devices we would probably have spent the entire day at the first winery.
 
 After checking in to the hotel, we also had a group dinner, which was a fun experience where I learnt what a [porrón](https://en.wikipedia.org/wiki/Porron) was and on an entirely unrelated note, have to hope that some videos never become public.
-

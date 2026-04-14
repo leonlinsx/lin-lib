@@ -9,6 +9,8 @@ heroImage: './img3.webp'
 
 This is notes from the second day of the Cava Educator Advanced course, [see here for the introduction and notes from the first day.](https://linlib.com/writing/cava_educator_advanced/)
 
+Related hub references: [Cava style](/wine/styles/cava), [Penedès region](/wine/regions/penedes), and [Xarel·lo grape](/wine/grapes/xarel-lo).
+
 The second day included two winery visits and our exam.
 
 # Visit to Vilarnau

@@ -11,6 +11,8 @@ Some interesting excerpts from "Port and the Douro", by Richard Mayson.
 
 I found the book helpful in providing more context about the history of Port while preparing for the dipWSET fortified wine module. 
 
+If helpful, I have short reference hubs for [Port as a style](/wine/styles/port) and the [Douro region](/wine/regions/douro).
+
 I personally do like the sweetness and fruity notes of Ports, but the high alcohol is challenging. It is also special to be drinking wines older than yourself.
 
 > The story of Port and the Douro is inseparable from Portugal's emergence as a trading nation, in which England, another rapidly developing mercantile power, played a crucially important part.
