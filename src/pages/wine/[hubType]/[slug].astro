@@ -21,6 +21,25 @@ export async function getStaticPaths() {
 const { hub } = Astro.props;
 const { Content } = await render(hub);
 const sectionLabel = hub.data.hubType.charAt(0).toUpperCase() + hub.data.hubType.slice(1);
+const hubRef = computeCleanSlug(hub).toLowerCase();
+
+const normalizeHubRef = (value: string) =>
+  value
+    .toLowerCase()
+    .trim()
+    .replace(/^\/+|\/+$/g, '');
+
+const relatedPosts = (await getCollection('blog'))
+  .filter((post) => (post.data.hubRefs ?? []).some((ref) => normalizeHubRef(ref) === hubRef))
+  .sort((a, b) => {
+    const aPrimary = normalizeHubRef(a.data.primaryHub ?? '') === hubRef ? 1 : 0;
+    const bPrimary = normalizeHubRef(b.data.primaryHub ?? '') === hubRef ? 1 : 0;
+    if (aPrimary !== bPrimary) {
+      return bPrimary - aPrimary;
+    }
+    return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+  })
+  .slice(0, 4);
 ---
 
 <BaseLayout
@@ -59,6 +78,29 @@ const sectionLabel = hub.data.hubType.charAt(0).toUpperCase() + hub.data.hubType
     <div class="content">
       <Content />
     </div>
+
+    {relatedPosts.length > 0 && (
+      <section class="related-posts" aria-labelledby="related-posts-heading">
+        <h2 id="related-posts-heading">Related posts</h2>
+        <ul>
+          {relatedPosts.map((post) => (
+            <li>
+              <a href={`/writing/${computeCleanSlug(post)}/`}>{post.data.title}</a>
+              <span class="related-post-date">
+                {' · '}
+                <time datetime={post.data.pubDate.toISOString()}>
+                  {post.data.pubDate.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric',
+                  })}
+                </time>
+              </span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
   </article>
 </BaseLayout>
 
@@ -74,5 +116,29 @@ const sectionLabel = hub.data.hubType.charAt(0).toUpperCase() + hub.data.hubType
 
   .content {
     margin-top: var(--space-lg);
+  }
+
+  .related-posts {
+    margin-top: var(--space-xl);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border-soft);
+  }
+
+  .related-posts h2 {
+    margin-bottom: var(--space-sm);
+    font-size: var(--text-xl);
+  }
+
+  .related-posts ul {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+
+  .related-posts li + li {
+    margin-top: var(--space-xs);
+  }
+
+  .related-post-date {
+    color: var(--color-text-muted);
   }
 </style>
