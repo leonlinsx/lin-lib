@@ -16,7 +16,7 @@ export async function getStaticPaths() {
         const slug = computeCleanSlug(hub).replace(new RegExp(`^${hubType}/`), '');
         return {
           title: hub.data.title,
-          href: `/wine/${hubType}/${slug}`,
+          href: `/wine/${hubType}/${slug}/`,
         };
       })
       .sort((a, b) => a.title.localeCompare(b.title));
@@ -43,7 +43,7 @@ const heading = titleCase(hubType);
   <Breadcrumbs
     items={[
       { label: 'Home', href: '/' },
-      { label: 'Wine', href: '/writing/category/wine' },
+      { label: 'Wine', href: '/writing/category/wine/' },
       { label: heading },
     ]}
   />

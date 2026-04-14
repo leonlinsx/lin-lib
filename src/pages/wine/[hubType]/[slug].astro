@@ -52,8 +52,8 @@ const relatedPosts = (await getCollection('blog'))
   <Breadcrumbs
     items={[
       { label: 'Home', href: '/' },
-      { label: 'Wine', href: '/writing/category/wine' },
-      { label: sectionLabel, href: `/wine/${hub.data.hubType}` },
+      { label: 'Wine', href: '/writing/category/wine/' },
+      { label: sectionLabel, href: `/wine/${hub.data.hubType}/` },
       { label: hub.data.title },
     ]}
   />
