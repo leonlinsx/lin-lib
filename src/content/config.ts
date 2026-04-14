@@ -14,6 +14,8 @@ const blog = defineCollection({
       heroImage: z.union([image(), z.string()]).optional(),
       readingTime: z.number().optional(),
       slug: z.string().optional(), // ✅ new override field
+      hubRefs: z.array(z.string()).optional(),
+      primaryHub: z.string().optional(),
     }),
 });
 

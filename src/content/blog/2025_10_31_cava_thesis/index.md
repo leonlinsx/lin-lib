@@ -5,6 +5,8 @@ pubDate: 2025-10-31
 category: wine
 tags: [sparkling wine, Cava, wine business]
 heroImage: './image13.webp'
+hubRefs: [styles/cava, regions/penedes, grapes/xarel-lo, styles/champagne]
+primaryHub: styles/cava
 ---
 
 > **Editorial Note**: This essay was originally written as part of a professional wine examination. It has been lightly edited for clarity and web reading.

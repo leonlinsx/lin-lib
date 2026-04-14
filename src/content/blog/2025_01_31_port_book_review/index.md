@@ -5,6 +5,8 @@ pubDate: 2025-01-31
 category: wine
 tags: [fortified wine, Port, wine business]
 heroImage: './img1.webp'
+hubRefs: [styles/port, regions/douro]
+primaryHub: styles/port
 ---
 
 Some interesting excerpts from "Port and the Douro", by Richard Mayson. 
