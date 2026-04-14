@@ -38,11 +38,11 @@ For quick background, see the [Cava Wine Style](/wine/styles/cava), [Penedès Wi
 
 A Cava label can tell you five useful things very quickly:
 
-1. **How sweet or dry the wine is**
-2. **How long it has aged**
-3. **What level of quality the producer is aiming for**
-4. **Sometimes which grapes are in the blend**
-5. **Whether the producer made the wine from start to finish**
+1. How sweet or dry the wine is
+2. How long it has aged
+3. What level of quality the producer is aiming for
+4. Sometimes which grapes are in the blend
+5. Whether the producer made the wine from start to finish
 
 For beginners, the first two matter the most. If you can spot the sweetness term and the ageing tier, you already know a lot.
 
@@ -53,7 +53,7 @@ If you only have half a minute, look for these things in this order:
 1. **Sweetness term**  
    Look for **Brut Nature**, **Extra Brut**, **Brut**, or another sweetness level.
 
-2. **ageing tier**  
+2. **Ageing tier**  
    Check whether it says **Guarda**, **Reserva**, **Gran Reserva**, or **Paraje Calificado**.
 
 3. **Producer quality cue**  
@@ -246,7 +246,7 @@ If you want the easiest possible buying framework, use this:
 ### If you want something fresh and easy-drinking
 Look for:
 - **Cava de Guarda**
-- **Brut Nature** or **Brut**
+- **Brut Nature** or **Extra Brut**
 - a straightforward producer style
 
 This is a good choice for aperitif drinking, parties, and casual food.
