@@ -18,7 +18,7 @@ If you want a sparkling wine with strong value, lots of food-pairing flexibility
 
 It is also worth dropping the idea that Cava is simply “cheap Champagne.” That framing misses what makes Cava distinctive. Serious Cava has its own identity, especially through native grapes like **Xarel·lo**, which gives many top bottles structure, savory character, and aging potential. Some top Cavas—especially **Guarda Superior** and **Paraje Calificado** bottlings—are aged for long periods and can be every bit as thoughtful and cellar-worthy as very good Champagne, just without the same international recognition.
 
-If you want to dive deeper, you can also explore the [Cava Wine Style](/wine/styles/cava), [Champagne Wine Style](/wine/styles/champagne), [Penedès Wine Region](/wine/regions/penedes), [Champagne Wine Region](/wine/regions/champagne), and [Xarel·lo Grape](/wine/grapes/xarel-lo) hubs.
+If you want to dive deeper, you can also explore the [Cava Wine Style](/wine/styles/cava), [Champagne Wine Style](/wine/styles/champagne), [Penedès Wine Region](/wine/regions/penedes), and [Champagne Wine Region](/wine/regions/champagne) hubs.
 
 ## Summary
 
