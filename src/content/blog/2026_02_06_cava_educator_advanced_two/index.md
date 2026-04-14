@@ -5,6 +5,8 @@ pubDate: 2026-02-06
 category: wine
 tags: [sparkling wine, Cava, winemaking]
 heroImage: './img3.webp'
+hubRefs: [styles/cava, regions/penedes, grapes/xarel-lo]
+primaryHub: styles/cava
 ---
 
 This is notes from the second day of the Cava Educator Advanced course, [see here for the introduction and notes from the first day.](https://linlib.com/writing/cava_educator_advanced/)

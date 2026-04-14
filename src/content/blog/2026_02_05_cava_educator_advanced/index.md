@@ -5,6 +5,8 @@ pubDate: 2026-02-05
 category: wine
 tags: [sparkling wine, Cava, winemaking]
 heroImage: './img2.webp'
+hubRefs: [styles/cava, regions/penedes, grapes/xarel-lo, styles/champagne]
+primaryHub: styles/cava
 ---
 
 # Introduction to Cava

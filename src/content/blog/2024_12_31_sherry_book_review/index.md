@@ -5,6 +5,8 @@ pubDate: 2024-12-31
 category: wine
 tags: [fortified wine, Sherry, wine business]
 heroImage: './img1.webp'
+hubRefs: [styles/sherry, regions/jerez, grapes/palomino]
+primaryHub: styles/sherry
 ---
 
 Some interesting excerpts from "Sherry", by Julian Jeffs. 
