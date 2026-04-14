@@ -26,7 +26,7 @@ const hubs = defineCollection({
       updatedDate: z.coerce.date().optional(),
       heroImage: z.union([image(), z.string()]).optional(),
       slug: z.string().optional(),
-      hubType: z.enum(['regions', 'grapes']),
+      hubType: z.enum(['regions', 'grapes', 'styles', 'producers']),
     }),
 });
 

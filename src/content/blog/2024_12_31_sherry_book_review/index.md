@@ -11,6 +11,8 @@ Some interesting excerpts from "Sherry", by Julian Jeffs.
 
 I found the book helpful in providing more context about the history and types of Sherry while preparing for the dipWSET fortified wine module. 
 
+For quick background references, see the [Sherry style hub](/wine/styles/sherry), [Jerez region hub](/wine/regions/jerez), and [Palomino grape hub](/wine/grapes/palomino).
+
 I personally have liked the PX style of sherry more, but not the cream or fino styles. Amontillado and Oloroso seem to be hit or miss for me. I suspect this is partially a budgetary issue, given the lack of selection available at reasonable prices in ths US.
 
 > Chaucer (13402-1400) was the son of a vintner and was famously accurate in everything he mentioned, so it appears that wines from southern Spain were already fortified when he wrote his Tales, and this is borne out by the knowledge that the Moors distilled alcohol and used it for medicinal purposes. 
