@@ -43,7 +43,7 @@ Port is a fortified wine made in Portugal’s Douro Valley. During fermentation,
 
 [^1]: Fermentation converts sugar to alcohol. If the fermentation is stopped early, there is still residual sugar that has not been converted.
 
-Different Port styles can be fruity, nutty, fresh, youthful, mature, casual, serious, affordable, or age-worthy depending on how they are matured. 
+Different Port styles can be fruity, nutty, fresh, youthful, mature, casual, serious, affordable, or age-worthy, depending on how they are matured. 
 
 # The two main Port families
 
@@ -171,7 +171,7 @@ Good for aperitif drinking, Port and tonic cocktails, warm weather drinking, peo
 
 ## Rosé Port
 
-Rosé Port is a relatively modern style and is usually more casual and cocktail-friendly than the classic Port categories.
+Rosé Port is a relatively modern style and is usually more casual and cocktail-friendly than the classic Port categories. It was made to capitalise on the rosé trend in wines.
 
 Expect bright berry fruit, lighter feel than many red Ports, more casual, easy-drinking style
 
@@ -189,7 +189,7 @@ If you want the simplest buying guide:
 
 ## Start with Tawny if:
 - you like nuttier, softer, more mellow wines
-- you want something that feels more mature without huge cost
+- you want something that has more oxidised aromas
 
 ## Start with LBV if:
 - you want a more serious bottle
@@ -199,9 +199,9 @@ If you want the simplest buying guide:
 ## Try White Port if:
 - you want an aperitif
 - you want to make a Port and tonic
-- you want a less heavy entry into the category
+- you want a lighter entry into the category
 
-# How to choose in under 30 seconds
+## How to choose in under 30 seconds
 
 If you are in a store and want the fastest possible guide:
 
@@ -213,7 +213,7 @@ If you are in a store and want the fastest possible guide:
 
 # Final thought
 
-Port becomes much less intimidating once you stop thinking of it as one drink. It is really a family of styles, and the label usually tells you which family you are in.
+Port becomes less intimidating once you stop thinking of it as one single type of wine. It is really a family of styles, and the label usually tells you which family you are in.
 
 For beginners, the best path is simple:
 - learn the Ruby vs Tawny split

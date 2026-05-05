@@ -1,6 +1,6 @@
 ---
 title: "Cava vs Champagne: What’s the Real Difference for Beginners?"
-description: "A beginner-friendly guide to the differences between Cava and Champagne, including grapes, style, price, and when to buy each."
+description: "A beginner-friendly guide to the differences between Cava and Champagne, including grapes, style, price, and when to buy each"
 pubDate: 2026-04-18
 category: wine
 tags: [sparkling wine, Cava, Champagne]
@@ -55,7 +55,7 @@ So if you already like Champagne, Cava is not some unrelated bargain fizz. It be
 
 Champagne can only come from the **Champagne region of France**. Cava is a Spanish appellation historically centered on **Catalonia, especially Penedès**, though the Cava D.O. is not identical to one single region in the way Champagne is.
 
-That matters because sparkling wine is not just about method. It is also about climate, soils, grapes, and local tradition. For example, Champagne's limestone soils are typically cited as a reason for the minerality of the wines made there.
+That matters because sparkling wine is not just about method. It is also about climate, soils, grapes, and local tradition. For example, Champagne's chalk soils are typically cited as a reason for the minerality of the wines made there.
 
 ## 2. Grapes
 
