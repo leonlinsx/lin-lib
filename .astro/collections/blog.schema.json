@@ -64,6 +64,15 @@
         "slug": {
           "type": "string"
         },
+        "hubRefs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "primaryHub": {
+          "type": "string"
+        },
         "$schema": {
           "type": "string"
         }
