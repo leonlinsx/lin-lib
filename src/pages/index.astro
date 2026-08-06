@@ -20,6 +20,29 @@ const latestPosts = allPosts
   .map(enrichPost)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 3);
+
+const testimonials = [
+  {
+    quote:
+      'What truly set Leon apart was the thoughtfulness he brought to curating the experience. He selected wines that genuinely aligned with our values and the spirit of the Women’s History Month event. His teaching style was warm, down to earth, and engaging, making the tasting approachable for everyone, from complete beginners to more experienced wine drinkers alike.',
+    name: 'Jacqueline Deprey',
+  },
+  {
+    quote:
+      'Leon also went above and beyond by reaching out to one of the female winemakers featured in the tasting and arranging a personalized message for our group. It was an incredibly special touch that made the event feel unique and memorable. I would highly recommend Leon to any organization looking for a thoughtful, inclusive, and expertly led wine experience.',
+    name: 'Jacqueline Deprey',
+  },
+  {
+    quote:
+      'Leon’s wine tasting was fun, informative and well paced! He made wine feel more approachable and was very receptive to questions!',
+    name: 'Emily Szpynda',
+  },
+  {
+    quote:
+      'I really enjoyed the wine tasting experience. It was informative, engaging, and a lot of fun. As someone who doesn’t know much about wine and was a little nervous going in, I really appreciated how Leon made everything feel approachable and easy to understand. He created a relaxed atmosphere that made learning very fun!',
+    name: 'Maral Mohagheghi',
+  },
+];
 ---
 
 <BaseLayout
@@ -39,7 +62,7 @@ const latestPosts = allPosts
 
   <!-- Photo Strip Section -->
   <section class="tasting-gallery">
-    <h2>From past events</h2>
+    <h2>What I've been up to</h2>
     <div class="gallery-grid">
       <Image src={tastingImage1} alt="Tasting event" class="gallery-image" />
       <!-- <Image src={tastingImage2} alt="Tasting event" class="gallery-image" /> -->
@@ -49,6 +72,21 @@ const latestPosts = allPosts
       <Image src={tastingImage6} alt="Tasting event" class="gallery-image" /> -->
       <Image src={tastingImage7} alt="Tasting event" class="gallery-image" />
       <Image src={tastingImage8} alt="Tasting event" class="gallery-image" />
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What attendees say</h2>
+    <div class="testimonial-row">
+      {
+        testimonials.map((testimonial) => (
+          <figure class="testimonial-card">
+            <blockquote>"{testimonial.quote}"</blockquote>
+            <figcaption>- {testimonial.name}</figcaption>
+          </figure>
+        ))
+      }
     </div>
   </section>
 
@@ -62,7 +100,8 @@ const latestPosts = allPosts
   <section class="about-teaser">
     <h2>About Lin Lib</h2>
     <p>
-      I'm Leon Lin. My library is a space to make wine and spirits feel less intimidating — and also for occasional in-person tasting workshops.
+      I'm Leon Lin. My library is a space to make wine and spirits feel less
+      intimidating — and also for occasional in-person tasting workshops.
     </p>
     <p>
       <a href="/about">More about Lin Lib →</a>
@@ -138,7 +177,9 @@ const latestPosts = allPosts
     aspect-ratio: 4/3;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
     object-fit: cover;
     width: 100%;
     display: block;
@@ -149,6 +190,44 @@ const latestPosts = allPosts
   .gallery-image:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  }
+
+  /* Testimonials */
+  .testimonials {
+    margin: var(--space-xl) 0;
+  }
+
+  .testimonials h2 {
+    margin-bottom: var(--space-lg);
+  }
+
+  .testimonial-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: var(--space-md);
+    overflow-x: auto;
+    padding-bottom: var(--space-xs);
+  }
+
+  .testimonial-card {
+    flex: 0 0 min(320px, 85vw);
+    margin: 0;
+    padding: var(--space-md);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  .testimonial-card blockquote {
+    margin: 0 0 var(--space-sm);
+    padding: var(--space-md);
+    border-left: 0;
+    line-height: 1.6;
+  }
+
+  .testimonial-card figcaption {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
   }
 
   /* Content Section */

@@ -1,22 +1,43 @@
-# Allow all search and AI crawlers
+# robots.txt for linlib.com
+# Goal: maximize SEO + AEO discoverability while protecting non-public paths.
+
+# Default policy for all crawlers (search + AI):
+# - Crawl all public educational content.
+# - Avoid common private/backend paths.
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /login/
+Disallow: /wp-admin/
+Disallow: /staging/
+Disallow: /preview/
+Disallow: /draft/
+Disallow: /search/
+Disallow: /writing/search/
 
-# Explicitly allow AI crawlers
+# Explicitly allow major search engine bots.
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Explicitly allow major AI bots and AI-related crawlers.
 User-agent: GPTBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: PerplexityBot
 Allow: /
 
 User-agent: ClaudeBot
 Allow: /
 
-User-agent: anthropic-ai
+User-agent: PerplexityBot
 Allow: /
 
-# Sitemap for faster discovery
-Sitemap: https://leonlins.com/sitemap-index.xml
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Sitemap for faster discovery and better indexing coverage.
+Sitemap: https://linlib.com/sitemap-index.xml
