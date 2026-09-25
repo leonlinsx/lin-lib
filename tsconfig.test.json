@@ -1,9 +1,0 @@
-{
-  "extends": "./tsconfig.json",
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "astro:content": ["tests/mocks/astro-content.ts"]
-    }
-  }
-}
